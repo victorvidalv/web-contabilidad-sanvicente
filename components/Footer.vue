@@ -2,14 +2,7 @@
 <div>
 
 
-    <div class="custom-shape-divider-bottom-1694127106">
-    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-        <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
-    </svg>
-</div>
-
-
-  <footer class="bg-blue-600">
+  <footer class="border-t" >
  
   <div class="max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 lg:pt-20 mx-auto">
     <!-- Grid -->
@@ -20,33 +13,33 @@
       <!-- End Col -->
 
       <div class="col-span-1">
-        <h4 class="font-semibold text-gray-100">Servicios </h4>
+        <h4 class="font-semibold">Servicios </h4>
 
         <div class="mt-3 grid space-y-3">
-          <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200" href="#">Contabilidad</a></p>
-          <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200" href="#">Creación Empresas</a></p>
-          <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200" href="#">Asesoría Tributaria</a></p>
-          <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200" href="#">Ver Todos</a></p>
+          <p><a class="inline-flex gap-x-2 " href="#">Contabilidad</a></p>
+          <p><a class="inline-flex gap-x-2 " href="#">Creación Empresas</a></p>
+          <p><a class="inline-flex gap-x-2 " href="#">Asesoría Tributaria</a></p>
+          <p><a class="inline-flex gap-x-2 " href="#">Ver Todos</a></p>
         </div>
       </div>
       <!-- End Col -->
 
       <div class="col-span-1">
-        <h4 class="font-semibold text-gray-100">Company</h4>
+        <h4 class="font-semibold">Empresa</h4>
 
         <div class="mt-3 grid space-y-3">
-          <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200" href="#">Nosotros</a></p>
-          <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200" href="#">Servicios</a></p>
-          <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200" href="#">Contacto</a> </p>
+          <p><a class="inline-flex gap-x-2 " href="#">Nosotros</a></p>
+          <p><a class="inline-flex gap-x-2 " href="#">Servicios</a></p>
+          <p><a class="inline-flex gap-x-2 " href="#">Contacto</a> </p>
           
         </div>
       </div>
       <!-- End Col -->
 
       <div class="col-span-2">
-        <h4 class="font-semibold text-gray-100">Contabilidad San Vicente</h4>
+        <h4 class="font-semibold">Contabilidad San Vicente</h4>
 
-        <p class=" text-gray-100">"En San Vicente de Tagua Tagua y más allá, somos el aliado estratégico que transformará su visión en crecimiento tangible y éxito sostenible".
+        <p class=" ">"En San Vicente de Tagua Tagua y más allá, somos el aliado estratégico que transformará su visión en crecimiento tangible y éxito sostenible".
 
 
 
@@ -96,30 +89,6 @@
       <!-- End Social Brands -->
     </div>
   </div>
-</footer></div>
+</footer>
+</div>
 </template>
-
-
-<style>
-.custom-shape-divider-bottom-1694127106 {
-    position: relative;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom-1694127106 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 29px;
-    transform: rotateY(180deg);
-}
-
-.custom-shape-divider-bottom-1694127106 .shape-fill {
-    fill: #4267B2;
-}
-</style>

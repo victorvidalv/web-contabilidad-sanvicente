@@ -1,10 +1,10 @@
 <template>
     <!-- Features -->
-<div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+<div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto" data-aos="fade" data-aos-duration="1000">
   <!-- Grid -->
   <div class="md:grid md:grid-cols-2 md:items-center md:gap-12 xl:gap-32">
     <div>
-      <img  src="https://dummyimage.com/580x410/eee/aaa" alt="Image Description">
+      <img  src="https://dummyimage.com/580x580/eee/aaa" alt="Image Description">
     </div>
     <!-- End Col -->
 
@@ -13,10 +13,12 @@
         <!-- Title -->
         <div class="space-y-2 md:space-y-4">
           <h2 class="font-bold text-3xl lg:text-4xl text-gray-800 dark:text-gray-200">
-            Nosotros
+            Innovación y Precisión en Servicios Contables
           </h2>
           <p class="text-gray-500">
-            Bienvenido a nuestra firma ubicada en el corazón de San Vicente de Tagua Tagua, una comuna que representa la vida agrícola y vitivinícola de la Región de O'Higgins. Aquí, donde la agroindustria y el comercio dibujan el paisaje económico, nos enorgullece ofrecer una amplia gama de servicios que van desde la Contabilidad Financiera y Asesoría Tributaria hasta la Consultoría Estratégica y Servicios de Tesorería. <strong>Comprendemos las particularidades de la economía local</strong>, lo que nos permite brindar asesoramientos especializados en áreas como el cumplimiento de normativas relacionadas con la Ley de Impuesto a la Renta y el IVA, entre otros.
+            Descubra un nuevo estándar en contabilidad adaptado a la modernidad y al entorno empresarial del siglo XXI. Aquí en Contabilidad San Vicente, fusionamos la tradición contable con la tecnología más avanzada para ofrecer una experiencia de servicio única. <strong>No se trata solo de números y balances; nos enfocamos en proporcionar insights accionables que impulsan su negocio hacia el futuro.</strong>
+
+Nuestra metodología integra un enfoque multidisciplinario y un equipo de expertos altamente calificados en áreas contables, comerciales e informáticas. Con más de 10 años de experiencia, garantizamos soluciones precisas y cumplimiento total con las leyes chilenas y las Normas Internacionales de Información Financiera (NIIF).
           </p>
         </div>
         <!-- End Title -->
@@ -32,7 +34,7 @@
             <!-- End Solid Check -->
 
             <span class="text-sm sm:text-base text-gray-500">
-              <span class="font-bold">Conocimiento</span> Local
+              <span class="font-bold"> Especialización </span>   en Sectores Locales
             </span>
           </li>
 
@@ -45,7 +47,7 @@
             <!-- End Solid Check -->
 
             <span class="text-sm sm:text-base text-gray-500">
-              Uso de  <span class="font-bold">Tecnologias avanzadas</span>
+                Enfoque <span class="font-bold">Multidisciplinario </span>
             </span>
           </li>
 
@@ -58,7 +60,7 @@
             <!-- End Solid Check -->
 
             <span class="text-sm sm:text-base text-gray-500">
-              Orientación 100% al cliente
+                Uso Intensivo de Tecnología y Análisis de Datos
             </span>
           </li>
         </ul>

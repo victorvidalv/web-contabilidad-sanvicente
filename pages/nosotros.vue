@@ -1,22 +1,38 @@
 <template>
-  
     <div>
-   
- 
-      <Aboutus/>
+
+      <AboutusBanner/>
+
       <Team/>
 
-      <Modern/>
+      <BannerModernService/>
 
       <Clients/>
     
-  
     </div>
-    </template>
-    <script>
+</template>
 
 
-    export default {
-    layout: 'default',
+<script>
+export default {
+  layout: 'default',
+  // SEO (Optimización para motores de búsqueda)
+  head() {
+      return {
+          title: "Nosotros | Contabilidad San Vicente",
+          meta: [
+              {
+                  hid: "description",
+                  name: "description",
+                  content: "",
+              },
+              {
+                  hid: "keywords",
+                  name: "keywords",
+                  content: "",
+              },
+          ],
+      };
+  },
 }
-  </script>
+</script>

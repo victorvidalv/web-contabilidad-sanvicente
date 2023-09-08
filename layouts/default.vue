@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="dark:bg-gray-800">
     <Menu />
     <Nuxt />
     <Footer />
@@ -71,22 +71,29 @@ p {
 strong {
   font-weight: 700;
   font-size: 1.15rem;
-  color: #4267b2;
+  color:#F25022;
+ 
 }
 
 .bg-blue-600,
 .bg-blue-600 a {
-  background-color: #4267b2 !important;
+  background-color: #F25022 !important;
 }
 
 .text-blue-600,
 .text-blue-600,
-.text-blue-500 a {
-  color: #4267b2 !important;
+.text-blue-500 a nuxt-link {
+  color: #F25022 !important;
 }
 
 .text-gray-500,
 .text-gray-500 a {
   color: black !important;
+}
+
+.red  {
+
+background-color: #F25022;
+
 }
 </style>

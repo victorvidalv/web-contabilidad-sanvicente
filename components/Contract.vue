@@ -10,32 +10,13 @@
           contacto télefonico
         </p>
         <h1  data-aos="zoom-in" data-aos-duration="700" class="text-3xl text-gray-800 font-bold sm:text-5xl lg:text-6xl lg:leading-tight dark:text-gray-200">
-          Si tienes dudas o necesitas ayuda <span class="text-blue-500">dejános tu número</span>
+          Si tienes dudas o necesitas ayuda <span class="text-blue-500">+ 56 9-9999999</span>
         </h1>
       </div>
       <!-- End Title -->
 
 
-      <!-- Form -->
-      <form>
-        <div class="mx-auto max-w-2xl sm:flex sm:space-x-3 p-3 bg-white border rounded-lg shadow-lg shadow-gray-100 dark:bg-slate-900 dark:border-gray-700 dark:shadow-gray-900/[.2]">
-          <div class="pb-2 sm:pb-0 sm:flex-[1_0_0%]">
-            <label for="hs-hero-name-1" class="block text-sm font-medium dark:text-white"><span class="sr-only">Su nombre</span></label>
-            <input type="text" id="hs-hero-name-1" class="py-3 px-4 block w-full border-transparent rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 sm:p-4 dark:bg-slate-900 dark:border-transparent dark:text-gray-400" placeholder="Su
-            nombre">
-          </div>
-          <div class="pt-2 sm:pt-0 sm:pl-3 border-t border-gray-200 sm:border-t-0 sm:border-l sm:flex-[1_0_0%] dark:border-gray-700">
-            <label for="hs-hero-email-1" class="block text-sm font-medium dark:text-white"><span class="sr-only">Su número</span></label>
-            <input type="email" id="hs-hero-email-1" class="py-3 px-4 block w-full border-transparent rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 sm:p-4 dark:bg-slate-900 dark:border-transparent dark:text-gray-400" placeholder="Su número">
-          </div>
-          <div class="pt-2 sm:pt-0 grid sm:block sm:flex-[0_0_auto]">
-            <a class="py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md border border-transparent font-semibold bg-blue-500 text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all text-sm sm:p-4 dark:focus:ring-offset-gray-800" href="#">
-              Llamame!
-            </a>
-          </div>
-        </div>
-      </form>
-      <!-- End Form -->
+     
 
       <!-- SVG Element -->
       <div class="hidden absolute top-2/4 left-0 transform -translate-y-2/4 -translate-x-40 md:block lg:-translate-x-80" aria-hidden="true">
@@ -88,7 +69,7 @@
         Elegir un socio contable confiable es crucial para el éxito de tu negocio. En Contabilidad San Vicente, simplificamos el proceso de contratación para que puedas empezar a beneficiarte de nuestros servicios especializados lo más pronto posible. A continuación, te presentamos una guía detallada en tres sencillos pasos sobre cómo puedes contratar nuestros servicios contables.
       </p>
 
-      <img  class="mt-10" src="https://dummyimage.com/450x300/eee/aaa" alt="Image Description">
+      <img  class="mt-10" src="https://dummyimage.com/460x500/eee/aaa" alt="Image Description">
     </div>
     <!-- End Col -->
 
