@@ -1,21 +1,23 @@
 <template> 
-<div>
+    <div>
+    
+      <TrainBanner/>
+      
+      <TrainCards/>
+    
+      <TrainFocus/>
 
-  <HomeBanner/>
+      <AboutTeam/> 
+    
+      <SiteClients/> 
+    
+    </div>
+    </template>
+    
+    <script>
 
-  <HomeWhyChooseUs/>
 
-  <HomeModern/>
-
-  <SiteClients/> 
-
-</div>
-</template>
-
-<script>
-import HomeBanner from '~/components/HomeBanner.vue';
-
-export default {
+    export default {
     layout: 'default',
     // INICIO SEO 
     head() {
@@ -37,4 +39,4 @@ export default {
     },
 
 }
-</script>
+    </script>

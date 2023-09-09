@@ -3,16 +3,13 @@
  
       <ServicesBanner/>
 
-      <Allservices/>
+      <ServicesCards/>
 
-      
+      <ServicesContract/>
 
-      <Contract/>
+      <HomeModern/>
 
-
-      <BannerModernService/>
-
-      <Clients/>
+      <SiteClients/>
 
   </div>
 </template>
@@ -20,7 +17,9 @@
 <script>
 export default {
   layout: 'default',
-  // SEO (Optimización para motores de búsqueda)
+
+    // INICIO SEO 
+
   head() {
       return {
           title: "Servicios | Contabilidad San Vicente",
@@ -38,5 +37,8 @@ export default {
           ],
       };
   },
+
+    // FIn SEO 
+
 }
 </script>

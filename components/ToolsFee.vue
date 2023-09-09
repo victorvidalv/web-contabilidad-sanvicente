@@ -20,9 +20,6 @@
 </div>
 
 
-
-
-
   
       <div class="mt-5">
         <h3 class="text-xl font-semibold">Pesos Chilenos</h3>
@@ -79,8 +76,3 @@
   };
   </script>
 
-
-  
-  <style scoped>
-  /* Puedes añadir estilos adicionales aquí si lo deseas */
-  </style>

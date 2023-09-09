@@ -49,7 +49,10 @@
 <script>
 export default {
   layout: 'default',
-  // SEO (Optimización para motores de búsqueda)
+
+  
+    // INICIO SEO 
+
   head() {
       return {
           title: "Términos y Condiciones | Contabilidad San Vicente",
@@ -67,20 +70,17 @@ export default {
           ],
       };
   },
+
+  // FIN SEO 
+
 }
 </script>
 
 <style scoped>
 
-h2 {
+h2, li{
 
 margin-top: 20px;
-
-}
-
-li {
-
-margin-top: 15px;
 
 }
 

@@ -7,7 +7,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'contabibilidad-san-vicente',
+    title: 'Contabilidad San Vicente',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -26,8 +26,9 @@ export default {
   ]
   },
 
-  // Global CSS: https://go.nuxtjs.dev/config-css
+  // Global CSS: //static/style.css
   css: [
+    '~/static/style.css',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -50,6 +51,7 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
+    '@nuxtjs/sitemap',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -71,8 +73,27 @@ export default {
   },
  
   generate: {
-    routes: ['/servicios/contabilidad', '/servicios/remuneraciones', '/servicios/asesoria-tributaria',
-    '/servicios/cumplimiento', '/servicios/evaluacion-financiera', '/servicios/gestion-riesgo',
-    '/servicios/creacion-cierre-empresas', '/servicios/fusiones-adquisiciones', '/servicios/quiebras',]
+    routes: [
+
+      // Servicios
+    '/servicios/contabilidad', 
+    '/servicios/remuneraciones', 
+    '/servicios/asesoria-tributaria',
+    '/servicios/cumplimiento', 
+    '/servicios/evaluacion-financiera',
+     '/servicios/gestion-riesgo',
+    '/servicios/creacion-cierre-empresas', 
+    '/servicios/fusiones-adquisiciones', 
+    '/servicios/quiebras',
+
+    // Capacitaciones
+
+    '/capacitacion/fundamentos-contabilidad',
+    '/capacitacion/gestion-tributaria',
+    '/capacitacion/analisis-financiero',
+    '/capacitacion/manejo-remuneraciones',
+    '/capacitacion/beneficios-laborales',
+    '/capacitacion/cumplimiento-fiscal'
+  ]
   }
 }

@@ -47,11 +47,4 @@
   };
   </script>
   
-  <style scoped>
-.bg-blue-500 {
-
-background-color: #F25022;
-
-}
-  </style>
   

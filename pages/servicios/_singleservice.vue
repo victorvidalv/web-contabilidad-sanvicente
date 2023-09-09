@@ -1,41 +1,31 @@
 <template>
     <div>
- 
-      <SingleServiceBanner :name="servicio.name" :description="servicio.description" />
 
-      <SingleServiceSupport/>
+        <SiteSecondBanner :name="servicio.name" :description="servicio.description" img="https://dummyimage.com/580x450/eee/aaa" />
 
-      <SingleServiceDetails :details="servicio.details"/>
+        <ServiceSingleCharacteristics />
 
+        <ServiceSingleDetails :details="servicio.details" />
 
+        <ServicesContract />
 
-
-<Modern/>
-
-
-
-<Contract/>
-
-
-<Clients/>
+        <SiteClients />
 
     </div>
-  </template>
+</template>
 
+<script>
 
-
-  
-  <script>
-
-
-  export default {
+export default {
     layout: 'default',
+
     data() {
         return {
             servicio: {},
             singleservice: ''
         };
     },
+
     async asyncData({ params }) {
         const singleservice = params.singleservice;
         try {
@@ -67,6 +57,7 @@
             };
         }
     },
+    
     head() {
         return {
             title: this.servicio.name + ' | San Vicente Tagua Tagua',
@@ -84,6 +75,6 @@
             ],
         };
     },
-  
+
 }
-  </script>
+</script>

@@ -36,19 +36,3 @@
     </div>
 </template>
 
-<style>
-
-
-
-
-
-.bg-blue-500 {
-
-background-color: #c80000;
-
-}
-
-.red {min-height: 350px !important;
-}
-
-</style>

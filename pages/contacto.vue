@@ -1,9 +1,9 @@
 <template>
     <div>
 
-        <Contactform />
+        <ContactForm />
 
-        <WhyChooseUs />
+        <HomeWhyChooseUs />
 
     </div>
 </template>
@@ -12,7 +12,10 @@
 <script>
 export default {
   layout: 'default',
-  // SEO (Optimización para motores de búsqueda)
+
+    // INICIO SEO 
+
+  
   head() {
       return {
           title: "Contacto | Contabilidad San Vicente",
@@ -30,5 +33,9 @@ export default {
           ],
       };
   },
+
+
+  // FIN SEO 
+
 }
 </script>

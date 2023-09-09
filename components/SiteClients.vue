@@ -11,7 +11,7 @@
   
         <div class="grid grid-cols-2 sm:grid-cols-3 sm:grid-cols-4 md:grid-cols-4 gap-3 lg:gap-6">
             <div v-for="i in 8" :key="i">
-                <div :class="'border bg-'+i"></div>
+                <div :class="'border clients_logo-'+i"></div>
             </div>
         </div>
 

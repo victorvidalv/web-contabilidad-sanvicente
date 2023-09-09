@@ -42,7 +42,3 @@
   };
   </script>
   
-  <style scoped>
-  /* Puedes añadir estilos adicionales aquí si lo deseas */
-  </style>
-  

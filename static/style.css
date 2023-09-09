@@ -1,0 +1,103 @@
+/* Variables */
+:root {
+    --main-color: #F25022;
+    --second-color: white;
+    --bg-url: url('/clients_css_sprites.webp');
+  }
+  
+  /* Reglas Generales */
+  p {
+    text-align: justify;
+    text-justify: inter-word;
+    margin-top: 10px;
+  }
+  
+  strong {
+    font-weight: 700;
+    font-size: 1.15rem;
+    color: var(--main-color);
+  }
+  
+  /* Estilos para clases con sufijo "blue" */
+  .bg-blue, .bg-blue-100, .bg-blue-200, .bg-blue-300, .bg-blue-400, .bg-blue-500, .bg-blue-600, .bg-blue-700, .bg-blue-800, .bg-blue-900 {
+    background-color: var(--main-color) !important;
+  }
+  
+  {
+    background-color: var(--main-color);
+  }
+  
+  .text-blue , .text-blue-100, .text-blue-200, .text-blue-300, .text-blue-400, .text-blue-500, .text-blue-600, .text-blue-700, .text-blue-800, .text-blue-900 {
+    color: var(--main-color) !important;
+  }
+
+  /* Clases para el footer */
+ 
+  .mainfooter .footerend {
+    background-color: var(--main-color);
+    height: 10px;
+  }
+
+  .mainfooter .border {
+    border: 2px solid var(--main-color);
+  }
+  
+  /* Clases para "red" */
+  .red {
+    min-height: 350px;
+    background-color: var(--main-color);
+  }
+  
+  .red strong, .red .text-blue {
+    color: var(--second-color) !important;
+  }
+
+  .red .text-blue-600 {
+    color: var(--second-color) !important;
+  }
+  
+    /* Logos Clientes */
+
+.clients_logo-1 {
+    width: 240px; height: 145px;
+    background: var(--bg-url)
+}
+
+.clients_logo-2 {
+    width: 240px; height: 145px;
+    background: var(--bg-url) -246px -2px;
+}
+
+.clients_logo-3 {
+    width: 240px; height: 145px;
+    background: var(--bg-url) -2px -151px;
+}
+
+.clients_logo-4 {
+    width: 240px; height: 145px;
+    background: var(--bg-url) -246px -151px;
+}
+
+
+.clients_logo-5 {
+    width: 240px; height: 145px;
+    background: var(--bg-url) -2px -300px;
+}
+
+.clients_logo-6 {
+    width: 240px; height: 145px;
+    background: var(--bg-url) -246px -300px;
+}
+
+.clients_logo-7 {
+    width: 240px; height: 145px;
+    background: var(--bg-url) -490px -151px;
+}
+
+.clients_logo-8 {
+    width: 240px; height: 145px;
+    background: var(--bg-url) -490px -2px;
+}
+
+
+  

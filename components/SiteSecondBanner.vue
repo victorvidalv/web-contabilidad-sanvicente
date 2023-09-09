@@ -5,7 +5,7 @@
   <!-- Grid -->
   <div class="md:grid md:grid-cols-2 md:items-center md:gap-12 xl:gap-32">
     <div>
-      <img  src="https://dummyimage.com/580x450/eee/aaa" alt="Image Description">
+      <img  :src=img alt="Image Description">
     </div>
     <!-- End Col -->
 
@@ -32,13 +32,6 @@
 
 <script>
 export default {
-  props: ['name','description'],
+  props: ['name','description','img'],
 };
 </script>
-
-
-<style>
-
-.red {min-height: 350px !important;
-}
-</style>

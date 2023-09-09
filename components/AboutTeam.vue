@@ -5,7 +5,7 @@
 
     
 <div class="py-10 text-center">
-        <h2 class="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white">Nuestro equipo</h2>
+        <h2 class="text-2xl font-bold md:text-4xl md:leading-tight ">Nuestro equipo</h2>
         <p class="mt-1 text-gray-600 text-xl text-center ">Equipo multidisciplinario de profesionales  en áreas contables, comerciales e informáticas. <strong> Esta diversidad de talento nos habilita para ir más allá de los servicios contables tradicionales.</strong></p>
 </div>
   <!-- End Title -->
@@ -15,11 +15,11 @@
   
   
     <div >
-        <div class="flex flex-col  p-4 md:p-6 bg-white border border-gray-200 dark:bg-slate-900 dark:border-gray-700">
+        <div class="flex flex-col  p-4 md:p-6 bg-white border border-gray-200 ">
             <div class="flex items-center gap-x-4">
                 <img class=" w-25 h-25" src="https://dummyimage.com/100x100/eee/aaa" alt="Image Description">
                 <div class="grow">
-                    <h3 class="font-medium text-gray-800 dark:text-gray-200">
+                    <h3 class="font-medium text-gray-800 0">
                         Vanessa Peralta
                     </h3>
                     <p class="text-xs uppercase text-gray-500">
@@ -39,11 +39,11 @@
 
 
     <div >
-        <div class="flex flex-col  p-4 md:p-6 bg-white border border-gray-200 dark:bg-slate-900 dark:border-gray-700">
+        <div class="flex flex-col  p-4 md:p-6 bg-white border border-gray-200">
             <div class="flex items-center gap-x-4">
                 <img class=" w-25 h-25" src="https://dummyimage.com/100x100/eee/aaa" alt="Image Description">
                 <div class="grow">
-                    <h3 class="font-medium text-gray-800 dark:text-gray-200">
+                    <h3 class="font-medium text-gray-800">
                        Erick Herrera
                     </h3>
                     <p class="text-xs uppercase text-gray-500">
@@ -63,11 +63,11 @@
 
 
     <div >
-        <div class="flex flex-col  p-4 md:p-6 bg-white border border-gray-200 dark:bg-slate-900 dark:border-gray-700">
+        <div class="flex flex-col  p-4 md:p-6 bg-white border border-gray-200">
             <div class="flex items-center gap-x-4">
                 <img class=" w-25 h-25" src="https://dummyimage.com/100x100/eee/aaa" alt="Image Description">
                 <div class="grow">
-                    <h3 class="font-medium text-gray-800 dark:text-gray-200">
+                    <h3 class="font-medium text-gray-800">
                        Víctor Vidal
                     </h3>
                     <p class="text-xs uppercase text-gray-500">
@@ -87,11 +87,11 @@
 
 
     <div >
-        <div class="flex flex-col  p-4 md:p-6 bg-white border border-gray-200 dark:bg-slate-900 dark:border-gray-700">
+        <div class="flex flex-col  p-4 md:p-6 bg-white border border-gray-200">
             <div class="flex items-center gap-x-4">
                 <img class=" w-25 h-25" src="https://dummyimage.com/100x100/eee/aaa" alt="Image Description">
                 <div class="grow">
-                    <h3 class="font-medium text-gray-800 dark:text-gray-200">
+                    <h3 class="font-medium text-gray-800">
                        Carmen Urbina
                     </h3>
                     <p class="text-xs uppercase text-gray-500">
@@ -111,11 +111,11 @@
 
 
     <div >
-        <div class="flex flex-col  p-4 md:p-6 bg-white border border-gray-200 dark:bg-slate-900 dark:border-gray-700">
+        <div class="flex flex-col  p-4 md:p-6 bg-white border border-gray-200">
             <div class="flex items-center gap-x-4">
                 <img class=" w-25 h-25" src="https://dummyimage.com/100x100/eee/aaa" alt="Image Description">
                 <div class="grow">
-                    <h3 class="font-medium text-gray-800 dark:text-gray-200">
+                    <h3 class="font-medium text-gray-800 ">
                        Bernardino Silva
                     </h3>
                     <p class="text-xs uppercase text-gray-500">
@@ -135,11 +135,11 @@
 
 
     <div >
-        <div class="flex flex-col  p-4 md:p-6 bg-white border border-gray-200 dark:bg-slate-900 dark:border-gray-700">
+        <div class="flex flex-col  p-4 md:p-6 bg-white border border-gray-200">
             <div class="flex items-center gap-x-4">
                 <img class=" w-25 h-25" src="https://dummyimage.com/100x100/eee/aaa" alt="Image Description">
                 <div class="grow">
-                    <h3 class="font-medium text-gray-800 dark:text-gray-200">
+                    <h3 class="font-medium text-gray-800">
                        Camila Flores
                     </h3>
                     <p class="text-xs uppercase text-gray-500">

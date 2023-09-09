@@ -13,7 +13,7 @@
               class="flex-none text-xl font-semibold text-white"
               aria-label="Brand"
             >
-              <logo/>
+              <SiteLogo/>
             </nuxt-link>
             <div class="sm:hidden">
               <button
@@ -44,8 +44,6 @@
               <nuxt-link   class="font-medium md:w-32 md:text-center md:border-l  sm:py-6 trick  py-2 px-2  " to="/servicios">Servicios</nuxt-link>
 
               <nuxt-link   class="font-medium md:w-32 md:text-center md:border-l  sm:py-6 trick  py-2 px-2  " to="/capacitacion">Capacitación</nuxt-link>
-
-              <nuxt-link   class="font-medium md:w-32 md:text-center md:border-l  sm:py-6 trick  py-2 px-2  " to="/publicaciones">Publicaciones</nuxt-link>
               <nuxt-link class="font-medium md:w-32 md:text-center md:border-l  md:border-r  sm:py-6 trick py-2 px-2  " to="/contacto">Contacto</nuxt-link>
             </div>
           </div>
@@ -72,26 +70,3 @@
     },
   };
   </script>
-  
-  <style>
-  /* Estilos existentes */
-.trick:hover {
-  color: black;
-  background-color: #F8F9F9;
-  transition: all 0.3s ease-in-out;
-}
-
-.bg-blue-500 {
-  background-color: rgb(242, 80, 34) !important ;   
-}
-
-.bg-blue-200 {
-
-
-    color: black !important;
-}
-
-
-
-  </style>
-  

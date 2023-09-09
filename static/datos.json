@@ -64,5 +64,55 @@
       "keywords" : "Procesos de Quiebra, Ley de Quiebras, San Vicente Tagua Tagua, Reorganización Empresarial, Liquidación Forzosa, Deudores y Acreedores, Suspensión de Pagos, Acuerdo de Reestructuración",
       "meta" : "Asesoramiento en Procesos de Quiebra en San Vicente de Tagua Tagua. Reorganización empresarial, negociación con acreedores y documentación legal para empresas en crisis."
     }
+  },
+  "capacitacion" : {
+    "fundamentos-contabilidad" : {
+      "name" : "Fundamentos de Contabilidad para Emprendedores",
+      "description" : "",
+      "url" : "capacitacion/fundamentos-contabilidad",
+      "keywords" : "Contabilidad, San Vicente Tagua Tagua,  Capacitación, Clases",
+      "details" : "",
+      "meta" : ""
+    },
+    "gestion-tributaria" : {
+      "name" : "Gestión Tributaria",
+      "description" : "",
+      "url" : "capacitacion/gestion-tributaria",
+      "keywords" : "Contabilidad, San Vicente Tagua Tagua,  Capacitación, Clases",
+      "details" : "",
+      "meta" : ""
+    },
+    "analisis-financiero" : {
+      "name" : "Análisis Financiero y Toma de Decisiones",
+      "description" : "",
+      "url" : "capacitacion/analisis-financiero",
+      "keywords" : "Contabilidad, San Vicente Tagua Tagua,  Capacitación, Clases",
+      "details" : "",
+      "meta" : ""
+    },
+    "manejo-remuneraciones" : {
+      "name" : "Manejo de Remuneraciones",
+      "description" : "",
+      "url" : "capacitacion/manejo-remuneraciones",
+      "keywords" : "Contabilidad, San Vicente Tagua Tagua,  Capacitación, Clases",
+      "details" : "",
+      "meta" : ""
+    },
+    " beneficios-laborales" : {
+      "name" : "Beneficios Laborales",
+      "description" : "",
+      "url" : "capacitacion/beneficios-laborales",
+      "keywords" : "Contabilidad, San Vicente Tagua Tagua,  Capacitación, Clases",
+      "details" : "",
+      "meta" : ""
+    },
+    "cumplimiento-fiscal" : {
+      "name" : "Cumplimiento Fiscal",
+      "description" : "",
+      "url" : "capacitacion/cumplimiento-fiscal",
+      "keywords" : "Contabilidad, San Vicente Tagua Tagua,  Capacitación, Clases",
+      "details" : "",
+      "meta" : ""
+    }
   }
 }

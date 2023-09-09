@@ -3,7 +3,7 @@
     <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
         <!-- Título -->
         <div class="py-10 text-center">
-            <h2 class="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white">Nuestros Servicios</h2>
+            <h2 class="text-2xl font-bold md:text-4xl md:leading-tight">Nuestros Servicios</h2>
             <!-- Descripción general de los servicios -->
             <p class="text-gray-500 text-xl text-center">Nos distinguimos por nuestro enfoque en <strong>soluciones contables integrales, respaldadas por tecnología avanzada y análisis de datos.</strong></p>
         </div>
@@ -15,11 +15,11 @@
             <!-- INICIO BUCLE SERVICIOS -->
             <nuxt-link :to="service.url" class="group trick  overflow-hidden border px-4" v-for="service in servicios" :key="service">
                 <div class="mt-7">
-                    <h3 class="text-xl font-semibold text-gray-800 group-hover:text-gray-600 dark:text-gray-200">
+                    <h3 class="text-xl font-semibold text-gray-800 group-hover:text-gray-600">
                         {{ service.name }}
                     </h3>
                     <!-- Nombre del servicio -->
-                    <p class="mt-3 text-gray-800 dark:text-gray-200">
+                    <p class="mt-3 text-gray-800">
                         {{ service.description }}
                     </p>
                     <!-- Descripción del servicio -->
@@ -54,12 +54,3 @@ export default {
     }
 }
 </script>
-
-<style>
-/* Estilos para el efecto de cambio de color en hover */
-.trick:hover {
-    color: black;
-    background-color: #F8F9F9;
-    transition: all 0.3s ease-in-out;
-}
-</style>

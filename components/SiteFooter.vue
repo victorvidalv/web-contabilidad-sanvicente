@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class="mainfooter">
 
   <footer class="border-t" >
  
@@ -7,7 +7,7 @@
     <!-- Grid -->
     <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
       <div class="col-span-full lg:col-span-1">
-        <span  aria-label="Brand"><Logo/></span>
+        <span  aria-label="Brand"><SiteLogo/></span>
       </div>
       <!-- End Col -->
 
@@ -70,19 +70,4 @@
 <div class="footerend"></div>
 </div>
 </template>
-<style scoped>
 
-.text-blue-500  {
-    color: #F25022 !important;
-  }
-
-
-  .border {
-    border: 2px solid #F25022 !important;
-  }
-
-  .footerend {
-    height: 10px;
-    background-color: #F25022 !important;
-  }
-  </style>
