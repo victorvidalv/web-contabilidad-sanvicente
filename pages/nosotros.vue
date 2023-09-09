@@ -24,12 +24,12 @@ export default {
               {
                   hid: "description",
                   name: "description",
-                  content: "",
+                  content: "Conozca más sobre nuestro equipo de expertos en servicios contables y empresariales en San Vicente de Tagua Tagua. Estamos comprometidos con la excelencia y el crecimiento de su negocio.",
               },
               {
                   hid: "keywords",
                   name: "keywords",
-                  content: "",
+                  content: "Equipo Experto, San Vicente de Tagua Tagua, Servicios Contables, Excelencia Empresarial, Crecimiento de Negocio",
               },
           ],
       };

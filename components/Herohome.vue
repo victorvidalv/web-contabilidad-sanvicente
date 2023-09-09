@@ -10,9 +10,7 @@
                 <p class="mt-3 text-lg text-gray-800 dark:text-gray-400">
                     Situados estratégicamente en San Vicente de Tagua Tagua, comprendemos
                     de manera íntima las necesidades de los sectores agroindustriales y
-                    agrícolas en la Región de O'Higgins. No somos solo otro servicio de
-                    contabilidad; somos un aliado que entiende las peculiaridades de su
-                    industria y las transforma en estrategias financieras efectivas.
+                    agrícolas en la Región de O'Higgins. 
                 </p>
 
                 <!-- Buttons -->

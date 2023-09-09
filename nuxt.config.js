@@ -71,5 +71,8 @@ export default {
   },
  
   generate: {
-    routes: ['/servicios/contabilidad', '/servicios/asesoria-tributaria', '/servicios/auditoria']
-  }}
+    routes: ['/servicios/contabilidad', '/servicios/remuneraciones', '/servicios/asesoria-tributaria',
+    '/servicios/cumplimiento', '/servicios/evaluacion-financiera', '/servicios/gestion-riesgo',
+    '/servicios/creacion-cierre-empresas', '/servicios/fusiones-adquisiciones', '/servicios/quiebras',]
+  }
+}

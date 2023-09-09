@@ -13,10 +13,10 @@
         <!-- Title -->
         <div class="space-y-2 md:space-y-4">
           <h2 class=" text-3xl lg:text-4xl text-white">
-            Nosotros
+            Capacitación
           </h2>
           <p class="text-white">
-            Bienvenido a nuestra firma ubicada en el corazón de San Vicente de Tagua Tagua. Aquí, donde la agroindustria y el comercio dibujan el paisaje económico, nos enorgullece ofrecer una amplia gama de servicios que van desde la Contabilidad Financiera y Asesoría Tributaria hasta la Consultoría Estratégica y Servicios de Tesorería. 
+            Entendemos que el mundo de la contabilidad y las finanzas puede ser complejo y en constante cambio, especialmente bajo el marco legal chileno. Por ello, estamos encantados de presentar nuestro nuevo servicio de capacitación en materia contable
           </p>
         </div>
         <!-- End Title -->

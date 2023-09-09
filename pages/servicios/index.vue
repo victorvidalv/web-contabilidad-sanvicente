@@ -5,7 +5,12 @@
 
       <Allservices/>
 
+      
+
       <Contract/>
+
+
+      <BannerModernService/>
 
       <Clients/>
 
@@ -23,12 +28,12 @@ export default {
               {
                   hid: "description",
                   name: "description",
-                  content: "oo",
+                  content: "Explore nuestra amplia gama de servicios contables y empresariales en San Vicente de Tagua Tagua. Desde contabilidad hasta asesoría tributaria, tenemos la solución que su negocio necesita.",
               },
               {
                   hid: "keywords",
                   name: "keywords",
-                  content: "sss",
+                  content: "Servicios Contables, San Vicente de Tagua Tagua, Contabilidad, Asesoría Tributaria, Gestión de Riesgos, Evaluación Financiera, Creación de Empresas, Fusiones y Adquisiciones, Gestión Remuneraciones, Cumplimiento Fiscal",
               },
           ],
       };

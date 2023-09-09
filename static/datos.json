@@ -1,82 +1,68 @@
 {
-  "titulo" : "Mi Sitio Web",
-  "descripcion" : "Este es un ejemplo de descripción",
-  "otrosDatos" : {
-    "clave" : "valor"
-  },
   "servicios" : {
     "contabilidad" : {
       "name" : "Contabilidad",
-      "description" : "Además de las tareas tradicionales, nuestro servicio se distingue por el uso intensivo de tecnología y análisis de datos. La Elaboración de Estados Financieros, por ejemplo, va más allá de la simple presentación de informes como el Balance General o la Cuenta de Resultados. Utilizamos herramientas de análisis de datos para convertir la información contable en insights accionables, lo que añade un valor adicional para nuestros clientes en sectores como la exportación de vinos de alta calidad y el empaquetamiento de frutas. Estos informes cumplen con las exigencias locales y nacionales, incluyendo las de la Superintendencia de Valores y Seguros (SVS) de Chile.",
+      "description" : "Servicio de contabilidad integral que abarca desde la creación de estados financieros como el Balance General y la Cuenta de Resultados hasta la gestión de activos y pasivos. Nuestro equipo de expertos se asegura de que su contabilidad esté al día.",
       "url" : "servicios/contabilidad",
-      "keywords" : "contabilidad, san vicente tagua tagua, servicios contables, asesoría contable",
-      "details" : "<p>En Contabilidad San Vicente, estamos orgullosos de ofrecer nuestro exclusivo <strong>servicio de Contabilidad</strong>, diseñado para satisfacer las necesidades específicas del entorno empresarial de San Vicente de Tagua Tagua y su fuerte enfoque en la agricultura, la viticultura y la agroindustria. Uno de los pilares de nuestro servicio es el Mantenimiento de Libros Contables, realizado de acuerdo con las leyes chilenas y las Normas Internacionales de Información Financiera (NIIF). Gracias a nuestra presencia local, estamos familiarizados con las particularidades del negocio en esta región, lo que nos permite ofrecer un registro contable meticuloso que ayuda a nuestros clientes en el cumplimiento fiscal y la toma de decisiones estratégicas.</p>\n\n<p>Además de las tareas tradicionales, nuestro servicio se distingue por el <strong>uso intensivo de tecnología y análisis de datos.</strong> La Elaboración de Estados Financieros, por ejemplo, va más allá de la simple presentación de informes como el Balance General o la Cuenta de Resultados. Utilizamos herramientas de análisis de datos para convertir la información contable en insights accionables, lo que añade un valor adicional para nuestros clientes en sectores como la exportación de vinos de alta calidad y el empaquetamiento de frutas. Estos informes cumplen con las exigencias locales y nacionales, incluyendo las de la Superintendencia de Valores y Seguros (SVS) de Chile.\n</p>\n<p>\nFinalmente, el Seguimiento de Transacciones Financieras es otro aspecto en el que brilla nuestro enfoque multidisciplinario. Nuestro equipo, compuesto por profesionales con <strong>más de 10 años de experiencia </strong>en áreas contables, comerciales e informáticas, realiza un monitoreo continuo y detallado de todas las transacciones financieras de la empresa. </p>",
-      "questions" : {
-        "1" : {
-          "question" : "¿Qué servicios de contabilidad ofrecen específicamente para el sector agrícola y vitivinícola en San Vicente de Tagua Tagua?",
-          "answer" : "En Contabilidad San Vicente <strong>nos especializamos en atender las necesidades del entorno empresarial de San Vicente de Tagua Tagua</strong>, con un enfoque en la agricultura, la viticultura y la agroindustria. Nos ocupamos del mantenimiento meticuloso de libros contables, cumpliendo con las leyes chilenas y las Normas Internacionales de Información Financiera (NIIF). Nuestro profundo conocimiento de las particularidades del negocio en esta región nos permite brindar un servicio de contabilidad altamente preciso y enfocado en el cumplimiento fiscal."
-        },
-        "2" : {
-          "question" : "¿Utilizan tecnología en su proceso de contabilidad?",
-          "answer" : "Sí, una de las características que distinguen nuestro servicio es el uso intensivo de tecnología y análisis de datos. Empleamos diversas herramientas tecnológicas para monitorear transacciones financieras, asegurar la conciliación bancaria y mantener una documentación adecuada, lo que fortalece la precisión y el cumplimiento en el registro contable."
-        },
-        "3" : {
-          "question" : "¿Cómo abordan la elaboración de estados financieros?",
-          "answer" : "Vamos más allá de la simple presentación de informes como el Balance General o la Cuenta de Resultados. Utilizamos herramientas de análisis de datos para convertir la información contable en insights accionables, brindando un valor adicional especialmente para sectores como la exportación de vinos de alta calidad y el empaquetamiento de frutas."
-        },
-        "4" : {
-          "question" : "¿Sus informes cumplen con las regulaciones de la Superintendencia de Valores y Seguros (SVS) de Chile?",
-          "answer" : "Sí, todos nuestros informes y estados financieros cumplen con las exigencias tanto locales como nacionales, incluyendo las de la Superintendencia de Valores y Seguros (SVS) de Chile. Este cumplimiento normativo es crucial para garantizar que nuestros clientes puedan operar en el mercado de manera segura y eficaz."
-        },
-        "5" : {
-          "question" : " ¿Qué nivel de experiencia tiene su equipo?",
-          "answer" : "Nuestro equipo está compuesto por profesionales con más de 10 años de experiencia en áreas contables, comerciales e informáticas. Este enfoque multidisciplinario nos permite ofrecer un servicio de contabilidad integral y de alta calidad."
-        },
-        "6" : {
-          "question" : " ¿Ofrecen seguimiento en tiempo real de las transacciones financieras?",
-          "answer" : "Ofrecemos un servicio de Seguimiento de Transacciones Financieras que realiza un monitoreo continuo y detallado de todas las actividades financieras de la empresa (siempre y cuendo esta cuente con las fuentes de datos necesarias). Este seguimiento se lleva a cabo con la ayuda de tecnologías avanzadas que garantizan la máxima precisión y cumplimiento, dándole a nuestros clientes una ventaja competitiva en el entorno empresarial de San Vicente de Tagua Tagua."
-        }
-      }
+      "keywords" : "Contabilidad, San Vicente Tagua Tagua, Servicios Contables, Asesoría contable, Balance General, Libro Diario, Flujo de Efectivo, Costo de Ventas",
+      "details" : "",
+      "meta" : "Ofrecemos servicios de contabilidad completos en San Vicente de Tagua Tagua. Mantenga su contabilidad al día y tome decisiones informadas para maximizar la rentabilidad de su empresa."
+    },
+    "remuneraciones" : {
+      "name" : "Remuneraciones",
+      "description" : "El servicio de Gestión de Remuneraciones se encarga de todo el proceso de pagos a empleados, desde la elaboración de liquidaciones de sueldo hasta el cálculo y pago de cotizaciones previsionales e impuestos a la renta. ",
+      "url" : "servicios/remuneraciones",
+      "keywords" : "Remuneraciones, San Vicente Tagua Tagua, Liquidación de Sueldo, Cotizaciones Previsionales, Impuestos a la Renta, Beneficios Laborales, Planilla de Pago, Sueldos, Previred",
+      "meta" : "Gestión de Remuneraciones en San Vicente de Tagua Tagua. Cálculo de sueldos, cotizaciones previsionales e impuestos para garantizar una remuneración justa y transparente."
     },
     "asesoria-tributaria" : {
       "name" : "Asesoría Tributaria",
-      "description" : "En Contabilidad San Vicente, nos enorgullece ofrecer un servicio de Asesoría Tributaria de alta calidad, especialmente diseñado para satisfacer las necesidades de los sectores económicos predominantes en San Vicente de Tagua Tagua, Región de O'Higgins. ",
-      "url" : "servicios/asesoria-tributaria"
+      "description" : "Nuestra asesoría tributaria personalizada le permite navegar con confianza en el complejo sistema impositivo chileno. Ofrecemos análisis tributario estratégico, optimización de créditos fiscales y asesoramiento en casos de citaciones fiscales.",
+      "url" : "servicios/asesoria-tributaria",
+      "keywords" : "Asesoría Tributaria, San Vicente Tagua Tagua, Análisis Tributario, Devolución de Impuestos, Créditos Fiscales, Problemas Fiscales, Impuesto a la Renta, SII, Impuestos Internos",
+      "meta" : "Asesoría Tributaria experta en San Vicente de Tagua Tagua. Optimice su carga tributaria y navegue con confianza en el sistema fiscal chileno."
     },
-    "auditoria" : {
-      "name" : "Auditoría",
-      "description" : "En Contabilidad San Vicente, ubicada en la comuna de San Vicente de Tagua Tagua en la Región de O'Higgins, Chile, tenemos el privilegio de ofrecer nuestro servicio de Auditoría, el cual abarca tanto auditorías internas como externas. ",
-      "url" : "servicios/auditoria"
+    "cumplimiento" : {
+      "name" : "Cumplimiento Fiscal",
+      "description" : "En el ámbito del cumplimiento fiscal, nos encargamos de realizar auditorías fiscales, preparar declaraciones juradas y gestionar pagos provisionales. Nuestro objetivo es que su empresa cumpla al 100% con las obligaciones fiscales y evite posibles sanciones o infracciones en el marco legal chileno.",
+      "url" : "servicios/cumplimiento",
+      "keywords" : "Cumplimiento Fiscal, San Vicente Tagua Tagua, Declaraciones Juradas, Pagos Provisionales, Infracciones Tributarias, Regulaciones Locales",
+      "meta" : "Cumplimiento Fiscal integral en San Vicente de Tagua Tagua. Auditorías fiscales, declaraciones juradas y pagos provisionales para mantener su empresa en regla."
     },
-    "control-interno" : {
-      "name" : "Control Interno",
-      "description" : "Nuestro servicio de Control Interno no es uno convencional; va más allá al incorporar un enfoque basado en la tecnología y el análisis de datos. Comprendemos que en la era actual de la información, transformar datos brutos en insights accionables es vital para el éxito empresarial. ",
-      "url" : "servicios/control-interno"
+    "evaluacion-financiera" : {
+      "name" : "Evaluación Financiera",
+      "description" : "A través de nuestro servicio de Evaluación Financiera, proporcionamos análisis detallados de rentabilidad, Valor Presente Neto (VPN) y Tasa Interna de Retorno (TIR) para proyectos e inversiones. ",
+      "url" : "servicios/evaluacion-financiera",
+      "keywords" : "Evaluación Financiera, San Vicente Tagua Tagua, Análisis de Rentabilidad, Valor Presente Neto, Tasa Interna de Retorno, Evaluación de Activos, Capital de Trabajo, Indicadores Contables, Ratios Contables, Ratios Financieros",
+      "meta" : "Fusiones y Adquisiciones"
     },
-    "control-interno0" : {
-      "name" : "Control Interno",
-      "description" : "Nuestro servicio de Control Interno no es uno convencional; va más allá al incorporar un enfoque basado en la tecnología y el análisis de datos. Comprendemos que en la era actual de la información, transformar datos brutos en insights accionables es vital para el éxito empresarial. ",
-      "url" : "servicios/control-interno"
+    "gestion-riesgos" : {
+      "name" : "Gestión de Riesgos",
+      "description" : "Nos especializamos en la identificación, análisis y mitigación de riesgos financieros. Ofrecemos estrategias de cobertura financiera, evaluaciones de volatilidad del mercado y diversificación de cartera, todo con el objetivo de asegurar la estabilidad y crecimiento de su patrimonio.",
+      "url" : "servicios/gestion-riesgo",
+      "keywords" : "Gestión Riesgos, San Vicente Tagua Tagua,  Cobertura Financiera, Análisis de Volatilidad, Valor en Riesgo, Riesgo Crediticio, Diversificación de Cartera",
+      "meta" : "Gestión de Riesgos Financieros en San Vicente de Tagua Tagua. Identificación, análisis y mitigación de riesgos para asegurar la estabilidad y crecimiento de su patrimonio."
     },
-    "control-interno1" : {
-      "name" : "Control Interno",
-      "description" : "Nuestro servicio de Control Interno no es uno convencional; va más allá al incorporar un enfoque basado en la tecnología y el análisis de datos. Comprendemos que en la era actual de la información, transformar datos brutos en insights accionables es vital para el éxito empresarial. ",
-      "url" : "servicios/control-interno"
+    "creacion-cierre-empresas" : {
+      "name" : "Creación y Cierre de empresas",
+      "description" : "Asistimos en todo el proceso de creación y cierre de empresas, desde la constitución de la sociedad y obtención de permisos y licencias, hasta la disolución y liquidación de activos. Nuestro enfoque es hacer estos procesos lo más eficientes y sin complicaciones posibles.",
+      "url" : "servicios/creacion-cierre-empresas",
+      "keywords" : "Creación Empresas, Inicio Actividades, Término de  Giro, Cierre Empresas, San Vicente Tagua Tagua, Constitución de Sociedad, Permisos y Licencias, Capital Inicial, Disolución de Empresa, Liquidación de Activos",
+      "meta" : "Servicio de Creación y Cierre de Empresas en San Vicente de Tagua Tagua. Asistencia en constitución, permisos, disolución y liquidación de activos."
     },
-    "control-interno2" : {
-      "name" : "Control Interno",
-      "description" : "Nuestro servicio de Control Interno no es uno convencional; va más allá al incorporar un enfoque basado en la tecnología y el análisis de datos. Comprendemos que en la era actual de la información, transformar datos brutos en insights accionables es vital para el éxito empresarial. ",
-      "url" : "servicios/control-interno"
+    "fusiones-adquisiciones" : {
+      "name" : "Fusiones y Adquisiciones",
+      "description" : "Ofrecemos un servicio integral en el campo de las fusiones y adquisiciones que incluye desde el análisis de due diligence y valoración de empresas, hasta la estructuración de acuerdos y financiamiento. Nos aseguramos de que la transacción sea beneficiosa para todas las partes involucradas y conforme a las leyes chilenas.",
+      "url" : "servicios/fusiones-adquisiciones",
+      "keywords" : "Fusiones empresas, Compra de empresas, Fusiones y Adquisiones, Negociación, San Vicente Tagua Tagua, Due Diligence, Sinergias Operativas, Valoración de Empresas, Estructura de Financiamiento, Integración Corporativa",
+      "meta" : "Asesoramiento en Fusiones y Adquisiciones en San Vicente de Tagua Tagua. Due diligence, valoración y estructuración de acuerdos conformes a las leyes chilenas."
     },
-    "control-interno20" : {
-      "name" : "Control Interno",
-      "description" : "Nuestro servicio de Control Interno no es uno convencional; va más allá al incorporar un enfoque basado en la tecnología y el análisis de datos. Comprendemos que en la era actual de la información, transformar datos brutos en insights accionables es vital para el éxito empresarial. ",
-      "url" : "servicios/control-interno"
-    },
-    "control-interno21" : {
-      "name" : "Control Interno",
-      "description" : "Nuestro servicio de Control Interno no es uno convencional; va más allá al incorporar un enfoque basado en la tecnología y el análisis de datos. Comprendemos que en la era actual de la información, transformar datos brutos en insights accionables es vital para el éxito empresarial. ",
-      "url" : "servicios/control-interno"
+    "quiebras" : {
+      "name" : "Procesos de Quiebra",
+      "description" : "En el delicado tema de quiebras, ofrecemos asesoramiento experto tanto para empresas en reorganización como en liquidación forzosa. Nos encargamos de la negociación con acreedores, la presentación de documentación legal y la búsqueda de acuerdos de reestructuración.",
+      "url" : "servicios/quiebras",
+      "keywords" : "Procesos de Quiebra, Ley de Quiebras, San Vicente Tagua Tagua, Reorganización Empresarial, Liquidación Forzosa, Deudores y Acreedores, Suspensión de Pagos, Acuerdo de Reestructuración",
+      "meta" : "Asesoramiento en Procesos de Quiebra en San Vicente de Tagua Tagua. Reorganización empresarial, negociación con acreedores y documentación legal para empresas en crisis."
     }
   }
 }

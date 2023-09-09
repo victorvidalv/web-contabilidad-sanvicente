@@ -23,12 +23,12 @@ export default {
               {
                   hid: "description",
                   name: "description",
-                  content: "Situados estratégicamente en San Vicente de Tagua Tagua, comprendemos de manera íntima las necesidades de los sectores agroindustriales y agrícolas en la Región de O'Higgins. No somos solo otro servicio de contabilidad; somos un aliado que entiende las peculiaridades de su industria y las transforma en estrategias financieras efectivas.",
+                  content: "Ofrecemos una amplia gama de servicios contables y empresariales en San Vicente de Tagua Tagua. Explore nuestras soluciones y descubra cómo podemos ayudarle a prosperar.",
               },
               {
                   hid: "keywords",
                   name: "keywords",
-                  content: "San Vicente, Contabilidad, Contabilidad San Vicente, Contabilidad San Vicente de Tagua Tagua, Contabilidad San Vicente de Tagua Tagua O'Higgins, Contabilidad San Vicente de Tagua Tagua",
+                  content: "Servicios Integrales, San Vicente de Tagua Tagua, Bienvenida, Soluciones Contables, Asesoramiento Contable",
               },
           ],
       };

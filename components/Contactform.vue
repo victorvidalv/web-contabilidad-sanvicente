@@ -3,18 +3,18 @@
       <div class="max-w-2xl lg:max-w-5xl mx-auto">
         <div class="text-center">
           <h1 class="text-3xl font-bold text-gray-800 sm:text-4xl dark:text-white">
-            Contact us
-          </h1>
-          <p class="mt-1 text-gray-600 dark:text-gray-400">
-            We'd love to talk about how we can help you.
+Contacto
+</h1>
+          <p class="mt-1 text-gray-600 dark:text-gray-400 mt-5 text-center text-xl">
+            <strong>Estamos encantados de recibir tus consultas y comentarios.</strong> Por favor, complete el siguiente formulario y nos pondremos en contacto contigo a la brevedad posible. 
           </p>
         </div>
     
         <div class="mt-12 grid items-center lg:grid-cols-2 gap-6 lg:gap-16">
           <!-- Card -->
-          <div class="flex flex-col border rounded-xl p-4 sm:p-6 lg:p-8 dark:border-gray-700">
+          <div class="flex flex-col border  p-4 sm:p-6 lg:p-8 ">
             <h2 class="mb-8 text-xl font-semibold text-gray-800 dark:text-gray-200">
-              Fill in the form
+           
             </h2>
     
             <form>
@@ -22,43 +22,39 @@
                 <!-- Grid -->
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
-                    <label for="hs-firstname-contacts-1" class="sr-only">First Name</label>
-                    <input type="text" name="hs-firstname-contacts-1" id="hs-firstname-contacts-1" class="py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400" placeholder="First Name">
+                    <label for="hs-firstname-contacts-1" class="sr-only">Nombre</label>
+                    <input type="text" name="hs-firstname-contacts-1" id="hs-firstname-contacts-1" class="py-3 px-4 block w-full border  text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900  dark:text-gray-400" placeholder="Nombre">
                   </div>
     
                   <div>
-                    <label for="hs-lastname-contacts-1" class="sr-only">Last Name</label>
-                    <input type="text" name="hs-lastname-contacts-1" id="hs-lastname-contacts-1" class="py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400" placeholder="Last Name">
+                    <label for="hs-lastname-contacts-1" class="sr-only">Apellido</label>
+                    <input type="text" name="hs-lastname-contacts-1" id="hs-lastname-contacts-1" class="py-3 px-4 block w-full border text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900  dark:text-gray-400" placeholder="Apellido">
                   </div>
                 </div>
                 <!-- End Grid -->
     
                 <div>
                   <label for="hs-email-contacts-1" class="sr-only">Email</label>
-                  <input type="email" name="hs-email-contacts-1" id="hs-email-contacts-1" autocomplete="email" class="py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400" placeholder="Email">
+                  <input type="email" name="hs-email-contacts-1" id="hs-email-contacts-1" autocomplete="email" class="py-3 px-4 block w-full border  text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900  dark:text-gray-400" placeholder="Email">
                 </div>
     
                 <div>
-                  <label for="hs-phone-number-1" class="sr-only">Phone Number</label>
-                  <input type="text" name="hs-phone-number-1" id="hs-phone-number-1" class="py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400" placeholder="Phone Number">
+                  <label for="hs-phone-number-1" class="sr-only">Fono</label>
+                  <input type="text" name="hs-phone-number-1" id="hs-phone-number-1" class="py-3 px-4 block w-full border  text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900  dark:text-gray-400" placeholder="Fono">
                 </div>
     
                 <div>
-                  <label for="hs-about-contacts-1" class="sr-only">Details</label>
-                  <textarea id="hs-about-contacts-1" name="hs-about-contacts-1" rows="4" class="py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400" placeholder="Details"></textarea>
+                  <label for="hs-about-contacts-1" class="sr-only">Mensaje</label>
+                  <textarea id="hs-about-contacts-1" name="hs-about-contacts-1" rows="4" class="py-3 px-4 block w-full border  text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900  dark:text-gray-400" placeholder="Mensaje"></textarea>
                 </div>
               </div>
               <!-- End Grid -->
     
               <div class="mt-4 grid">
-                <button type="submit" class="inline-flex justify-center items-center gap-x-3 text-center bg-blue-600 hover:bg-blue-700 border border-transparent text-sm lg:text-base text-white font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:focus:ring-offset-gray-800">Send inquiry</button>
+                <button type="submit" class="inline-flex justify-center items-center gap-x-3 text-center bg-blue-600 hover:bg-blue-700 border border-transparent text-sm lg:text-base text-white font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:focus:ring-offset-gray-800">Enviar consulta</button>
               </div>
     
-              <div class="mt-3 text-center">
-                <p class="text-sm text-gray-500">
-                  We'll get back to you in 1-2 business days.
-                </p>
-              </div>
+             
             </form>
           </div>
           <!-- End Card -->

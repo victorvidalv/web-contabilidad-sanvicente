@@ -1,6 +1,6 @@
 <template>
     <!-- Features -->
-<div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto" data-aos="fade" data-aos-duration="1000">
+<div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
   <!-- Grid -->
   <div class="md:grid md:grid-cols-2 md:items-center md:gap-12 xl:gap-32">
     <div>
@@ -16,9 +16,8 @@
             Innovación y Precisión en Servicios Contables
           </h2>
           <p class="text-gray-500">
-            Descubra un nuevo estándar en contabilidad adaptado a la modernidad y al entorno empresarial del siglo XXI. Aquí en Contabilidad San Vicente, fusionamos la tradición contable con la tecnología más avanzada para ofrecer una experiencia de servicio única. <strong>No se trata solo de números y balances; nos enfocamos en proporcionar insights accionables que impulsan su negocio hacia el futuro.</strong>
+            Descubra un nuevo estándar en contabilidad adaptado a la modernidad y al entorno empresarial del siglo XXI. Aquí en Contabilidad San Vicente, fusionamos la tradición contable con la tecnología más avanzada para ofrecer <strong> una experiencia de servicio única.</strong>
 
-Nuestra metodología integra un enfoque multidisciplinario y un equipo de expertos altamente calificados en áreas contables, comerciales e informáticas. Con más de 10 años de experiencia, garantizamos soluciones precisas y cumplimiento total con las leyes chilenas y las Normas Internacionales de Información Financiera (NIIF).
           </p>
         </div>
         <!-- End Title -->
