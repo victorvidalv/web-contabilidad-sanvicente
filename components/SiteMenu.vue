@@ -1,28 +1,6 @@
 <template>
     <div>
-      <header
-        class="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full border-b text-sm py-3 sm:py-0  "
-      >
-        <nav 
-          class="relative max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8"
-          aria-label="Global"
-        >
-          <div class="flex items-center justify-between">
-            <nuxt-link
-              to="/"
-              class="flex-none text-xl font-semibold text-white"
-              aria-label="Brand"
-            >
-              <SiteLogo/>
-            </nuxt-link>
-            <div class="sm:hidden">
-              <button
-                @click="toggleMenu"
-                type="button"
-                class="bg-blue-500 hs-collapse-toggle p-2 inline-flex justify-center items-center gap-2  font-medium text-white shadow-sm align-middle focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm"
-                aria-controls="navbar-collapse-with-animation"
-                aria-label="Toggle navigation"
-              >
+    
                 <svg class="hs-collapse-open:hidden w-8 h-8" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
                   <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
                 </svg>

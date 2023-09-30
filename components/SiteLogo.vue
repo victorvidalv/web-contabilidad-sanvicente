@@ -8,7 +8,7 @@
         <text x="51.883px" y="26.151px" style="font-family:'AppleMyungjo';font-size:33.58px;">an Vicente</text>
     </g>
     <g transform="matrix(0.367687,0,0,0.414974,29.9381,12.5846)">
-        <text x="51.883px" y="26.151px" style="font-family:'AppleMyungjo';font-size:33.58px;">Contabilidad</text>
+        <text x="51.883px" y="26.151px" style="font-family:'AppleMyungjo';font-size:33.58px; color:white;">Contabilidad</text>
     </g>
     <g transform="matrix(0.833543,0,0,1.40666,-18.5234,-9.12679)">
         <rect x="30.909" y="13.895" width="2.564" height="29.07"/>

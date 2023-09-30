@@ -1,9 +1,11 @@
-<template><!-- Icon Blocks -->
+<template>
+  <div class="bg-details">
+    <!-- Icon Blocks (Bloques de Iconos) -->
     <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+      <!-- Cuadrícula -->
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 items-center gap-12">
-      
-    
-        <!-- Icon Block -->
+
+        <!-- Bloque de Icono -->
         <div>
           <svg class="w-9 h-9 text-gray-800 " xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
             <path d="M9.465 10H12a2 2 0 1 1 0 4H9.465c.34-.588.535-1.271.535-2 0-.729-.195-1.412-.535-2z"/>
@@ -15,12 +17,12 @@
           </div>
           <div class="mt-5">
             <h3 class="text-lg font-semibold text-gray-800 ">Enfoque Personalizado y Práctico</h3>
-            <p class="mt-1 text-gray-600 "> Nuestros cursos de capacitación se adaptan a los objetivos y desafíos particulares de su negocio. Utilizamos una metodología que combina teoría con ejercicios prácticos y casos de estudio regionales, asegurando así que los conceptos aprendidos se puedan aplicar de inmediato en su día a día empresarial.</p>
+            <p class="mt-1 text-gray-600 ">Nuestros cursos de capacitación se adaptan a los objetivos y desafíos particulares de su negocio. Utilizamos una metodología que combina teoría con ejercicios prácticos y casos de estudio regionales, asegurando así que los conceptos aprendidos se puedan aplicar de inmediato en su día a día empresarial.</p>
           </div>
         </div>
-        <!-- End Icon Block -->
-    
-        <!-- Icon Block -->
+        <!-- Fin del Bloque de Icono -->
+
+        <!-- Bloque de Icono -->
         <div>
           <svg class="w-9 h-9 text-gray-800 " xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
             <path d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z"/>
@@ -34,10 +36,10 @@
             <p class="mt-1 text-gray-600 ">Nuestro equipo de formadores está compuesto por contadores y asesores financieros con una vasta experiencia en las industrias agroindustrial y agrícola de la región. Esto nos permite ofrecer un enfoque de capacitación que no solo se alinea con las mejores prácticas contables.</p>
           </div>
         </div>
-        <!-- End Icon Block -->
-    
-        <!-- Icon Block -->
-        <div >
+        <!-- Fin del Bloque de Icono -->
+
+        <!-- Bloque de Icono -->
+        <div>
           <svg class="w-9 h-9 text-gray-800 " xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
             <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
             <path d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
@@ -47,13 +49,12 @@
           </div>
           <div class="mt-5 " >
             <h3 class="text-lg font-semibold text-gray-800 ">Actualización Continua y Soporte Post-Capacitación</h3>
-            <p class="mt-1 text-gray-600 ">Mantenemos nuestros programas de capacitación al día con las últimas actualizaciones en leyes y reglamentos contables y fiscales de Chile. Además, ofrecemos soporte post-capacitación para resolver cualquier duda o inquietud que pueda surgir después de completar nuestros cursos</p>
+            <p class="mt-1 text-gray-600 ">Mantenemos nuestros programas de capacitación al día con las últimas actualizaciones en leyes y reglamentos contables y fiscales de Chile. Además, ofrecemos soporte post-capacitación para resolver cualquier duda o inquietud que pueda surgir después de completar nuestros cursos.</p>
           </div>
         </div>
-        <!-- End Icon Block -->
+        <!-- Fin del Bloque de Icono -->
       </div>
     </div>
-    <!-- End Icon Blocks -->
-    
-    
-    </template>
+    <!-- Fin de Icon Blocks (Bloques de Iconos) -->
+  </div>
+</template>

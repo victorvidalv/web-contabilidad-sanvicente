@@ -1,43 +1,36 @@
-<template><div class="bg-details">
-    <!-- Features -->
-    <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto ">
-      <!-- Grid -->
+<template>
+  <div class="bg-details">
+    <!-- Sección de características -->
+    <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+      <!-- Cuadrícula -->
       <div class="md:grid md:grid-cols-6 md:items-center md:gap-6 xl:gap-6">
-        
-    
         <div class="mt-5 sm:mt-10 lg:mt-0 col-span-4">
           <div class="space-y-6 sm:space-y-8">
-            <!-- Title -->
+            <!-- Título -->
             <div class="space-y-2 md:space-y-4">
-              <h2 class="font-bold text-3xl lg:text-4xl text-gray-800 ">
+              <h2 class="font-bold text-3xl lg:text-4xl text-gray-800">
                 Detalles del Servicio
               </h2>
               <p class="text-gray-500" v-html="details">
-       
+                <!-- El contenido de 'details' se renderizará aquí usando v-html -->
               </p>
             </div>
-            <!-- End Title -->
-    
+            <!-- Fin del Título -->
           </div>
         </div>
-    
         <div class="col-span-2">
-          <img  src="https://dummyimage.com/410x550/eee/aaa" alt="Image Description">
+          <img src="https://dummyimage.com/410x550/eee/aaa" alt="Descripción de la Imagen">
         </div>
-        <!-- End Col -->
-        <!-- End Col -->
+        <!-- Fin de la Columna -->
       </div>
-      <!-- End Grid -->
+      <!-- Fin de la Cuadrícula -->
     </div>
-    <!-- End Features -->
-    
-    
-    </div>
-    </template>
-
+    <!-- Fin de la Sección de Características -->
+  </div>
+</template>
 
 <script>
 export default {
-  props: ['details'],
+  props: ['details'], // Recibiendo la prop 'details' desde el componente padre
 };
 </script>

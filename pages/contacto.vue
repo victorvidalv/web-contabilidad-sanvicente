@@ -1,41 +1,35 @@
 <template>
     <div>
-
-        <ContactForm />
-
-        <HomeWhyChooseUs />
-
-    </div>
-</template>
-
-
-<script>
-export default {
-  layout: 'default',
-
-    // INICIO SEO 
-
+      <!-- Componente del formulario de contacto -->
+      <ContactForm />
   
-  head() {
+      <!-- Sección "Why Choose Us" (Por qué elegirnos) -->
+      <HomeWhyChooseUs />
+    </div>
+  </template>
+  
+  <script>
+  export default {
+    layout: 'default', // Establece el diseño predeterminado para esta página
+  
+    // Configuración de etiquetas meta para SEO
+    head() {
       return {
-          title: "Contacto | Contabilidad San Vicente",
-          meta: [
-              {
-                  hid: "description",
-                  name: "description",
-                  content: "Póngase en contacto con nosotros para servicios de contabilidad, asesoría tributaria y más en San Vicente de Tagua Tagua. Estamos aquí para resolver todas sus consultas.",
-              },
-              {
-                  hid: "keywords",
-                  name: "keywords",
-                  content: "Atención al Cliente, Consultas Financieras, San Vicente de Tagua Tagua, Asesoría Personalizada, Contacto Inmediato",
-              },
-          ],
+        title: "Contacto | Contabilidad San Vicente", // Título de la página
+        meta: [
+          {
+            hid: "description", // Identificador único para esta etiqueta meta
+            name: "description", // Nombre de la etiqueta meta
+            content: "Póngase en contacto con nosotros para servicios de contabilidad, asesoría tributaria y más en San Vicente de Tagua Tagua. Estamos aquí para resolver todas sus consultas.", // Contenido de la etiqueta meta
+          },
+          {
+            hid: "keywords", // Identificador único para esta etiqueta meta
+            name: "keywords", // Nombre de la etiqueta meta
+            content: "Atención al Cliente, Consultas Financieras, San Vicente de Tagua Tagua, Asesoría Personalizada, Contacto Inmediato", // Contenido de la etiqueta meta
+          },
+        ],
       };
-  },
-
-
-  // FIN SEO 
-
-}
-</script>
+    },
+  }
+  </script>
+  

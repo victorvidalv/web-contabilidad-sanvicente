@@ -18,6 +18,7 @@
           <p><nuxt-link to="/servicios/contabilidad" class="inline-flex gap-x-2 text-blue-500" >Contabilidad </nuxt-link></p>
           <p><nuxt-link to="/servicios/creacion-cierre-empresas" class="inline-flex gap-x-2 text-blue-500" >Creación Empresas</nuxt-link></p>
           <p><nuxt-link to="/servicios/asesoria-tributaria" class="inline-flex gap-x-2 text-blue-500" >Asesoría Tributaria</nuxt-link></p>
+          
           <p><nuxt-link to="/servicios" class="font-semibold inline-flex gap-x-2 text-blue-500" >Ver Todos</nuxt-link></p>
         </div>
       </div>

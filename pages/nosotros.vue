@@ -1,22 +1,24 @@
 <template>
     <div>
-
+      <!-- Componente del banner de "Acerca de nosotros" -->
       <AboutBanner/>
 
+      <!-- Componente de nuestro equipo -->
       <AboutTeam/>
 
+      <!-- Componente de la sección servcios modernos de inicio -->
       <HomeModern/>
 
+      <!-- Componente de clientes del sitio -->
       <SiteClients/>
-    
     </div>
 </template>
 
 <script>
-
 export default {
-    layout: 'default',
-    // INICIO SEO 
+    layout: 'default', // Establece el diseño predeterminado para esta página
+
+    // Configuración de etiquetas meta para SEO
     head() {
         return {
             title: "Nosotros | Contabilidad San Vicente",
@@ -34,6 +36,5 @@ export default {
             ],
         };
     },
-   
 }
 </script>

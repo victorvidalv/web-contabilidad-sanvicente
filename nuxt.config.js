@@ -1,99 +1,90 @@
 export default {
-  // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
+  // Desactivar renderizado del lado del servidor: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
 
-  // Target: https://go.nuxtjs.dev/config-target
+  // Objetivo: https://go.nuxtjs.dev/config-target
   target: 'static',
 
-  // Global page headers: https://go.nuxtjs.dev/config-head
+  // Cabeceras globales de la página: https://go.nuxtjs.dev/config-head
   head: {
     title: 'Contabilidad San Vicente',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' }
+      { name: 'format-detection', content: 'telephone=no' },
     ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     script: [
       {
         src: '/vendor/preline/dist/preline.js',
         body: true,
-        defer: true
-      }
-  ]
+        defer: true,
+      },
+    ],
   },
 
-  // Global CSS: //static/style.css
-  css: [
-    '~/static/style.css',
-  ],
+  // CSS globales: //static/style.css
+  css: ['~/static/style.css'],
 
-  // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [
-'~/plugins/aos.client.js',
-  ],
+  // Plugins para ejecutar antes de renderizar la página: https://go.nuxtjs.dev/config-plugins
+  plugins: ['~/plugins/aos.client.js'],
 
-  // Auto import components: https://go.nuxtjs.dev/config-components
+  // Importar automáticamente componentes: https://go.nuxtjs.dev/config-components
   components: true,
 
-  // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
+  // Módulos para desarrollo y construcción (recomendados): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
   ],
 
-  // Modules: https://go.nuxtjs.dev/config-modules
+  // Módulos: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
-    '@nuxtjs/sitemap',
   ],
 
-  // Axios module configuration: https://go.nuxtjs.dev/config-axios
+  // Configuración del módulo Axios: https://go.nuxtjs.dev/config-axios
   axios: {
-    // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
+    // Solución temporal para evitar la imposición de localhost:3000 codificado en duro: https://github.com/nuxt-community/axios-module/issues/308
     baseURL: '/',
   },
 
-  // PWA module configuration: https://go.nuxtjs.dev/pwa
+  // Configuración del módulo PWA: https://go.nuxtjs.dev/pwa
   pwa: {
     manifest: {
-      lang: 'es'
-    }
+      lang: 'es',
+    },
   },
 
-  // Build Configuration: https://go.nuxtjs.dev/config-build
+  // Configuración de construcción: https://go.nuxtjs.dev/config-build
   build: {
     publicPath: 'contabilidad-san-vicente',
   },
- 
+
   generate: {
     routes: [
+      // Rutas de Servicios
+      '/servicios/contabilidad',
+      '/servicios/remuneraciones',
+      '/servicios/asesoria-tributaria',
+      '/servicios/cumplimiento',
+      '/servicios/evaluacion-financiera',
+      '/servicios/gestion-riesgo',
+      '/servicios/creacion-cierre-empresas',
+      '/servicios/fusiones-adquisiciones',
+      '/servicios/quiebras',
 
-      // Servicios
-    '/servicios/contabilidad', 
-    '/servicios/remuneraciones', 
-    '/servicios/asesoria-tributaria',
-    '/servicios/cumplimiento', 
-    '/servicios/evaluacion-financiera',
-     '/servicios/gestion-riesgo',
-    '/servicios/creacion-cierre-empresas', 
-    '/servicios/fusiones-adquisiciones', 
-    '/servicios/quiebras',
-
-    // Capacitaciones
-
-    '/capacitacion/fundamentos-contabilidad',
-    '/capacitacion/gestion-tributaria',
-    '/capacitacion/analisis-financiero',
-    '/capacitacion/manejo-remuneraciones',
-    '/capacitacion/beneficios-laborales',
-    '/capacitacion/cumplimiento-fiscal'
-  ]
-  }
-}
+      // Rutas de Capacitaciones
+      '/capacitacion/fundamentos-contabilidad',
+      '/capacitacion/gestion-tributaria',
+      '/capacitacion/analisis-financiero',
+      '/capacitacion/manejo-remuneraciones',
+      '/capacitacion/beneficios-laborales',
+      '/capacitacion/cumplimiento-fiscal',
+    ],
+  },
+};
