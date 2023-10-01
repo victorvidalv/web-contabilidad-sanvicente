@@ -5,7 +5,7 @@
       <div class="grid md:grid-cols-2 gap-4 md:gap-8 xl:gap-20 md:items-center">
         <div>
           <h1 class="block text-3xl text-gray-800 sm:text-4xl lg:text-6xl lg:leading-tight">
-            Contabilidad <span class="text-blue-600">San Vicente</span>
+            Contabilidad <span class="homebanner">San Vicente</span>
           </h1>
           <p class="mt-3 text-lg text-gray-800">
             Situados estratégicamente en San Vicente de Tagua Tagua, comprendemos

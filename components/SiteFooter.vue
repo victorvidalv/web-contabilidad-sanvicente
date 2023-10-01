@@ -1,6 +1,13 @@
 <template>
 <div class="mainfooter">
 
+<!-- Aquí agregar número como call to action -->
+<div class="call-to-action text-center py-4 mb-5">
+      <a href="tel:+56722746337" class="text-2xl font-bold border p-3 ">
+        Contáctenos al: +56 72 2746337
+      </a>
+    </div>
+
   <footer class="border-t" >
  
   <div class="max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 lg:pt-20 mx-auto">

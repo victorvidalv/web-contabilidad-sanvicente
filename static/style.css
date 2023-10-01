@@ -24,7 +24,10 @@
     background-color: var(--main-color) !important;
   }
   
+.homebanner {
 
+  color: var(--main-color) !important;
+}
   
   .red strong , .bg-red-500 strong, .bg-red-500 p, .red p .bg-red-500 svg {
     color: var(--second-color) !important;

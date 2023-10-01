@@ -1,7 +1,7 @@
 <template>
     <div>
       <!-- Componente del formulario de contacto -->
-      <ContactForm />
+      <Contactform />
   
       <!-- Sección "Why Choose Us" (Por qué elegirnos) -->
       <HomeWhyChooseUs />
