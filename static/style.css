@@ -58,6 +58,12 @@
   .red .text-blue-600 {
     color: var(--second-color) !important;
   }
+
+  .text-blue-600 {
+
+    color: var(--main-color) !important;
+
+  }
   
     /* Logos Clientes */
 
