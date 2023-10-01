@@ -46,6 +46,7 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
+    '@nuxtjs/sitemap',
   ],
 
   // Configuración del módulo Axios: https://go.nuxtjs.dev/config-axios
