@@ -40,7 +40,11 @@
     background-color: var(--main-color);
     height: 10px;
   }
+  .text-blue-600 {
 
+    color: var(--main-color) !important;
+
+  }
   .mainfooter .border {
     border: 2px solid var(--main-color);
   }
@@ -59,11 +63,7 @@
     color: var(--second-color) !important;
   }
 
-  .text-blue-600 {
-
-    color: var(--main-color) !important;
-
-  }
+ 
   
     /* Logos Clientes */
 
