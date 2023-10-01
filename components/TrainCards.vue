@@ -48,7 +48,7 @@ export default {
         }
     },
     async mounted() {
-        const res = await fetch('/datos.json') //lee la info desde datos.json
+        const res = await fetch('datos.json') //lee la info desde datos.json
         const datos = await res.json()
         this.capacitacion = datos.capacitacion
     }
