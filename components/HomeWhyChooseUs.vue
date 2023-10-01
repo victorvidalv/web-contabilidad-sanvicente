@@ -1,9 +1,9 @@
 <template>
-    <!-- Features -->
+    <!--  -->
 <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto" data-aos="fade" data-aos-duration="1000">
 
 
-  <!-- Grid -->
+  <!--  -->
   <div class="mt-5 lg:mt-16 grid lg:grid-cols-3 gap-8 lg:gap-12">
     <div class="lg:col-span-1">
       <h2 class="font-bold text-2xl md:text-3xl text-gray-800">
@@ -13,11 +13,11 @@
        En nuestra firma, situada en <strong>San Vicente de Tagua Tagua</strong>, ofrecemos mucho más que servicios contables tradicionales; somos tu aliado estratégico para navegar por el complejo paisaje ontable, financiero y comercial del Chile actual.
       </p>
     </div>
-    <!-- End Col -->
+    <!-- -->
 
     <div class="lg:col-span-2">
       <div class="grid sm:grid-cols-2 gap-8 md:gap-12">
-        <!-- Icon Block -->
+        <!--  -->
         <div class="flex gap-x-5">
        
           <svg class="flex-shrink-0 mt-1 w-10 h-10 text-blue-600" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"  viewBox="0 0 16 16">
@@ -32,9 +32,9 @@
             </p>
           </div>
         </div>
-        <!-- End Icon Block -->
+        <!--  -->
 
-        <!-- Icon Block -->
+        <!--  -->
         <div class="flex gap-x-5">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="flex-shrink-0 mt-1 w-10 h-10 text-blue-600" viewBox="0 0 16 16">
   <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm1.679-4.493-1.335 2.226a.75.75 0 0 1-1.174.144l-.774-.773a.5.5 0 0 1 .708-.708l.547.548 1.17-1.951a.5.5 0 1 1 .858.514Z"/>
@@ -50,9 +50,9 @@
             </p>
           </div>
         </div>
-        <!-- End Icon Block -->
+        <!--  -->
 
-        <!-- Icon Block -->
+        <!-- -->
         <div class="flex gap-x-5">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="flex-shrink-0 mt-1 w-10 h-10 text-blue-600 " viewBox="0 0 16 16">
   <path d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5h11zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2h-11zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5z"/>
@@ -66,7 +66,7 @@
             </p>
           </div>
         </div>
-        <!-- End Icon Block -->
+        <!--  -->
 
         <!-- Icon Block -->
         <div class="flex gap-x-5">
@@ -83,12 +83,12 @@
             </p>
           </div>
         </div>
-        <!-- End Icon Block -->
+        <!--  -->
       </div>
     </div>
-    <!-- End Col -->
+    <!--  -->
   </div>
-  <!-- End Grid -->
+  <!--  -->
 </div>
 <!-- End Features -->
 </template>
