@@ -50,7 +50,7 @@ export default {
   // Configuración del módulo Axios: https://go.nuxtjs.dev/config-axios
   axios: {
     // Solución temporal para evitar la imposición de localhost:3000 codificado en duro: https://github.com/nuxt-community/axios-module/issues/308
-    baseURL: '/',
+    // baseURL: '/',
   },
 
   // Configuración del módulo PWA: https://go.nuxtjs.dev/pwa
