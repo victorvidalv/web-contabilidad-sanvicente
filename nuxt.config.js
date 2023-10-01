@@ -55,7 +55,7 @@ export default {
   },
 
   router: {
-    base: 'https://victorvidalv.github.io/csvtt/'
+    base: '/csvtt/'
   },
 
   // Configuración del módulo PWA: https://go.nuxtjs.dev/pwa
