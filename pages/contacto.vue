@@ -2,6 +2,7 @@
     <div>
       <!-- Componente del formulario de contacto -->
       <Contactform />
+      <Map />
   
       <!-- Sección "Why Choose Us" (Por qué elegirnos) -->
       <HomeWhyChooseUs />
