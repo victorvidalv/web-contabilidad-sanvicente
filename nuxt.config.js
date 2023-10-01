@@ -66,9 +66,7 @@ export default {
   },
 
   // Configuración de construcción: https://go.nuxtjs.dev/config-build
-  build: {
-    publicPath: 'contabilidad-san-vicente',
-  },
+
 
   generate: {
     routes: [
