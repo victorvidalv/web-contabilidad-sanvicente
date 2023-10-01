@@ -2,7 +2,8 @@
     <div>
       <!-- Componente del formulario de contacto -->
       <Contactform />
-      <Map />
+            <!-- Componente desplegable Mapa Oficina -->
+      <ContactMap />
   
       <!-- Sección "Why Choose Us" (Por qué elegirnos) -->
       <HomeWhyChooseUs />
