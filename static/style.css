@@ -2,7 +2,7 @@
 :root {
     --main-color: #F25022;
     --second-color: white;
-    --bg-url: url('/clients_css_sprites.webp');
+    --bg-url: url('clients_css_sprites.webp');
   }
   
   /* Reglas Generales */
