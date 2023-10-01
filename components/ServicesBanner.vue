@@ -18,8 +18,8 @@
                           </h2>
                           <!-- Título principal de la sección -->
                           <p >
-                              Situados estratégicamente en San Vicente de Tagua Tagua, un epicentro clave en la Región de O'Higgins para los sectores de la agroindustria y la agricultura en Chile, brindamos una amplia variedad de servicios contables y financieros especializados.
-                              <strong>Nuestra oferta incluye Contabilidad Financiera, Asesoría Tributaria según la Ley de Impuesto a la Renta de Chile, y Auditoría.</strong>
+                              Situados en un epicentro clave en la Región de O'Higgins para los sectores de la agroindustria y la agricultura en Chile, brindamos una amplia variedad de servicios contables y financieros especializados.
+                             
                           </p>
                           <!-- Descripción de los servicios de contabilidad ofrecidos -->
                          

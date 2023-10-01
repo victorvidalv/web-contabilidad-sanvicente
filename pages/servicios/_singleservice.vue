@@ -9,9 +9,28 @@
       <!-- Detalles del Servicio Individual -->
       <ServiceSingleDetails :details="servicio.details" />
   
+
+
+
+
+
+      <!-- Componentes personalizados según servicio -->
+      <ServicesContabilidadCallToAction v-if="singleservice === 'contabilidad'" />
+
+
+
+
+
+
+
+
       <!-- Contrato de Servicios -->
       <ServicesContract />
-  
+
+     
+
+
+
       <!-- Clientes del Sitio -->
       <SiteClients />
     </div>

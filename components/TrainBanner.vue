@@ -16,7 +16,7 @@
             Capacitación
           </h2>
           <p class="text-white">
-            Entendemos que el mundo de la contabilidad y las finanzas puede ser complejo y en constante cambio, especialmente bajo el marco legal chileno. Por ello, estamos encantados de presentar nuestro nuevo servicio de capacitación en materia contable
+            Estamos encantados de presentar nuestros nuevos servicios de capacitación en materia contable, tributaria y financiera.
           </p>
         </div>
         <!--  -->

@@ -7,10 +7,15 @@
       <!-- Componente de por qué elegirnos -->
       <HomeWhyChooseUs/>
   
+            <!-- Componente servicio contabilidad -->
+      <ServicesContabilidadCallToAction/>
+  
+
+
+
       <!-- Componente de la sección servicios modernos de inicio -->
       <HomeModern/>
-  
-      <!-- Componente de clientes del sitio -->
+    <!-- Componente de clientes del sitio -->
       <SiteClients/> 
     </div>
   </template>

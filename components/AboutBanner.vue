@@ -16,7 +16,7 @@
               Nosotros
             </h2>
             <p class="text-white">
-              Bienvenido a nuestra firma ubicada en el corazón de San Vicente de Tagua Tagua. Aquí, donde la agroindustria y el comercio dibujan el paisaje económico, nos enorgullece ofrecer una amplia gama de servicios que van desde la Contabilidad Financiera y Asesoría Tributaria hasta la Consultoría Estratégica y Servicios de Tesorería.
+              Aquí, donde la agroindustria y el comercio dibujan el paisaje económico, nos enorgullece ofrecer una amplia gama de servicios que van desde la Contabilidad Financiera hasta la Consultoría Estratégica y Servicios de Tesorería.
             </p>
           </div>
           <!-- Fin Título -->

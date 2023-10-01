@@ -10,7 +10,7 @@
         ¿Por qué elegirnos?
       </h2>
       <p class="mt-2 md:mt-4 text-gray-500">
-       En nuestra firma, situada en <strong>San Vicente de Tagua Tagua</strong>, ofrecemos mucho más que servicios contables tradicionales; somos tu aliado estratégico para navegar por el complejo paisaje ontable, financiero y comercial del Chile actual.
+       En nuestra firma, situada en <strong>San Vicente de Tagua Tagua</strong>, ofrecemos mucho más que servicios contables tradicionales; somos tu aliado estratégico para navegar por el complejo paisaje contable.
       </p>
     </div>
     <!-- -->
@@ -62,7 +62,7 @@
                 Enfoque Innovador en Tecnología 
             </h3>
             <p class="mt-1 text-gray-600">
-                En un mundo cada vez más digitalizado, nuestra visión moderna de la contabilidad integra tecnología y análisis de datos en todas nuestras operaciones.
+                Nuestra visión moderna de la contabilidad integra tecnología y análisis de datos en todas nuestras operaciones.
             </p>
           </div>
         </div>
