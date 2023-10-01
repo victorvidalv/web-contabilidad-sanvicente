@@ -31,7 +31,7 @@
     async asyncData({ params }) {
       const singleservice = params.singleservice;
       try {
-        const res = await fetch('/datos.json'); // Cargar datos desde un archivo JSON (ajusta la ruta según tu estructura)
+        const res = await fetch('datos.json'); // Cargar datos desde un archivo JSON (ajusta la ruta según tu estructura)
         const datos = await res.json();
   
         // Encuentra el servicio cuya URL coincida con singleservice
