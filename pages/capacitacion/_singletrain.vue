@@ -31,7 +31,7 @@
     async asyncData({ params }) {
       const singletrain = params.singletrain; // Obtiene la URL única de la capacitación desde los parámetros
       try {
-        const res = await fetch('/datos.json'); // Realiza una solicitud para obtener datos
+        const res = await fetch('datos.json'); // Realiza una solicitud para obtener datos
         const datos = await res.json(); // Convierte la respuesta en formato JSON
   
         // Encuentra la capacitación cuya URL coincida con la singletrain
