@@ -43,7 +43,7 @@
   }
   
   /* Clases para "red" */
-  .red {
+  .red, .bg-red-500 {
     min-height: 350px;
     background-color: var(--main-color);
   }
