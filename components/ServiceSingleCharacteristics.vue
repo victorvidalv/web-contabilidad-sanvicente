@@ -1,9 +1,9 @@
-<template><!-- Icon Blocks -->
+<template><!---->
     <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 items-center gap-12">
       
     
-        <!-- Icon Block -->
+        <!--  -->
         <div>
           <svg class="w-9 h-9 text-gray-800 " xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
             <path d="M9.465 10H12a2 2 0 1 1 0 4H9.465c.34-.588.535-1.271.535-2 0-.729-.195-1.412-.535-2z"/>
@@ -18,9 +18,9 @@
             <p class="mt-1 text-gray-600 ">Comprendemos que cada cliente es único y tiene requerimientos específicos que no pueden ser satisfechos con soluciones estándar. </p>
           </div>
         </div>
-        <!-- End Icon Block -->
+        <!--  -->
     
-        <!-- Icon Block -->
+        <!--  -->
         <div>
           <svg class="w-9 h-9 text-gray-800 " xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
             <path d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z"/>
@@ -34,9 +34,9 @@
             <p class="mt-1 text-gray-600 ">La era digital ha revolucionado la forma en que accedemos y compartimos información. Conscientes de la importancia de esta evolución, en Contabilidad San Vicente ofrecemos una completa base de documentación en línea.</p>
           </div>
         </div>
-        <!-- End Icon Block -->
+        <!--  -->
     
-        <!-- Icon Block -->
+        <!-- -->
         <div >
           <svg class="w-9 h-9 text-gray-800 " xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
             <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
@@ -50,10 +50,10 @@
             <p class="mt-1 text-gray-600 "><strong>En el mundo de los negocios, los números nunca descansan. </strong>Conscientes de que cada decisión financiera cuenta, en Contabilidad San Vicente te ofrecemos un soporte contable permanente.</p>
           </div>
         </div>
-        <!-- End Icon Block -->
+        <!--  -->
       </div>
     </div>
-    <!-- End Icon Blocks -->
+    <!--  -->
     
     
     </template>
