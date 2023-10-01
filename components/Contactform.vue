@@ -1,4 +1,4 @@
-<template><!-- Contact Us -->
+<template><!-- Contacto -->
     <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
       <div class="max-w-2xl lg:max-w-5xl mx-auto">
         <div class="text-center">
@@ -31,7 +31,7 @@ Contacto
                     <input type="text" name="hs-lastname-contacts-1" id="hs-lastname-contacts-1" class="py-3 px-4 block w-full border text-sm focus:border-blue-500 focus:ring-blue-500 0" placeholder="Apellido">
                   </div>
                 </div>
-                <!-- End Grid -->
+                <!-- Fin Grid -->
     
                 <div>
                   <label for="hs-email-contacts-1" class="sr-only">Email</label>
@@ -48,7 +48,7 @@ Contacto
                   <textarea id="hs-about-contacts-1" name="hs-about-contacts-1" rows="4" class="py-3 px-4 block w-full border  text-sm focus:border-blue-500 focus:ring-blue-500 " placeholder="Mensaje"></textarea>
                 </div>
               </div>
-              <!-- End Grid -->
+              <!-- Fin Grid -->
     
               <div class="mt-4 grid">
                 <button type="submit" class="inline-flex justify-center items-center gap-x-3 text-center bg-blue-600 hover:bg-blue-700 border border-transparent text-sm lg:text-base text-white font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 ">Enviar consulta</button>
@@ -57,10 +57,10 @@ Contacto
              
             </form>
           </div>
-          <!-- End Card -->
+          <!-- Fin Card -->
     
           <div class="divide-y divide-gray-200">
-            <!-- Icon Block -->
+            <!-- Icono -->
             <div class="flex gap-x-7 py-6">
               <svg class="flex-shrink-0 w-6 h-6 mt-1.5 text-gray-800 " xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
                 <path  d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
@@ -77,9 +77,9 @@ Contacto
                 </a>
               </div>
             </div>
-            <!-- End Icon Block -->
+            <!-- Fin Icono-->
     
-            <!-- Icon Block -->
+            <!-- Icono -->
             <div class="flex gap-x-7 py-6">
               <svg class="flex-shrink-0 w-6 h-6 mt-1.5 text-gray-800 " xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
                 <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
@@ -96,9 +96,9 @@ Contacto
                 </a>
               </div>
             </div>
-            <!-- End Icon Block -->
+           <!-- Fin Icono-->
     
-            <!-- Icon Block -->
+          <!-- Icono -->
             <div class=" flex gap-x-7 py-6">
               <svg class="flex-shrink-0 w-6 h-6 mt-1.5 text-gray-800 " xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
                 <path d="M6 9a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3A.5.5 0 0 1 6 9zM3.854 4.146a.5.5 0 1 0-.708.708L4.793 6.5 3.146 8.146a.5.5 0 1 0 .708.708l2-2a.5.5 0 0 0 0-.708l-2-2z"/>
@@ -115,9 +115,9 @@ Contacto
                 </a>
               </div>
             </div>
-            <!-- End Icon Block -->
+         <!-- Fin Icono-->
     
-            <!-- Icon Block -->
+             <!-- Icono -->
             <div class=" flex gap-x-7 py-6">
               <svg class="flex-shrink-0 w-6 h-6 mt-1.5 text-gray-800 " xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
                 <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
@@ -130,9 +130,10 @@ Contacto
                 </a>
               </div>
             </div>
-            <!-- End Icon Block -->
+        <!-- Fin Icono-->
           </div>
         </div>
       </div>
     </div>
-    <!-- End Contact Us --></template>
+    <!-- Fin Contacto -->
+</template>
