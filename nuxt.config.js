@@ -4,6 +4,7 @@ export default {
 
   // Objetivo: https://go.nuxtjs.dev/config-target
   target: 'static',
+  
 
   // Cabeceras globales de la página: https://go.nuxtjs.dev/config-head
   head: {
@@ -50,7 +51,11 @@ export default {
   // Configuración del módulo Axios: https://go.nuxtjs.dev/config-axios
   axios: {
     // Solución temporal para evitar la imposición de localhost:3000 codificado en duro: https://github.com/nuxt-community/axios-module/issues/308
-    // baseURL: '/',
+     baseURL: 'https://victorvidalv.github.io/csvtt',
+  },
+
+  router: {
+    base: 'https://victorvidalv.github.io/csvtt'
   },
 
   // Configuración del módulo PWA: https://go.nuxtjs.dev/pwa
@@ -61,9 +66,9 @@ export default {
   },
 
   // Configuración de construcción: https://go.nuxtjs.dev/config-build
-  //build: {
-    //publicPath: 'contabilidad-san-vicente',
-  //},
+  build: {
+    publicPath: 'contabilidad-san-vicente',
+  },
 
   generate: {
     routes: [
