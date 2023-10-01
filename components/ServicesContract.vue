@@ -13,9 +13,9 @@
                     </span>
     </div>
 
-      <!-- Icon Blocks -->
+      <!--  -->
 <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto" v-if="mostrarContenido">
-  <!-- Grid -->
+  <!-- -->
   <div class="grid md:grid-cols-2 gap-12">
     <div class="lg:w-3/4">
       <h2 class="text-3xl text-gray-800 font-bold lg:text-4xl">
@@ -27,12 +27,12 @@
 
       <img  class="mt-10" src="https://dummyimage.com/460x500/eee/aaa" alt="Image Description">
     </div>
-    <!-- End Col -->
+    <!--  -->
 
     <div class="space-y-6 lg:space-y-10">
-      <!-- Icon Block -->
+      <!--  -->
       <div class="flex"  data-aos="fade-up" data-aos-duration="700">
-        <!-- Icon -->
+        <!--  -->
         <span class="flex-shrink-0 inline-flex justify-center items-center w-[46px] h-[46px] ">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="flex-shrink-0 mt-1 w-10 h-10 text-blue-600 " viewBox="0 0 16 16">
   <path d="M9.283 4.002V12H7.971V5.338h-.065L6.072 6.656V5.385l1.899-1.383h1.312Z"/>
@@ -49,11 +49,11 @@
 El primer paso para contratar nuestros servicios es <strong>agendar una consulta inicial con uno de nuestros expertos contables.</strong> En esta reunión, evaluaremos tus necesidades empresariales, responderemos a tus preguntas y te presentaremos un panorama general de cómo podemos ayudarte. Este es un excelente momento para que nos hagas todas las preguntas que necesites y para que comprendas el alcance y valor que nuestros servicios pueden ofrecer a tu negocio. No hay ningún compromiso en esta etapa; es una oportunidad para que ambas partes evalúen si somos el ajuste adecuado.          </p>
         </div>
       </div>
-      <!-- End Icon Block -->
+      <!--  -->
 
-      <!-- Icon Block -->
+      <!--  -->
       <div class="flex"  data-aos="fade-up" data-aos-duration="700">
-        <!-- Icon -->
+        <!--  -->
         <span class="flex-shrink-0 inline-flex justify-center items-center w-[46px] h-[46px] ">
   
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="flex-shrink-0 mt-1 w-10 h-10 text-blue-600" viewBox="0 0 16 16">
@@ -70,11 +70,11 @@ El primer paso para contratar nuestros servicios es <strong>agendar una consulta
           </p>
         </div>
       </div>
-      <!-- End Icon Block -->
+      <!--  -->
 
-      <!-- Icon Block -->
+      <!--  -->
       <div class="flex"  data-aos="fade-up" data-aos-duration="700">
-        <!-- Icon -->
+        <!--  -->
         <span class="flex-shrink-0 inline-flex justify-center items-center w-[46px] h-[46px] ">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="flex-shrink-0 mt-1 w-10 h-10 text-blue-600 " viewBox="0 0 16 16">
   <path d="M7.918 8.414h-.879V7.342h.838c.78 0 1.348-.522 1.342-1.237 0-.709-.563-1.195-1.348-1.195-.79 0-1.312.498-1.348 1.055H5.275c.036-1.137.95-2.115 2.625-2.121 1.594-.012 2.608.885 2.637 2.062.023 1.137-.885 1.776-1.482 1.875v.07c.703.07 1.71.64 1.734 1.917.024 1.459-1.277 2.396-2.93 2.396-1.705 0-2.707-.967-2.754-2.144H6.33c.059.597.68 1.06 1.541 1.066.973.006 1.6-.563 1.588-1.354-.006-.779-.621-1.318-1.541-1.318Z"/>
@@ -90,13 +90,13 @@ El primer paso para contratar nuestros servicios es <strong>agendar una consulta
           </p>
         </div>
       </div>
-      <!-- End Icon Block -->
+      <!--  -->
     </div>
-    <!-- End Col -->
+    <!--  -->
   </div>
-  <!-- End Grid -->
+  <!--  -->
 </div>
-<!-- End Icon Blocks -->
+<!--  -->
 
 
 
