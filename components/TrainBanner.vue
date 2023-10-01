@@ -8,7 +8,7 @@
     </div>
     <!--  -->
 
-    <div class="mt-5 sm:mt-10 lg:mt-0  p-5 red">
+    <div class="mt-5 sm:mt-10 lg:mt-0  p-5 bg-red-500">
       <div class="space-y-6 sm:space-y-8">
         <!-- Title -->
         <div class="space-y-2 md:space-y-4">
