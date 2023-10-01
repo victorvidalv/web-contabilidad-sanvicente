@@ -1,17 +1,10 @@
 /* Variables */
 :root {
-    --main-color: #002c48;
+    --main-color: #F25022;
     --second-color: white;
-    --orange-color:#F25022;
     --bg-url: url('/clients_css_sprites.webp');
   }
   
-
-.bg-sii {
-    background-color: var(--main-color) !important;
-    color: white !important;
-}
-
   /* Reglas Generales */
   p {
     text-align: justify;
@@ -27,8 +20,7 @@
   
   /* Estilos para clases con sufijo "blue" */
   .bg-blue, .bg-blue-100, .bg-blue-200, .bg-blue-300, .bg-blue-400, .bg-blue-500, .bg-blue-600, .bg-blue-700, .bg-blue-800, .bg-blue-900 {
-    background-color: var(--orange-color) !important;
-    border-radius: 15px;
+    background-color: var(--main-color) !important;
   }
   
   {
@@ -55,13 +47,9 @@
     min-height: 350px;
     background-color: var(--main-color);
   }
-
-  strong {
-    color: #F25022 !important;
-  }
   
   .red strong, .red .text-blue {
-    color: #F25022  !important;
+    color: var(--second-color) !important;
   }
 
   .red .text-blue-600 {
@@ -110,6 +98,3 @@
     width: 240px; height: 145px;
     background: var(--bg-url) -490px -2px;
 }
-
-
-  
