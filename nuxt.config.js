@@ -46,6 +46,7 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
+     // https://sitemap.nuxtjs.org
     '@nuxtjs/sitemap',
   ],
 
@@ -59,6 +60,11 @@ export default {
     base: '/'
   },
 
+// Configuración de sitemap (automatico): 
+sitemap: {
+      hostname: 'https://contabilidadsanvicente.cl',
+    },
+  
   // Configuración del módulo PWA: https://go.nuxtjs.dev/pwa
   pwa: {
     manifest: {
@@ -67,7 +73,6 @@ export default {
   },
 
   // Configuración de construcción: https://go.nuxtjs.dev/config-build
-
 
   generate: {
     routes: [
