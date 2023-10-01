@@ -18,17 +18,16 @@
     color: var(--main-color);
   }
 
-.bg-red-500 strong {
-    color: var(--second-color);
-  }
-  
+
   /* Estilos para clases con sufijo "blue" */
   .bg-blue, .bg-blue-100, .bg-blue-200, .bg-blue-300, .bg-blue-400, .bg-blue-500, .bg-blue-600, .bg-blue-700, .bg-blue-800, .bg-blue-900 {
     background-color: var(--main-color) !important;
   }
   
-  {
-    background-color: var(--main-color);
+
+  
+  .red strong , .bg-red-500 strong, .bg-red-500 p, .red p .bg-red-500 svg {
+    color: var(--second-color) !important;
   }
   
   .text-blue , .text-blue-100, .text-blue-200, .text-blue-300, .text-blue-400, .text-blue-500, .text-blue-600, .text-blue-700, .text-blue-800, .text-blue-900 {
@@ -52,7 +51,7 @@
     background-color: var(--main-color);
   }
   
-  .red strong, .red .text-blue {
+  .red strong, .red .text-blue, .text-blue-600 {
     color: var(--second-color) !important;
   }
 
