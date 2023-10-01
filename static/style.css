@@ -18,7 +18,7 @@
     color: var(--main-color);
   }
 
-  .red strong , .bg-red-500 strong {
+.bg-red-500 strong {
     color: var(--second-color);
   }
   
