@@ -8,7 +8,7 @@
             Contabilidad <span class="homebanner">San Vicente</span>
           </h1>
           <p class="mt-3 text-lg text-gray-800">
-            Situados estratégicamente en San Vicente de Tagua Tagua, comprendemos
+            Situados en San Vicente de Tagua Tagua, comprendemos
             de manera íntima las necesidades de los sectores agroindustriales y
             agrícolas en la Región de O'Higgins.
           </p>
