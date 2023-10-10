@@ -1,0 +1,84 @@
+/* Variables */
+:root {
+    --main-color: #002c48;
+    --second-color: #eb510d;
+    --bg-url: url('clients_css_sprites.webp');
+  }
+  
+  /* Reglas Generales */
+  p {
+    text-align: justify;
+    text-justify: inter-word;
+    margin-top: 10px;
+  }
+  
+  strong {
+    font-weight: 700;
+    font-size: 1.15rem;
+    color: var(--main-color);
+  }
+
+ 
+
+
+
+
+  /* Clases para el footer */
+ 
+  .mainfooter .footerend {
+    background-color: var(--main-color);
+    height: 10px;
+  }
+ 
+  .mainfooter .border {
+    border: 2px solid var(--main-color);
+  }
+
+  .banner {
+
+    min-height: 300px;
+  }
+  
+
+    /* Logos Clientes */
+
+.clients_logo-1 {
+    width: 240px; height: 145px;
+    background: var(--bg-url)
+}
+
+.clients_logo-2 {
+    width: 240px; height: 145px;
+    background: var(--bg-url) -246px -2px;
+}
+
+.clients_logo-3 {
+    width: 240px; height: 145px;
+    background: var(--bg-url) -2px -151px;
+}
+
+.clients_logo-4 {
+    width: 240px; height: 145px;
+    background: var(--bg-url) -246px -151px;
+}
+
+
+.clients_logo-5 {
+    width: 240px; height: 145px;
+    background: var(--bg-url) -2px -300px;
+}
+
+.clients_logo-6 {
+    width: 240px; height: 145px;
+    background: var(--bg-url) -246px -300px;
+}
+
+.clients_logo-7 {
+    width: 240px; height: 145px;
+    background: var(--bg-url) -490px -151px;
+}
+
+.clients_logo-8 {
+    width: 240px; height: 145px;
+    background: var(--bg-url) -490px -2px;
+}

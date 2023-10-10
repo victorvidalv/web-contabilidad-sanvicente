@@ -1,0 +1,96 @@
+# Nombre del flujo de trabajo
+name: Despliegue de sitio Nuxt en GitHub Pages
+
+# Eventos en los que se ejecutará el flujo de trabajo
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+# Permisos del token de GitHub para el despliegue
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Configuración de concurrencia
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+# Definición de trabajos
+jobs:
+  # Trabajo de construcción
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # Obtener el código fuente del repositorio
+      - name: Checkout
+        uses: actions/checkout@v3
+      
+      # Detectar el gestor de paquetes utilizado
+      - name: Detectar gestor de paquetes
+        id: detect-package-manager
+        run: |
+          if [ -f "${{ github.workspace }}/yarn.lock" ]; then
+            echo "manager=yarn" >> $GITHUB_ENV
+            echo "command=install" >> $GITHUB_ENV
+          elif [ -f "${{ github.workspace }}/package.json" ]; then
+            echo "manager=npm" >> $GITHUB_ENV
+            echo "command=ci" >> $GITHUB_ENV
+          else
+            echo "No se pudo determinar el gestor de paquetes"
+            exit 1
+          fi
+      
+      # Configurar el entorno Node.js
+      - name: Configurar Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: "16"
+          cache: ${{ env.manager }}
+      
+      # Configuración adicional para Nuxt
+      - name: Configurar Pages
+        uses: actions/configure-pages@v3
+        with:
+          static_site_generator: nuxt
+      
+      # Restaurar caché
+      - name: Restaurar caché
+        uses: actions/cache@v3
+        with:
+          path: |
+            dist
+            .nuxt
+          key: ${{ runner.os }}-nuxt-build-${{ hashFiles('dist') }}
+          restore-keys: |
+            ${{ runner.os }}-nuxt-build-
+      
+      # Instalar dependencias
+      - name: Instalar dependencias
+        run: ${{ env.manager }} ${{ env.command }}
+      
+      # Exportar HTML estático con Nuxt
+      - name: Exportación HTML estática con Nuxt
+        run: ${{ env.manager }} run generate
+      
+      # Subir el artefacto
+      - name: Subir artefacto
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: ./dist
+  
+  # Trabajo de despliegue
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      # Despliegue en GitHub Pages
+      - name: Desplegar en GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
+
