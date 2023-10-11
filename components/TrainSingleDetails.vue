@@ -19,7 +19,7 @@
           </div>
         </div>
         <div class="col-span-2">
-          <img src="https://dummyimage.com/410x550/e5e7eb/aaa" alt="Descripción de la Imagen">
+          <img src="detail1.webp" alt="Descripción de la Imagen">
         </div>
         <!-- Fin de la Columna -->
       </div>

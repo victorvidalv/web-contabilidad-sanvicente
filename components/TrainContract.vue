@@ -28,7 +28,7 @@
             pasos sobre cómo puedes contratar nuestros servicios contables.
           </p>
 
-          <img class="mt-10" src="https://dummyimage.com/460x500/e5e7eb/aaa" alt="Image Description">
+          <img class="mt-10" src="contract.webp" alt="Image Description">
         </div>
         <!-- End Col -->
 

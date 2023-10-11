@@ -4,7 +4,7 @@
     <!-- Grid -->
     <div class="md:grid md:grid-cols-2 md:items-center md:gap-12 xl:gap-32">
       <div>
-        <img src="https://dummyimage.com/580x450/e5e7eb/aaa" alt="Descripción de la imagen">
+        <img src="about.webp" alt="Descripción de la imagen">
       </div>
       <!-- Fin Col -->
 
