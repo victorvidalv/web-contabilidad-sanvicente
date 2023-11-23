@@ -9,6 +9,10 @@
       <!-- Enfoque de Entrenamiento -->
       <!-- Detalles de la Capacitación con información dinámica -->
       <TrainSingleDetails :details="capacitar.details"/>
+
+
+      <!-- CTA  Oficina Virtual -->
+    <OfficeCallToAction />
   
       <!-- Contrato de Capacitación -->
       <TrainContract />

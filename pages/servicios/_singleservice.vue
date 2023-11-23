@@ -11,6 +11,10 @@
     <!-- Detalles del Servicio Individual -->
     <ServiceSingleDetails :details="servicio.details" />
 
+
+    <!-- CTA  Oficina Virtual -->
+    <OfficeCallToAction />
+
     <!-- Componentes personalizados según servicio -->
     <ServicesContabilidadCallToAction v-if="singleservice === 'contabilidad'" />
 
