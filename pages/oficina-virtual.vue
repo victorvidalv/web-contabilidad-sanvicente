@@ -31,12 +31,12 @@ export default {
     // Configuración de etiquetas meta para SEO
     head() {
         return {
-            title: "Oficina Virtual | Contabilidad San Vicente",
+            title: "Domicilio Tributario ONLINE | Contabilidad San Vicente",
             meta: [
                 {
                     hid: "description",
                     name: "description",
-                    content: "Oficina Virtual en  San Vicente de Tagua Tagua, su solución para domicilio tributario y comercial.",
+                    content: "Oficina Virtual en San Vicente de Tagua Tagua, su solución para domicilio tributario y comercial.",
                 },
                 {
                     hid: "keywords",
