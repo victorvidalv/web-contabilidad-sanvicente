@@ -26,7 +26,7 @@
                 Conocer más detalles
               </nuxt-link>
               <!-- Botón para contactar -->
-              <nuxt-link to="contacto"
+              <nuxt-link to="/contacto"
                 class="my-1 inline-block rounded py-4 px-6 text-base font-medium text-gray-600 transition hover:bg-opacity-90 md:px-9 lg:px-6 xl:px-9 border bg-blue-950 text-white">
                 Contactar Ahora
               </nuxt-link>
