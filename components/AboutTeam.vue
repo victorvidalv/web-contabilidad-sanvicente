@@ -78,7 +78,7 @@ export default {
                     nombre: 'Camila Flores',
                     titulo: 'Contadora / Especialista Cumplimiento Fiscal',
                     descripcion: 'Es la encargada de asegurar que nuestra empresa y nuestros clientes cumplan con todas las obligaciones fiscales. ',
-                    imagen: 'https://dummyimage.com/100x100/e5e7eb/aaa'
+                    imagen: 'denisse_p.webp'
                 },
             ]
 
