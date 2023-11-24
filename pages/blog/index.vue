@@ -6,14 +6,14 @@
         </div>
 
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            <nuxt-link :to="`/posts/${post.id}`" class="group trick overflow-hidden border px-4" 
-                v-for="post in posts" :key="post.id">
+            <nuxt-link :to="`/blog/${post.url}`" class="group trick overflow-hidden border px-4" 
+                v-for="post in posts" :key="post.url">
                 <div class="mt-7">
                     <h3 class="text-xl font-semibold text-gray-800 group-hover:text-gray-600">
                         {{ post.title }}
                     </h3>
                     <p class="mt-3 text-gray-800">
-                        {{ post.body.substring(0, 100) }}...
+                        {{ post.description }}...
                     </p>
                     <span class="mt-5 inline-flex items-center gap-x-1.5 links-cards decoration-2 font-medium text-orange-600">
                         Ver más
@@ -33,7 +33,7 @@ export default {
         }
     },
     async mounted() {
-        const res = await this.$axios.$get('https://jsonplaceholder.typicode.com/posts')
+        const res = await this.$axios.$get('http://64.176.199.173:5001/articles')
         this.posts = res.slice(0, 9) // Limita el número de publicaciones, por ejemplo a 9
     }
 }
