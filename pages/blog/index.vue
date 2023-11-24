@@ -7,6 +7,7 @@
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <a
           :href="`https://blog.contabilidadsanvicente.cl/${post.slug}`"
+          target="_blank"
           class="group trick overflow-hidden border px-4" 
           v-for="post in posts" 
           :key="post.id"
@@ -21,7 +22,7 @@
               v-html="post.excerpt.rendered"
             ></div>
             <span class="mt-5 inline-flex items-center gap-x-1.5 links-cards decoration-2 font-medium text-orange-600">
-                        Ver más
+                        Ver más 
                         <!-- Icono aquí -->
                     </span>
           </div>
