@@ -7,14 +7,29 @@
     </div>
   </template>
   
+
+  
   <script>
   export default {
+
+//coge lel slug de la url y lo busca en la api de wordpress
+
+
+
+
     async asyncData({ $axios, params }) {
       try {
-        const post = await $axios.$get(`https://blog.contabilidadsanvicente.cl/wp-json/wp/v2/posts/${params.id}`)
-        return { post }
+        const slug = params.slug;
+        const response = await $axios.$get(`https://blog.contabilidadsanvicente.cl/wp-json/wp/v2/posts?slug=${params.slug}`);
+
+        const post = response.length > 0 ? response[0] : null;
+  
+        if (!post) {
+          throw new Error('Post not found');
+        }
+  
+        return { post };
       } catch (error) {
-        // Manejar el error como prefieras, por ejemplo, redirigir a una página de error personalizada
         console.error(error);
         throw new Error('La publicación no pudo ser cargada');
       }

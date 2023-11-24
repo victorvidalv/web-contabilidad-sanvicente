@@ -1,6 +1,3 @@
-
-
-
 <template>
     <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
         <div class="py-10 text-center">
@@ -9,7 +6,7 @@
         </div>
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <nuxt-link 
-          :to="`/blog/${post.id}`" 
+          :to="`/blog/${post.slug}`"
           class="group trick overflow-hidden border px-4" 
           v-for="post in posts" 
           :key="post.id"
@@ -30,7 +27,22 @@
           </div>
         </nuxt-link>
       </div>
+
+   
+
+      <!-- CTA  Oficina Virtual -->
+    <OfficeCallToAction />
+
+<!-- Componente de clientes del sitio -->
+<SiteClients />
     </div>
+
+
+
+
+
+
+
   </template>
   
   <script>
