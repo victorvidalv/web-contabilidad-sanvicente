@@ -74,13 +74,14 @@ export default {
     },
   },
 
-
-proxy: {
-      '/api/': { 
-        target: 'http://64.176.199.173:5002', 
-        pathRewrite: {'^/api/': ''} 
-      }
-    },
+  proxy: {
+    '/api/': { 
+      target: 'http://64.176.199.173:5002', 
+      pathRewrite: {'^/api/': ''},
+      changeOrigin: true
+    }
+  }
+  
   
 
   // Configuración de construcción: https://go.nuxtjs.dev/config-build
