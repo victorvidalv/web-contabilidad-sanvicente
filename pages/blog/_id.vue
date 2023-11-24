@@ -10,7 +10,7 @@
 <script>
 export default {
     async asyncData({ $axios, params }) {
-        const post = await $axios.$get(`http://64.176.199.173:5001/articles/${params.id}`)
+        const post = await $axios.$get(`https://64.176.199.173:5001/articles/${params.id}`)
         return { post }
     }
 }

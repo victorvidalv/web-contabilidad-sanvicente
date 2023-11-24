@@ -33,7 +33,7 @@ export default {
         }
     },
     async mounted() {
-        const res = await this.$axios.$get('http://64.176.199.173:5001/articles')
+        const res = await this.$axios.$get('https://64.176.199.173:5001/articles')
         this.posts = res.slice(0, 9) // Limita el número de publicaciones, por ejemplo a 9
     }
 }
