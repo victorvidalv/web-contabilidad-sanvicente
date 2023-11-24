@@ -48,6 +48,7 @@ export default {
     '@nuxtjs/pwa',
     // https://sitemap.nuxtjs.org
     '@nuxtjs/sitemap',
+    '@nuxtjs/proxy',
   ],
 
   // Configuración del módulo Axios: https://go.nuxtjs.dev/config-axios
@@ -72,6 +73,15 @@ export default {
       lang: 'es',
     },
   },
+
+
+proxy: {
+      '/api/': { 
+        target: 'http://64.176.199.173:5002', 
+        pathRewrite: {'^/api/': ''} 
+      }
+    },
+  
 
   // Configuración de construcción: https://go.nuxtjs.dev/config-build
 
