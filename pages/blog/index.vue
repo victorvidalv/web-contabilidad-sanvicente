@@ -5,8 +5,8 @@
             <p class="text-gray-500 text-xl text-center">Explora las últimas publicaciones de nuestro blog.</p>
         </div>
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <nuxt-link 
-          :to="`https://blog.contabilidadsanvicente.cl/${post.slug}`"
+        <a
+          :href="`https://blog.contabilidadsanvicente.cl/${post.slug}`"
           class="group trick overflow-hidden border px-4" 
           v-for="post in posts" 
           :key="post.id"
@@ -25,7 +25,7 @@
                         <!-- Icono aquí -->
                     </span>
           </div>
-        </nuxt-link>
+        </a>
       </div>
 
    
