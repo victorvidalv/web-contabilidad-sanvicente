@@ -7,9 +7,9 @@
   
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <nuxt-link 
-          :to="`/blog/${post.id}`" 
+          :to="`/blog/${post.slug}`" 
           class="group trick overflow-hidden border px-4" 
-          v-for="post in posts" 
+          v-for="post in posts.reverse()" 
           :key="post.id"
         >
           <div class="mt-7">
