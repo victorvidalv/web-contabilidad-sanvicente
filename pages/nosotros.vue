@@ -3,12 +3,12 @@
         <!-- Componente del banner de "Acerca de nosotros" -->
         <AboutBanner />
 
-        <AboutVideo />
+        <AboutVisionMisionValues />
 
         <!-- Componente de nuestro equipo -->
         <AboutTeam />
 
-        <AboutVisionMisionValues />
+  
 
         <!-- Componente de la sección servcios modernos de inicio -->
         <HomeModern />
