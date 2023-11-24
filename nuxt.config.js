@@ -80,7 +80,7 @@ export default {
       pathRewrite: {'^/api/': ''},
       changeOrigin: true
     }
-  }
+  },
   
   
 
