@@ -21,12 +21,12 @@
           <div class="w-full px-4 lg:w-1/2">
             <div class="flex flex-wrap lg:justify-end">
               <!-- Botón para conocer más detalles -->
-              <nuxt-link to="/oficina-virtual"
+              <nuxt-link to="/oficina-virtual/"
                 class="my-1 mr-4 inline-block bg-orange-600 py-4 px-6 text-base font-medium text-white transition hover:bg-opacity-100 hover:text-primary md:px-9 lg:px-6 xl:px-9">
                 Conocer más detalles
               </nuxt-link>
               <!-- Botón para contactar -->
-              <nuxt-link to="/contacto"
+              <nuxt-link to="/contacto/"
                 class="my-1 inline-block rounded py-4 px-6 text-base font-medium text-gray-600 transition hover:bg-opacity-90 md:px-9 lg:px-6 xl:px-9 border bg-blue-950 text-white">
                 Contactar Ahora
               </nuxt-link>

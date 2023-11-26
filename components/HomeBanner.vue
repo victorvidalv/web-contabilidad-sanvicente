@@ -15,7 +15,7 @@
 
         <!-- Botones -->
         <div class="mt-7 grid gap-3 w-full sm:inline-flex">
-          <nuxt-link to="servicios" 
+          <nuxt-link to="/servicios/" 
             class="inline-flex justify-center items-center gap-x-3 text-center bg-blue-950 border  text-sm lg:text-base text-white font-medium transition py-3 px-4">
             Conocer Servicios
             <svg class="w-2.5 h-2.5" width="16" height="16" viewBox="0 0 16 16" fill="none">
@@ -23,7 +23,7 @@
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" />
             </svg>
           </nuxt-link>
-          <nuxt-link to="contacto" 
+          <nuxt-link to="/contacto/" 
             class="inline-flex justify-center items-center gap-x-3.5 text-sm lg:text-base text-center border border-orange-600  font-medium  py-3 px-4 text-gray-800">
             Ponerse en contacto
           </nuxt-link>

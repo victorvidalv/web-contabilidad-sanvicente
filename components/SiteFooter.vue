@@ -24,14 +24,14 @@
             <h4 class="font-semibold text-gray-600">Servicios </h4>
 
             <div class="mt-3 grid space-y-3">
-              <p><nuxt-link to="/servicios/contabilidad" class="inline-flex gap-x-2 text-blue-950">Contabilidad
+              <p><nuxt-link to="/servicios/contabilidad/" class="inline-flex gap-x-2 text-blue-950">Contabilidad
                 </nuxt-link></p>
-              <p><nuxt-link to="/servicios/creacion-cierre-empresas" class="inline-flex gap-x-2 text-blue-950">Creación
+              <p><nuxt-link to="/servicios/creacion-cierre-empresas/" class="inline-flex gap-x-2 text-blue-950">Creación
                   Empresas</nuxt-link></p>
-              <p><nuxt-link to="/servicios/asesoria-tributaria" class="inline-flex gap-x-2 text-blue-950">Asesoría
+              <p><nuxt-link to="/servicios/asesoria-tributaria/" class="inline-flex gap-x-2 text-blue-950">Asesoría
                   Tributaria</nuxt-link></p>
 
-              <p><nuxt-link to="/servicios" class="font-semibold inline-flex gap-x-2 text-blue-950">Ver Todos</nuxt-link>
+              <p><nuxt-link to="/servicios/" class="font-semibold inline-flex gap-x-2 text-blue-950">Ver Todos</nuxt-link>
               </p>
             </div>
           </div>
@@ -41,8 +41,8 @@
             <h4 class="font-semibold text-gray-600">Empresa</h4>
 
             <div class="mt-3 grid space-y-3">
-              <p><nuxt-link to="/nosotros" class="inline-flex gap-x-2 text-blue-950">Nosotros</nuxt-link></p>
-              <p><nuxt-link to="/herramientas" class="inline-flex gap-x-2 text-blue-950 p-1 border">Herramientas
+              <p><nuxt-link to="/nosotros/" class="inline-flex gap-x-2 text-blue-950">Nosotros</nuxt-link></p>
+              <p><nuxt-link to="/herramientas/" class="inline-flex gap-x-2 text-blue-950 p-1 border">Herramientas
 
 
                   <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -52,9 +52,9 @@
                     <path
                       d="M4 2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-2zm0 4a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3-6a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3-6a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-4z" />
                   </svg></nuxt-link> </p>
-              <p><nuxt-link to="/terminos-condiciones" class="inline-flex gap-x-2 text-blue-950">Términos y
+              <p><nuxt-link to="/terminos-condiciones/" class="inline-flex gap-x-2 text-blue-950">Términos y
                   Condiciones</nuxt-link> </p>
-              <p><nuxt-link to="/politica-privacidad" class="inline-flex gap-x-2 text-blue-950">Politica de
+              <p><nuxt-link to="/politica-privacidad/" class="inline-flex gap-x-2 text-blue-950">Politica de
                   Privacidad</nuxt-link> </p>
 
 

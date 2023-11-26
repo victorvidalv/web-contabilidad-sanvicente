@@ -49,7 +49,7 @@
         // Encuentra la capacitación cuya URL coincida con la singletrain
         let capacitarEncontrado = null;
         for (const key in datos.capacitacion) {
-          if (datos.capacitacion[key].url === `capacitacion/${singletrain}`) {
+          if (datos.capacitacion[key].url === `/capacitacion/${singletrain}/`) {
             capacitarEncontrado = datos.capacitacion[key];
             break;
           }

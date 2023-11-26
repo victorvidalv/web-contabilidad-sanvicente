@@ -24,6 +24,7 @@
     <!-- Clientes del Sitio -->
     <SiteClients />
 
+
   </div>
 </template>
   
@@ -42,8 +43,9 @@ export default {
     return {
       servicio: {},
       singleservice: ''
+   
     };
-  },
+  }, 
 
   async asyncData({ params }) {
     const singleservice = params.singleservice;
@@ -54,7 +56,7 @@ export default {
       // Encuentra el servicio cuya URL coincida con singleservice
       let servicioEncontrado = null;
       for (const key in datos.servicios) {
-        if (datos.servicios[key].url === `servicios/${singleservice}`) {
+        if (datos.servicios[key].url === `/servicios/${singleservice}/`) {
           servicioEncontrado = datos.servicios[key];
           break;
         }

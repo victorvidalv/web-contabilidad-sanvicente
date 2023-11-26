@@ -1,11 +1,11 @@
 export default {
-  // Desactivar renderizado del lado del servidor: https://go.nuxtjs.dev/ssr-mode
+  // Desactivar renderizado del lado del servidor
   ssr: false,
 
-  // Objetivo: https://go.nuxtjs.dev/config-target
+  // Objetivo: estático
   target: 'static',
  
-  // Cabeceras globales de la página: https://go.nuxtjs.dev/config-head
+  // Cabeceras globales de la página
   head: {
     title: 'Contabilidad San Vicente',
     meta: [
@@ -14,8 +14,7 @@ export default {
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-    ],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     script: [
       {
         src: '',
@@ -25,35 +24,29 @@ export default {
     ],
   },
 
-  // CSS globales: //static/style.css
+  // CSS globales
   css: ['~/static/style.css'],
 
-  // Plugins para ejecutar antes de renderizar la página: https://go.nuxtjs.dev/config-plugins
+  // Plugins para ejecutar antes de renderizar la página
   plugins: [],
 
-  // Importar automáticamente componentes: https://go.nuxtjs.dev/config-components
+  // Importar automáticamente componentes
   components: true,
 
-  // Módulos para desarrollo y construcción (recomendados): https://go.nuxtjs.dev/config-modules
+  // Módulos para desarrollo y construcción
   buildModules: [
-    // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
   ],
 
-  // Módulos: https://go.nuxtjs.dev/config-modules
+  // Módulos
   modules: [
-    // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
-    // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
-    // https://sitemap.nuxtjs.org
     '@nuxtjs/sitemap',
-    '@nuxtjs/proxy',
   ],
 
-  // Configuración del módulo Axios: https://go.nuxtjs.dev/config-axios
+  // Configuración del módulo Axios
   axios: {
-    // Solución temporal para evitar la imposición de localhost:3000 codificado en duro: https://github.com/nuxt-community/axios-module/issues/308
     baseURL: '/',
   },
 
@@ -61,51 +54,75 @@ export default {
     base: '/'
   },
 
-  // Configuración de sitemap (automatico): 
-  sitemap: {
-    hostname: 'https://contabilidadsanvicente.cl',
-  },
-
-  // Configuración del módulo PWA: https://go.nuxtjs.dev/pwa
-
+  // Configuración del módulo PWA
   pwa: {
     manifest: {
       lang: 'es',
     },
   },
 
-  proxy: {
-    '/api/': { 
-      target: 'http://64.176.199.173:5002', 
-      pathRewrite: {'^/api/': ''},
-      changeOrigin: true
-    }
+  // Configuración de sitemap
+  sitemap: {
+    hostname: 'https://contabilidadsanvicente.cl/',
+    filter({ routes }) {
+      const includedRoutes = [
+        '/nosotros/',
+        '/servicios/',
+        '/capacitacion/',
+        '/contacto/',
+        '/blog/',
+        '/terminos-condiciones/',
+        '/politica-privacidad/',
+        '/oficina-virtual/',
+        '/herramientas/',
+        '/servicios/contabilidad/',
+        '/servicios/remuneraciones/',
+        '/servicios/asesoria-tributaria/',
+        '/servicios/cumplimiento/',
+        '/servicios/evaluacion-financiera/',
+        '/servicios/gestion-riesgo/',
+        '/servicios/creacion-cierre-empresas/',
+        '/servicios/fusiones-adquisiciones/',
+        '/servicios/quiebras/',
+        '/capacitacion/fundamentos-contabilidad/',
+        '/capacitacion/gestion-tributaria/',
+        '/capacitacion/analisis-financiero/',
+        '/capacitacion/manejo-remuneraciones/',
+        '/capacitacion/beneficios-laborales/',
+        '/capacitacion/cumplimiento-fiscal/',
+      ];
+
+      return routes.filter(route => includedRoutes.includes(route.url));
+    },
   },
-  
-  
 
-  // Configuración de construcción: https://go.nuxtjs.dev/config-build
-
+  // Configuración de construcción
   generate: {
     routes: [
-      // Rutas de Servicios
-      '/servicios/contabilidad',
-      '/servicios/remuneraciones',
-      '/servicios/asesoria-tributaria',
-      '/servicios/cumplimiento',
-      '/servicios/evaluacion-financiera',
-      '/servicios/gestion-riesgo',
-      '/servicios/creacion-cierre-empresas',
-      '/servicios/fusiones-adquisiciones',
-      '/servicios/quiebras',
-
-      // Rutas de Capacitaciones
-      '/capacitacion/fundamentos-contabilidad',
-      '/capacitacion/gestion-tributaria',
-      '/capacitacion/analisis-financiero',
-      '/capacitacion/manejo-remuneraciones',
-      '/capacitacion/beneficios-laborales',
-      '/capacitacion/cumplimiento-fiscal',
+      '/nosotros/',
+      '/servicios/',
+      '/capacitacion/',
+      '/contacto/',
+      '/blog/',
+      '/terminos-condiciones/',
+      '/politica-privacidad/',
+      '/oficina-virtual/',
+      '/herramientas/',
+      '/servicios/contabilidad/',
+      '/servicios/remuneraciones/',
+      '/servicios/asesoria-tributaria/',
+      '/servicios/cumplimiento/',
+      '/servicios/evaluacion-financiera/',
+      '/servicios/gestion-riesgo/',
+      '/servicios/creacion-cierre-empresas/',
+      '/servicios/fusiones-adquisiciones/',
+      '/servicios/quiebras/',
+      '/capacitacion/fundamentos-contabilidad/',
+      '/capacitacion/gestion-tributaria/',
+      '/capacitacion/analisis-financiero/',
+      '/capacitacion/manejo-remuneraciones/',
+      '/capacitacion/beneficios-laborales/',
+      '/capacitacion/cumplimiento-fiscal/',
     ],
   },
 };
