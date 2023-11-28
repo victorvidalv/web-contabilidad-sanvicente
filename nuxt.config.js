@@ -28,7 +28,9 @@ export default {
   css: ['~/static/style.css'],
 
   // Plugins para ejecutar antes de renderizar la página
-  plugins: [],
+  plugins: [
+        { src: '~/plugins/google-analytics.js', mode: 'client' }
+  ],
 
   // Importar automáticamente componentes
   components: true,
