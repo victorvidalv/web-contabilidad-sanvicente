@@ -57,7 +57,7 @@ export default {
             // Obtención de las publicaciones del blog
             const res = await this.$axios.$get('https://blog.contabilidadsanvicente.cl/wp-json/wp/v2/posts')
             this.posts = res
-                .slice(0, 9) // Limita el número de publicaciones a 6
+                .slice(0, 6) // Limita el número de publicaciones a 6
                 .sort((a, b) => new Date(b.date) - new Date(a.date)); // Ordena los posts por fecha descendente
         } catch (error) {
             console.error('Error al recuperar las publicaciones:', error)
