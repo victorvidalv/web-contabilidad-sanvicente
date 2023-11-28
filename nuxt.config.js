@@ -17,11 +17,23 @@ export default {
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     script: [
       {
-        src: '',
-        body: true,
-        defer: true,
+        async: true,
+        src: 'https://www.googletagmanager.com/gtag/js?id=G-QTC3G6D1CL',
       },
+      {
+        innerHTML: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-QTC3G6D1CL');
+        `,
+        type: 'text/javascript',
+        charset: 'utf-8'
+      }
     ],
+    __dangerouslyDisableSanitizersByTagID: {
+      'gtag-inline-script': ['innerHTML']
+    }
   },
 
   // CSS globales
@@ -29,7 +41,7 @@ export default {
 
   // Plugins para ejecutar antes de renderizar la página
   plugins: [
-     '~/plugins/google-analytics.js', mode: 'client',
+    { src: '~/plugins/google-analytics.js', mode: 'client' }
   ],
 
   // Importar automáticamente componentes
@@ -52,6 +64,7 @@ export default {
     baseURL: '/',
   },
 
+  // Configuración del router
   router: {
     base: '/'
   },
