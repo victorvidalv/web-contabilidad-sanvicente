@@ -29,7 +29,7 @@ export default {
 
   // Plugins para ejecutar antes de renderizar la página
   plugins: [
-        { src: '~/plugins/google-analytics.js', mode: 'client' }
+     '~/plugins/google-analytics.js', mode: 'client',
   ],
 
   // Importar automáticamente componentes
