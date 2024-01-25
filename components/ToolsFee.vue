@@ -55,7 +55,7 @@ export default {
   data() {
     return {
       monto_convertir: null,  // Monto que el usuario desea convertir
-      porcentaje_retencion: 13.75,  // Porcentaje de retención, por defecto 13.75%
+      porcentaje_retencion: 1375/100,  // Porcentaje de retención, por defecto 13.75%
       boleta_liquido: 0,
       recibir_liquido: 0,
       retencion_liquido: 0,
