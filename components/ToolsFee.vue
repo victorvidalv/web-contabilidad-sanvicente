@@ -9,7 +9,7 @@
       <div @change="calcular">
         <input class="p-5" type="radio" id="retencion_2023" value="13" v-model="porcentaje_retencion"
           name="tipo_retencion">
-        <label for="retencion_2023">2023 - 13%</label>
+        <label for="retencion_2023">2024 - 13.75%</label>
         |
         <input class="p-5" type="radio" id="retencion_bono_covid" value="16" v-model="porcentaje_retencion"
           name="tipo_retencion">
@@ -55,7 +55,7 @@ export default {
   data() {
     return {
       monto_convertir: null,  // Monto que el usuario desea convertir
-      porcentaje_retencion: 13,  // Porcentaje de retención, por defecto 13%
+      porcentaje_retencion: 13.75,  // Porcentaje de retención, por defecto 13.75%
       boleta_liquido: 0,
       recibir_liquido: 0,
       retencion_liquido: 0,
