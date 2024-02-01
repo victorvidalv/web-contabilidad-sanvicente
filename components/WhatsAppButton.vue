@@ -34,8 +34,8 @@ export default {
 }
 
 .whatsapp-button img {
-  width: 50px;
-  height: 50px;
+  width: 64px;
+  height: 64px;
   /* Estilos adicionales para el icono */
 }
 
