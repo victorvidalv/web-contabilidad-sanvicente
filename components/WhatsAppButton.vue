@@ -1,7 +1,7 @@
 <template>
   <div class="whatsapp-button">
     <a :href="whatsappUrl" target="_blank">
-      <img src="/whatsapp-icon.png" alt="WhatsApp"/>
+      <img src="/WhatsApp_icon.png" alt="WhatsApp"/>
       <span>Escríbenos</span>
     </a>
   </div>
@@ -12,7 +12,7 @@ export default {
   data() {
     return {
       // Reemplaza con tu número de WhatsApp
-      phoneNumber: '1234567890',
+      phoneNumber: '+56722746337',
     }
   },
   computed: {
