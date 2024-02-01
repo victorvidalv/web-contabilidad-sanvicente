@@ -8,6 +8,7 @@
     <Nuxt />
 
     <!-- Pie de página-->
+    <WhatsAppButton/>
     <SiteFooter />
     
   </div>
