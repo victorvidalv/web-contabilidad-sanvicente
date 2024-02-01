@@ -12,7 +12,7 @@ export default {
   data() {
     return {
       // Reemplaza con tu número de WhatsApp
-      phoneNumber: '+56722746337',
+      phoneNumber: '56722746337',
     }
   },
   computed: {
