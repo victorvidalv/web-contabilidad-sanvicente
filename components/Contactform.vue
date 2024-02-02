@@ -87,6 +87,29 @@
             </div>
           </div>
           <!-- Fin Icono-->
+
+                    <!-- Icono -->
+          <div class="flex gap-x-7 py-6">
+            <a href="https://wa.me/56722746337?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n."><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-event" viewBox="0 0 16 16">
+  <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z"/>
+  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"/>
+</svg></a>
+            <div>
+              <h3 class="font-semibold text-gray-800 ">Agenda Online</h3>
+              <p class="mt-1  text-gray-500">Reserva tu reunión en  línea </p>
+              <a class="mt-2 inline-flex items-center gap-x-2  font-medium text-gray-600  "
+                href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0QEa7VufZM2f_fQ_12APcY4oioU3SQgV5MrrDe_bm5lgAuqpnaPdd7rI5w8weM7BAm1SKrFPmI?gv=true">
+                +56722746337
+
+              </a>
+            </div>
+          </div>
+          <!-- Fin Icono-->
+
+
+
+
+          
           <!-- Icono -->
           <div class="flex gap-x-7 py-6">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-envelope"
