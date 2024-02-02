@@ -99,7 +99,7 @@
               <p class="mt-1  text-gray-500">Reserva tu reunión en  línea </p>
               <a class="mt-2 inline-flex items-center gap-x-2  font-medium text-gray-600  "
                 href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0QEa7VufZM2f_fQ_12APcY4oioU3SQgV5MrrDe_bm5lgAuqpnaPdd7rI5w8weM7BAm1SKrFPmI?gv=true">
-                +56722746337
+                Agenda Online
 
               </a>
             </div>
