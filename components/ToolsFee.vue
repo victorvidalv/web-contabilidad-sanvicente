@@ -11,9 +11,9 @@
           name="tipo_retencion">
         <label for="retencion_2023">2024 - 13.75%</label>
         |
-        <input class="p-5" type="radio" id="retencion_bono_covid" value="16" v-model="porcentaje_retencion"
+        <input class="p-5" type="radio" id="retencion_bono_covid" value="16.75" v-model="porcentaje_retencion"
           name="tipo_retencion">
-        <label for="retencion_bono_covid">Préstamo solidario - 16%</label>
+        <label for="retencion_bono_covid">Préstamo solidario - 16.75%</label>
       </div>
     </div>
 
