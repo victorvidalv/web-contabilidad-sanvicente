@@ -20,7 +20,7 @@
           <!--  -->
           <div class="flex justify-center items-baseline my-8">
             <span class="mr-2 text-4xl font-extrabold">
-              {{ plan.precio }} UF
+              {{ plan.precio }} 
             </span>
             <span class="text-gray-600">/mes</span>
           </div>
@@ -49,21 +49,21 @@ export default {
           id: 1,
           nombre: 'Esencial',
           descripcion: 'La mejor opción para pequeños negocios.',
-          precio: 2,
+          precio: '$ 59.900',
           caracteristicas: ['Hasta 250 Documentos tributarios', 'Declaración mensual de impuestos F29', 'Informes de Venta', 'Documentación Online']
         },
         {
           id: 2,
           nombre: 'Standard',
           descripcion: 'Recomendado para la mayoría de empresas.',
-          precio: 4,
+          precio: '$ 119.900',
           caracteristicas: ['Hasta 500 Documentos tributarios', 'Declaración mensual de impuestos F29', 'Informes de Venta', 'Informes de movimientos Bancarios', 'Documentación Online,']
         },
         {
           id: 3,
           nombre: 'Avanzado',
           descripcion: 'Recomendado para medianas y grandes empresas.',
-          precio: 'Desde 6',
+          precio: 'Desde $ 399.900 ',
           caracteristicas: ['Cantidad de Documentos tributarios a convenir', 'Declaración mensual de impuestos F29', 'Informes de Venta', 'Documentación Online', 'Asesoría contable permantente']
         },
 
