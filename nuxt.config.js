@@ -118,6 +118,7 @@ export default {
       '/capacitacion/',
       '/contacto/',
       '/blog/',
+      '/cotizar/contabilidad/',
       '/terminos-condiciones/',
       '/politica-privacidad/',
       '/oficina-virtual/',
