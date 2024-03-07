@@ -8,24 +8,31 @@
       </h2>
       <p class="mt-1 text-gray-600">
         A continuación encontrará una serie de herramientas que le permitirán
-        realizar cálculos de manera rápida y sencilla.
+        realizar cálculos y generar documentos  de manera rápida y sencilla.
       </p>
     </div>
 
     <!-- Menú de Componentes -->
     <div class="flex space-x-4 mb-4">
       <button @click="setCurrentComponent('ToolsFee')" :class="buttonClass('ToolsFee')">
-        Calculadora de Honorarios
+        Cal. de Honorarios
       </button>
       <button @click="setCurrentComponent('ToolsIndicators')" :class="buttonClass('ToolsIndicators')">
-        Indicadores Económicos
+        Ind. Económicos
       </button>
       <button @click="setCurrentComponent('ToolsUsdConverter')" :class="buttonClass('ToolsUsdConverter')">
-        Conversor Dólar Obs.
+        Con. Dólar Obs.
       </button>
       <button @click="setCurrentComponent('ToolsInvoice')" :class="buttonClass('ToolsInvoice')">
-        Calculadora de Facturas
+        Cal. de Facturas
       </button>
+
+      <button @click="setCurrentComponent('ToolsRepresentation')" :class="buttonClass('ToolsRepresentation')">
+        Gen. Poderes
+      </button>
+
+
+
     </div>
 
     <!-- Componentes Dinámicos -->
