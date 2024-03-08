@@ -17,51 +17,54 @@
 
           </h2>
 
-          <form action="https://formspree.io/f/xpzgoran" method="POST">
+          <form @submit.prevent="submitForm">
+
             <div class="grid gap-4">
               <!-- Grid -->
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          
+              
                 <div>
-                  <label for="hs-firstname-contacts-1" class="sr-only">Nombre</label>
-                  <input type="text" name="hs-firstname-contacts-1" id="hs-firstname-contacts-1"
-                    class="py-3 px-4 block w-full border    " placeholder="Nombre">
+                  <label >Nombre</label>
+                  <input type="text" name="name"class="py-3 px-4 block w-full border" placeholder="Nombre" v-model="form.name">
                 </div>
+                 <label for="type" class="">Tipo de Consulta</label>
+                <select id="type" name="type" class="py-3 px-4 block w-full border" v-model="form.type">
+                  <option value="Servicios">Servicios</option>
+                 <option value="Capacitaciones">Capacitación</option>
+                   <option value="Postulaciones">Postulaciones laborales</option>
+                   <option value="Otros">Otros</option>
+                </select>
 
                 <div>
-                  <label for="hs-lastname-contacts-1" class="sr-only">Apellido</label>
-                  <input type="text" name="hs-lastname-contacts-1" id="hs-lastname-contacts-1"
-                    class="py-3 px-4 block w-full border   0" placeholder="Apellido">
-                </div>
-              </div>
-              <!-- Fin Grid -->
+                  </div>
 
               <div>
-                <label for="hs-email-contacts-1" class="sr-only">Email</label>
-                <input type="email" name="hs-email-contacts-1" id="hs-email-contacts-1" autocomplete="email"
-                  class="py-3 px-4 block w-full border    " placeholder="Email">
+                <label>Email</label>
+                <input type="email" name="email" class="py-3 px-4 block w-full border" placeholder="Email" v-model="form.email">
               </div>
 
               <div>
-                <label for="hs-phone-number-1" class="sr-only">Fono</label>
-                <input type="text" name="hs-phone-number-1" id="hs-phone-number-1"
-                  class="py-3 px-4 block w-full border    " placeholder="Fono">
+                <label>Fono</label>
+                <input type="text" name="phone"
+                  class="py-3 px-4 block w-full border" placeholder="Fono" v-model="form.phone">
               </div>
 
               <div>
-                <label for="hs-about-contacts-1" class="sr-only">Mensaje</label>
-                <textarea id="hs-about-contacts-1" name="hs-about-contacts-1" rows="4"
-                  class="py-3 px-4 block w-full border    " placeholder="Mensaje"></textarea>
+                <label>Mensaje</label>
+                <textarea  name="message" rows="4" class="py-3 px-4 block w-full border" placeholder="Mensaje" v-model="form.message"></textarea >
               </div>
             </div>
-            <!-- Fin Grid -->
+  
 
-            <div class="mt-4 grid">
-              <button type="submit"
-                class="inline-flex justify-center items-center gap-x-3 text-center bg-blue-950 hover:bg-blue-700 border   lg:text-base text-white font-medium py-3 px-4 ">Enviar
+            <div class="mt-4 grid" >
+              <button  v-if="state === '' " 
+                class="inline-flex justify-center items-center gap-x-3 text-center bg-blue-950 hover:bg-blue-700 border lg:text-base text-white font-medium py-3 px-4 " @click="submitForm" 
+                >Enviar
                 consulta</button>
+                <p>{{ state }}</p>
+              <p><span @click="state = ''" v-if="reintentar === 1"  class="cursor-pointer text-blue-950 font-medium
+              ">Reintentar</span></p>
             </div>
-
-
           </form>
         </div>
         <!-- Fin Card -->
@@ -106,10 +109,6 @@
           </div>
           <!-- Fin Icono-->
 
-
-
-
-          
           <!-- Icono -->
           <div class="flex gap-x-7 py-6">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-envelope"
@@ -172,3 +171,44 @@
 
 </div>
 <!-- Fin Contacto --></template>
+
+<script>
+export default {
+  data() {
+    return {
+      // Inicializar los datos del formulario con valores predeterminados vacíos
+       state: '',
+       reintentar: 0,
+   
+      form: {
+        name: '',
+        type: 'Servicios',
+        email: '',
+        phone: '',
+        message: '',
+       
+      }
+    }
+  },
+  methods: {
+    async submitForm() {
+      try {
+        const response = await this.$axios.$post('https://www.t2g.cl/apis/public/api/contact', this.form);
+        // Manejar la respuesta aquí, por ejemplo, mostrando un mensaje de éxito
+        console.log('Formulario enviado con éxito:', response);
+  
+        this.state = 'Consulta  enviada exitosamente';
+        this.reintentar = 0;
+    
+      } catch (error) {
+        // Manejar el error aquí, por ejemplo, mostrando un mensaje de error
+
+        console.error('Error al enviar el formulario:', error);
+        this.reintentar = 1;
+        this.state = 'Error al enviar la consulta, revise los datos ingresados';
+
+      }
+    }
+  }
+}
+</script>
