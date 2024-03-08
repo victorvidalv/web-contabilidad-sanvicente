@@ -8,7 +8,7 @@
       </h2>
       <p class="mt-1 text-gray-600">
         A continuación encontrará una serie de herramientas que le permitirán
-        realizar cálculos y generar documentos  de manera rápida y sencilla.
+        realizar cálculos y generar documentos de manera rápida y sencilla.
       </p>
     </div>
 
@@ -31,8 +31,6 @@
         Gen. Poderes
       </button>
 
-
-
     </div>
 
     <!-- Componentes Dinámicos -->
@@ -43,6 +41,19 @@
 <script>
 export default {
   layout: "default", // Establece el diseño predeterminado para esta página
+
+  mounted() {
+
+
+    if (this.$route.query.atiende) {
+
+      this.setCurrentComponent('ToolsRepresentation');
+
+    }
+
+  },
+
+
 
   // Configuración de etiquetas meta para SEO
   head() {
