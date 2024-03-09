@@ -380,7 +380,7 @@ export default {
     }
 
 
-      if (this.$route.query.atiende === 'camen') {
+      if (this.$route.query.atiende === 'carmen') {
           this.formData.nombrepersonapoder = 'CARMEN ALICIA URBINA';
           this.formData.rutpersonapoder = '10.962.558-2';
           this.formData.nacionalidadpersonapoder = 'CHILENA';
@@ -423,13 +423,19 @@ export default {
 
       this.formData.nombreMandante = this.formData.nombreMandante.toUpperCase();
       this.formData.apellidoMandante = this.formData.apellidoMandante.toUpperCase();
-      this.formData.nombreEmpresa = this.formData.nombreEmpresa.toUpperCase();
       this.formData.nacionalidadMandante = this.formData.nacionalidadMandante.toUpperCase();
       this.formData.ciudad = this.formData.ciudad.toUpperCase();
       this.formData.comuna = this.formData.comuna.toUpperCase();
       this.formData.direccion = this.formData.direccion.toUpperCase();
       this.formData.nombrepersonapoder = this.formData.nombrepersonapoder.toUpperCase();
       this.formData.nacionalidadpersonapoder = this.formData.nacionalidadpersonapoder.toUpperCase();
+      this.formData.cuidadpersonapoder = this.formData.cuidadpersonapoder.toUpperCase();
+      this.formData.comunapersonapoder = this.formData.comunapersonapoder.toUpperCase();
+      this.formData.direccionpersonapoder = this.formData.direccionpersonapoder.toUpperCase();
+
+      if (this.formData.PersonaEmpresa === 'empresa') {
+        this.formData.nombreEmpresa = this.formData.nombreEmpresa.toUpperCase();
+      }
 
 
       //titulos 
