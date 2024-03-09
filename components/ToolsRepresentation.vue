@@ -69,12 +69,12 @@
           <p v-if="formData.PersonaEmpresa === 'empresa'" class="question">Datos Representante</p>
 
           <div class="input-wrapper py-2">
-            <label>Nombre </label>
+            <label>Nombres </label>
             <input type="text" class="input-custom" placeholder="Ingresa tu nombre" v-model="formData.nombreMandante">
           </div>
 
           <div class="input-wrapper py-2">
-            <label>Apellido </label>
+            <label>Apellidos </label>
             <input type="text" class="input-custom" placeholder="Ingresa tu apellido"
               v-model="formData.apellidoMandante">
 
@@ -94,14 +94,20 @@
 
           </div>
 
-
-
           <div class="input-wrapper py-2" v-if="formData.PersonaEmpresa === 'persona'" style="display: flex;">
             <div style="flex: 1;" class="m-1">
               <label>Dirección</label>
               <input type="text" class="input-custom" placeholder="Dirección" v-model="formData.direccion">
             </div>
-            <div style="flex: 1;" class="m-1">
+
+
+                <div style="flex: 1;" class="m-1" v-if="formData.PersonaEmpresa === 'persona'">
+                          <label>Comuna</label>
+                          <input type="text" class="input-custom" placeholder="comuna" v-model="formData.comuna">
+                        </div>
+
+
+            <div style="flex: 1;" class="m-1" v-if="formData.PersonaEmpresa === 'persona'">
               <label>ciudad</label>
               <input type="text" class="input-custom" placeholder="ciudad" v-model="formData.ciudad">
             </div>
@@ -172,7 +178,7 @@
           <p class="question">Persona a la que Otorga Poder </p>
 
           <div class="input-wrapper py-2">
-            <label>Nombre</label>
+            <label>Nombre Completo</label>
             <input type="text" class="input-custom" placeholder="Ingresa el nombre la persona"
               v-model="formData.nombrepersonapoder">
 
@@ -185,12 +191,30 @@
 
           </div>
 
+             <div class="input-wrapper py-2" style="display: flex;">
+                      <div style="flex: 1;" class="m-1">
+                        <label>Dirección</label>
+                        <input type="text" class="input-custom" placeholder="Dirección" v-model="formData.direccionpersonapoder">
+                      </div>
+                      <div style="flex: 1;" class="m-1">
+                        <label>Comuna</label>
+                        <input type="text" class="input-custom" placeholder="comuna" v-model="formData.comunapersonapoder">
+                      </div>
+          
+                      <div style="flex: 1;" class="m-1">
+                        <label>ciudad</label>
+                        <input type="text" class="input-custom" placeholder="ciudad" v-model="formData.cuidadpersonapoder">
+                      </div>
+                    </div>
+
           <div class="input-wrapper py-2">
             <label>Nacionalidad</label>
             <input type="text" class="input-custom" placeholder="Ingresa la nacionalidad de la persona"
               v-model="formData.nacionalidadpersonapoder">
 
           </div>
+
+
 
           <button @click="step = 7" class="btn-yes"
             v-if="formData.nombrepersonapoder && formData.rutpersonapoder">Continuar</button>
@@ -217,7 +241,7 @@
 
         <p>Nacionalidad: {{ formData.nacionalidadMandante }}</p>
 
-        <p>Dirección: {{ formData.direccion }}, {{ formData.ciudad }}</p>
+          <p>Dirección: {{ formData.direccion }}, {{ formData.comuna }}, {{ formData.ciudad }}</p>
 
         <p>Otorga Poder a: {{ formData.nombrepersonapoder }}, RUT: {{ formData.rutpersonapoder }}, Nacionalidad: {{
       formData.nacionalidadpersonapoder }}</p>
@@ -250,7 +274,7 @@
 
     <p>RUT Empresa: {{ formData.rutEmpresa }}</p>
 
-    <p>Dirección: {{ formData.direccion }}, {{ formData.ciudad }}</p>
+    <p>Dirección: {{ formData.direccion }}, {{ formData.comuna }}, {{ formData.ciudad }}</p>
 
     <p>Otorga Poder a: {{ formData.nombrepersonapoder }}, RUT: {{ formData.rutpersonapoder }}, Nacionalidad: {{
       formData.nacionalidadpersonapoder }}</p>
@@ -307,6 +331,9 @@ export default {
         PersonaEmpresa: '',
         nombrepersonapoder: '',
         rutpersonapoder: '',
+        direccionpersonapoder: '',
+        comunapersonapoder: '',
+        cuidadpersonapoder: '',
         nacionalidadpersonapoder: '',
         direccion: '',
         nacionalidadMandante: 'CHILENA',
@@ -322,12 +349,46 @@ export default {
   mounted() {
 
     let atiende = this.$route.query.atiende;
+
     if (this.$route.query.atiende === 'vanessa') {
       this.formData.nombrepersonapoder = 'VANESSA BETTINA PERALTA VIDAL';
       this.formData.rutpersonapoder = '17.510.748-7';
       this.formData.nacionalidadpersonapoder = 'CHILENA';
+      this.formData.direccionpersonapoder = 'German Riesco N° 900, Oficina N° 3';
+      this.formData.comunapersonapoder = 'San VICENTE TAGUA TAGUA';
+      this.formData.cuidadpersonapoder = 'RANCAGUA';
     }
 
+
+      if (this.$route.query.atiende === 'camen') {
+          this.formData.nombrepersonapoder = 'CARMEN ALICIA URBINA';
+          this.formData.rutpersonapoder = '10.962.558-2';
+          this.formData.nacionalidadpersonapoder = 'CHILENA';
+          this.formData.direccionpersonapoder = 'German Riesco N° 900, Oficina N° 3';
+          this.formData.comunapersonapoder = 'San VICENTE TAGUA TAGUA';
+          this.formData.cuidadpersonapoder = 'RANCAGUA';
+        }
+
+
+       if (this.$route.query.atiende === 'camila') {
+                  this.formData.nombrepersonapoder = 'CAMILA BELEN FLORES DONOSO';
+                  this.formData.rutpersonapoder = '19.526.937-8';
+                  this.formData.nacionalidadpersonapoder = 'CHILENA';
+                  this.formData.direccionpersonapoder = 'German Riesco N° 900, Oficina N° 3';
+                  this.formData.comunapersonapoder = 'San VICENTE TAGUA TAGUA';
+                  this.formData.cuidadpersonapoder = 'RANCAGUA';
+                }
+
+      
+        if (this.$route.query.atiende === 'victor') {
+                        this.formData.nombrepersonapoder = 'VICTOR MANUEL VIDAL VIDAL';
+                        this.formData.rutpersonapoder = '16.843.107-4';
+                        this.formData.nacionalidadpersonapoder = 'CHILENA';
+                        this.formData.direccionpersonapoder = 'German Riesco N° 900, Oficina N° 3';
+                        this.formData.comunapersonapoder = 'San VICENTE TAGUA TAGUA';
+                        this.formData.cuidadpersonapoder = 'RANCAGUA';
+                      }
+    
   },
   methods: {
 
@@ -345,9 +406,11 @@ export default {
       this.formData.nombreEmpresa = this.formData.nombreEmpresa.toUpperCase();
       this.formData.nacionalidadMandante = this.formData.nacionalidadMandante.toUpperCase();
       this.formData.ciudad = this.formData.ciudad.toUpperCase();
+      this.formData.comuna = this.formData.comuna.toUpperCase();
       this.formData.direccion = this.formData.direccion.toUpperCase();
       this.formData.nombrepersonapoder = this.formData.nombrepersonapoder.toUpperCase();
       this.formData.nacionalidadpersonapoder = this.formData.nacionalidadpersonapoder.toUpperCase();
+
 
       //titulos 
 
@@ -360,41 +423,41 @@ export default {
 
           if (this.formData.PersonaEmpresa === 'persona') {
 
-            const textoPoder = `En ${this.formData.ciudad}, a ${new Date().toLocaleDateString()}, Yo ${this.formData.nombreMandante} ${this.formData.apellidoMandante}, RUT ${this.formData.rutMandante}, de nacionalidad ${this.formData.nacionalidadMandante}, domiciliado en ${this.formData.direccion}, ${this.formData.ciudad}. Por el presente instrumento confiero poder especial, tan amplio como en derecho se requiere a ${this.formData.nombrepersonapoder}, RUT ${this.formData.rutpersonapoder}, de nacionalidad ${this.formData.nacionalidadpersonapoder},para que me represente ante el Servicio de Impuestos Internos, Tesorería General de la República, y en general ante cualquier organismo público o privado, en todos los trámites y gestiones que sean necesarios para el cumplimiento de las obligaciones tributarias, fiscales y laborales, incluyendo, pero no limitándose a:`;
+            const textoPoder = `En ${this.formData.ciudad}, a ${new Date().toLocaleDateString()}, Yo ${this.formData.nombreMandante} ${this.formData.apellidoMandante}, RUT ${this.formData.rutMandante}, de nacionalidad ${this.formData.nacionalidadMandante}, con domicilio en ${this.formData.direccion}, comuna de ${this.formData.comuna},  ${this.formData.ciudad}. Por el presente instrumento confiero poder especial, tan amplio como en derecho se requiere a ${this.formData.nombrepersonapoder}, RUT ${this.formData.rutpersonapoder}, con domicilio en ${this.formData.direccionpersonapoder}, comuna de ${this.formData.comunapersonapoder}, ${this.formData.cuidadpersonapoder}, de nacionalidad ${this.formData.nacionalidadpersonapoder},para que me represente ante el Servicio de Impuestos Internos, Tesorería General de la República, y en general ante cualquier organismo público o privado, en todos los trámites y gestiones que sean necesarios para el cumplimiento de las obligaciones tributarias, fiscales y laborales, incluyendo, pero no limitándose a:`;
             doc.text(textoPoder, 20, 25, { maxWidth: 170, align: "justify" }); // Ajuste el ancho máximo permitido
 
           } else {
 
-            const textoPoder = `En ${this.formData.ciudad}, a ${new Date().toLocaleDateString()}, Yo ${this.formData.nombreMandante} ${this.formData.apellidoMandante}, RUT ${this.formData.rutMandante}, de nacionalidad ${this.formData.nacionalidadMandante}, en representación de ${this.formData.nombreEmpresa}, RUT ${this.formData.rutEmpresa}, ambos domiciliados en ${this.formData.direccion}, ${this.formData.ciudad}. Por el presente instrumento confiero poder especial, tan amplio como en derecho se requiere a ${this.formData.nombrepersonapoder}, RUT ${this.formData.rutpersonapoder}, de nacionalidad ${this.formData.nacionalidadpersonapoder}, para que me represente ante el Servicio de Impuestos Internos, Tesorería General de la República, y en general ante cualquier organismo público o privado, en todos los trámites y gestiones que sean necesarios para el cumplimiento de las obligaciones tributarias, fiscales y laborales, incluyendo, pero no limitándose a:`;
+            const textoPoder = `En ${this.formData.ciudad}, a ${new Date().toLocaleDateString()}, Yo ${this.formData.nombreMandante} ${this.formData.apellidoMandante}, RUT ${this.formData.rutMandante}, de nacionalidad ${this.formData.nacionalidadMandante}, en representación de ${this.formData.nombreEmpresa}, RUT ${this.formData.rutEmpresa}, ambos domiciliados en ${this.formData.direccion}, comuna de ${this.formData.comuna}, ${this.formData.ciudad}. Por el presente instrumento confiero poder especial, tan amplio como en derecho se requiere a ${this.formData.nombrepersonapoder}, RUT ${this.formData.rutpersonapoder}, con domicilio en ${this.formData.direccionpersonapoder}, comuna de ${this.formData.comunapersonapoder}, ${this.formData.cuidadpersonapoder}, de nacionalidad ${this.formData.nacionalidadpersonapoder}, para que me represente ante el Servicio de Impuestos Internos, Tesorería General de la República, y en general ante cualquier organismo público o privado, en todos los trámites y gestiones que sean necesarios para el cumplimiento de las obligaciones tributarias, fiscales y laborales, incluyendo, pero no limitándose a:`;
             doc.text(textoPoder, 20, 25, { maxWidth: 170, align: "justify" }); // Ajuste el ancho máximo permitido
 
           }
 
           // SERVICIO DE IMPUESTOS INTERNOS, SII
-          doc.text('SERVICIO DE IMPUESTOS INTERNOS, SII', 20, 75);
+          doc.text('SERVICIO DE IMPUESTOS INTERNOS, SII', 20, 85);
           const textoSII = `Para que ejecute ante el Servicio de Impuestos Internos, todos los trámites relacionados con presentación de RAV y RAF, rectificatorias, notificaciones de giros, citaciones, presentar declaraciones fuera de plazo, de IVA o Renta, realizar el timbraje de boletas, facturas, guías de despacho, notas de crédito y ó débito, libros de contabilidad, apertura o cierre de sucursales, inicio de actividades, cambios de domicilio, solicitud de clave, término de giro, ser notificado de los giros y firmar los giros, firmar cualquier tipo de documentos recibidos, y en general para que realice todo tipo de trámites ante el SII.`;
-          doc.text(textoSII, 20, 82, { maxWidth: 170, align: "justify" }); // Ajuste el ancho máximo permitido
+          doc.text(textoSII, 20, 92, { maxWidth: 170, align: "justify" }); // Ajuste el ancho máximo permitido
 
           // TESORERÍA GENERAL DE LA REPÚBLICA, TGR
-          doc.text('TESORERÍA GENERAL DE LA REPÚBLICA, TGR', 20, 123);
+          doc.text('TESORERÍA GENERAL DE LA REPÚBLICA, TGR', 20, 133);
           const textoTGR = `Para que en mi nombre y representación ejecute ante la Tesorería General de la República, las solicitudes de certificados, obtener y recuperar clave de acceso a portal de la TGR, pagar giros, información de multas pendientes de pago, anulación de giros, devolución de pagos duplicados, recuperación de impuestos, cheques devueltos, en especial de declaraciones de renta y saldos a favor, alzamiento de embargos, y en general todos los trámites relacionados ante dicha institución.`;
-          doc.text(textoTGR, 20, 130, { maxWidth: 170, align: "justify" }); // Ajuste el ancho máximo permitido
+          doc.text(textoTGR, 20, 140, { maxWidth: 170, align: "justify" }); // Ajuste el ancho máximo permitido
 
           //Municipalidades, Notarías, Bancos, AFP, Isapres, Cajas de Compensación, Correos de Chile, Empresas de Servicios, etc.
 
-          doc.text('MUNICIPALIDAD', 20, 165);
+          doc.text('MUNICIPALIDAD', 20, 175);
 
           const textoMunicipalidad = `Para que realice trámites de patentes comerciales, permisos de circulación, certificados de dominio, certificados de deuda, certificados de avalúo fiscal, certificados de no expropiación, certificados de no afecto a expropiación, certificados de no pago de contribuciones, certificados de no pago de multas, certificados de no pago de derechos, certificados de no pago de patentes, certificados de no pago de permisos de circulación en la Municipalidad correspondiente, y en general todos los trámites relacionados ante dicha institución`;
 
           //direccion trabajo
 
-          doc.text(textoMunicipalidad, 20, 172, { maxWidth: 170, align: "justify" }); // Ajuste el ancho máximo permitido
+          doc.text(textoMunicipalidad, 20, 182, { maxWidth: 170, align: "justify" }); // Ajuste el ancho máximo permitido
 
-          doc.text('DIRECCIÓN DEL TRABAJO, DT', 20, 212);
+          doc.text('DIRECCIÓN DEL TRABAJO, DT', 20, 222);
 
           const textoDireccionTrabajo = `Para que realice trámites de fiscalización, inspecciones, multas, sanciones, denuncias, reclamos, recursos, y en general todo tipo de trámites relacionados con la Dirección del Trabajo.`;
 
-          doc.text(textoDireccionTrabajo, 20, 219, { maxWidth: 170, align: "justify" }); // Ajuste el ancho máximo permitido
+          doc.text(textoDireccionTrabajo, 20, 229, { maxWidth: 170, align: "justify" }); // Ajuste el ancho máximo permitido
 
 
         } else {
@@ -403,41 +466,41 @@ export default {
 
           if (this.formData.PersonaEmpresa === 'persona') {
 
-            const textoPoder = `En ${this.formData.ciudad}, a ${new Date().toLocaleDateString()}, Yo ${this.formData.nombreMandante} ${this.formData.apellidoMandante}, RUT ${this.formData.rutMandante}, de nacionalidad ${this.formData.nacionalidadMandante}, domiciliado en ${this.formData.direccion}, ${this.formData.ciudad}. Por el presente instrumento confiero poder a ${this.formData.nombrepersonapoder}, RUT ${this.formData.rutpersonapoder}, de nacionalidad ${this.formData.nacionalidadpersonapoder}, para que me represente ante el Servicio de Impuestos Internos, Tesorería General de la República, y en general ante cualquier organismo público o privado, en todos los trámites y gestiones que sean necesarios para el cumplimiento de las obligaciones tributarias, fiscales y laborales especificadas:`;
+            const textoPoder = `En ${this.formData.ciudad}, a ${new Date().toLocaleDateString()}, Yo ${this.formData.nombreMandante} ${this.formData.apellidoMandante}, RUT ${this.formData.rutMandante}, de nacionalidad ${this.formData.nacionalidadMandante}, con domicilio en ${this.formData.direccion}, comuna de ${this.formData.comuna}, ${this.formData.ciudad}. Por el presente instrumento confiero poder a ${this.formData.nombrepersonapoder}, RUT ${this.formData.rutpersonapoder}, con domicilio en ${this.formData.direccionpersonapoder}, comuna de ${this.formData.comunapersonapoder}, ${this.formData.cuidadpersonapoder}, de nacionalidad ${this.formData.nacionalidadpersonapoder}, para que me represente ante el Servicio de Impuestos Internos, Tesorería General de la República, y en general ante cualquier organismo público o privado, en todos los trámites y gestiones que sean necesarios para el cumplimiento de las obligaciones tributarias, fiscales y laborales especificadas:`;
             doc.text(textoPoder, 20, 25, { maxWidth: 170, align: "justify" }); // Ajuste el ancho máximo permitido
 
           } else {
 
-            const textoPoder = `En ${this.formData.ciudad}, a ${new Date().toLocaleDateString()}, Yo ${this.formData.nombreMandante} ${this.formData.apellidoMandante}, RUT ${this.formData.rutMandante}, de nacionalidad ${this.formData.nacionalidadMandante}, en representación de ${this.formData.nombreEmpresa}, RUT ${this.formData.rutEmpresa}, ambos domiciliados en ${this.formData.direccion}, ${this.formData.ciudad}. Por el presente instrumento confiero poder a ${this.formData.nombrepersonapoder}, RUT ${this.formData.rutpersonapoder}, de nacionalidad ${this.formData.nacionalidadpersonapoder}, para que me represente ante el Servicio de Impuestos Internos, Tesorería General de la República, y en general ante cualquier organismo público o privado, en todos los trámites y gestiones que sean necesarios para el cumplimiento de las obligaciones tributarias, fiscales y laborales especificadas`;
+            const textoPoder = `En ${this.formData.ciudad}, a ${new Date().toLocaleDateString()}, Yo ${this.formData.nombreMandante} ${this.formData.apellidoMandante}, RUT ${this.formData.rutMandante}, de nacionalidad ${this.formData.nacionalidadMandante}, en representación de ${this.formData.nombreEmpresa}, RUT ${this.formData.rutEmpresa}, ambos domiciliados en ${this.formData.direccion}, comuna de ${this.formData.comuna}, ${this.formData.ciudad}. Por el presente instrumento confiero poder a ${this.formData.nombrepersonapoder}, RUT ${this.formData.rutpersonapoder}, con domicilio en ${this.formData.direccionpersonapoder}, comuna de ${this.formData.comunapersonapoder}, ${this.formData.cuidadpersonapoder}, de nacionalidad ${this.formData.nacionalidadpersonapoder}, para que me represente ante el Servicio de Impuestos Internos, Tesorería General de la República, y en general ante cualquier organismo público o privado, en todos los trámites y gestiones que sean necesarios para el cumplimiento de las obligaciones tributarias, fiscales y laborales especificadas`;
             doc.text(textoPoder, 20, 25, { maxWidth: 170, align: "justify" }); // Ajuste el ancho máximo permitido
 
           }
 
           // SERVICIO DE IMPUESTOS INTERNOS, SII
-          doc.text('SERVICIO DE IMPUESTOS INTERNOS, SII', 20, 75);
+          doc.text('SERVICIO DE IMPUESTOS INTERNOS, SII', 20, 85);
           const textoSII = `Para que ejecute ante el Servicio de Impuestos Internos, todos los trámites relacionados con presentación de RAV y RAF, rectificatorias, notificaciones de giros, citaciones, presentar declaraciones fuera de plazo, de IVA o Renta, realizar el timbraje de boletas, facturas, guías de despacho, notas de crédito y ó débito, libros de contabilidad.`;
-          doc.text(textoSII, 20, 82, { maxWidth: 170, align: "justify" }); // Ajuste el ancho máximo permitido
+          doc.text(textoSII, 20, 92, { maxWidth: 170, align: "justify" }); // Ajuste el ancho máximo permitido
 
 
           // TESORERÍA GENERAL DE LA REPÚBLICA, TGR
-          doc.text('TESORERÍA GENERAL DE LA REPÚBLICA, TGR', 20, 106);
+          doc.text('TESORERÍA GENERAL DE LA REPÚBLICA, TGR', 20, 116);
           const textoTGR = `Para que en mi nombre y representación ejecute ante la Tesorería General de la República, las solicitudes de certificados, obtener y recuperar clave de acceso a portal de la TGR, pagar giros, información de multas pendientes de pago, anulación de giros, devolución de pagos duplicados, recuperación de impuestos, cheques devueltos, en especial de declaraciones de renta y saldos a favor.`;
-          doc.text(textoTGR, 20, 113, { maxWidth: 170, align: "justify" }); // Ajuste el ancho máximo permitido
+          doc.text(textoTGR, 20, 123, { maxWidth: 170, align: "justify" }); // Ajuste el ancho máximo permitido
 
           //Municipalidades, Notarías, Bancos, AFP, Isapres, Cajas de Compensación, Correos de Chile, Empresas de Servicios, etc.
 
-          doc.text('MUNICIPALIDAD', 20, 143);
+          doc.text('MUNICIPALIDAD', 20, 153);
 
           const textoMunicipalidad = `Para que realice trámites de patentes comerciales, permisos de circulación, certificados de dominio, certificados de deuda, certificados de avalúo fiscal, certificados de no expropiación, certificados de no afecto a expropiación, certificados de no pago de contribuciones, certificados de no pago de multas, certificados de no pago de derechos, certificados de no pago de patentes, certificados de no pago de permisos de circulación en la Municipalidad correspondiente.`;
 
-          doc.text(textoMunicipalidad, 20, 150, { maxWidth: 170, align: "justify" }); // Ajuste el ancho máximo permitido
+          doc.text(textoMunicipalidad, 20, 160, { maxWidth: 170, align: "justify" }); // Ajuste el ancho máximo permitido
 
           //direccion trabajo
-          doc.text('DIRECCIÓN DEL TRABAJO, DT', 20, 185);
+          doc.text('DIRECCIÓN DEL TRABAJO, DT', 20, 195);
 
           const textoDireccionTrabajo = `Para que realice trámites de fiscalización, inspecciones, multas, sanciones, denuncias, reclamos y  recursos.`;
 
-          doc.text(textoDireccionTrabajo, 20, 195, { maxWidth: 170, align: "justify" }); // Ajuste el ancho máximo permitido
+          doc.text(textoDireccionTrabajo, 20, 205, { maxWidth: 170, align: "justify" }); // Ajuste el ancho máximo permitido
 
         }
 
