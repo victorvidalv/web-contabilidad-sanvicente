@@ -46,7 +46,7 @@
         <div class="mb-4">
             <label for="oficina" class="inline-flex items-center">
                 <input type="checkbox" id="oficina" v-model="oficina" value="si" class="rounded border-gray-300 text-indigo-600 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
-                <span class="ml-2">Usa Oficina San Vicente</span>
+                <span class="ml-2">El Cliente usa oficina San Vicente</span>
             </label>
         </div>
 
