@@ -302,12 +302,18 @@
 
 </ServicesQuote>
 
-{{ atiende }}
+
 
 <div class="bg-gray-200 border border-t-gray-500">
   <button @click="step = 1" class="btn text-blue-500 p-2 m-1" v-if="step > 2">Inicio</button>
 </div>
 </form>
+
+<UrlGenerator/>
+
+
+
+
 </div>
 </template>
 
@@ -349,6 +355,20 @@ export default {
   mounted() {
 
     let atiende = this.$route.query.atiende;
+    this.formData.nombreMandante = this.$route.query.nombre;
+  this.formData.apellidoMandante = this.$route.query.apellido;
+    this.formData.nombreEmpresa = this.$route.query.empresa;
+
+
+    if (this.$route.query.oficina === 'si') {
+
+      this.formData.direccion = 'German Riesco N° 900, Oficina N° 3';
+      this.formData.comuna = 'San VICENTE TAGUA TAGUA';
+      this.formData.ciudad = 'RANCAGUA';
+
+
+    }
+    
 
     if (this.$route.query.atiende === 'vanessa') {
       this.formData.nombrepersonapoder = 'VANESSA BETTINA PERALTA VIDAL';
