@@ -70,12 +70,12 @@
 
           <div class="input-wrapper py-2">
             <label>Nombres </label>
-            <input type="text" class="input-custom" placeholder="Ingresa tu nombre" v-model="formData.nombreMandante">
+            <input type="text" class="input-custom" placeholder="Primer y Segundo Nombre" v-model="formData.nombreMandante">
           </div>
 
           <div class="input-wrapper py-2">
             <label>Apellidos </label>
-            <input type="text" class="input-custom" placeholder="Ingresa tu apellido"
+            <input type="text" class="input-custom" placeholder="Primer y Segundo Apellido"
               v-model="formData.apellidoMandante">
 
           </div>
