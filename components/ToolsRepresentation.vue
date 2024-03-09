@@ -108,7 +108,7 @@
 
 
             <div style="flex: 1;" class="m-1" v-if="formData.PersonaEmpresa === 'persona'">
-              <label>ciudad</label>
+              <label>Ciudad</label>
               <input type="text" class="input-custom" placeholder="ciudad" v-model="formData.ciudad">
             </div>
           </div>
@@ -157,7 +157,7 @@
             </div>
 
             <div style="flex: 1;" class="m-1">
-              <label>ciudad</label>
+              <label>Ciudad</label>
               <input type="text" class="input-custom" placeholder="ciudad" v-model="formData.ciudad">
             </div>
           </div>
@@ -202,7 +202,7 @@
                       </div>
           
                       <div style="flex: 1;" class="m-1">
-                        <label>ciudad</label>
+                        <label>Ciudad</label>
                         <input type="text" class="input-custom" placeholder="ciudad" v-model="formData.cuidadpersonapoder">
                       </div>
                     </div>
