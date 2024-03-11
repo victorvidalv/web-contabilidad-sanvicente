@@ -14,7 +14,7 @@
 
           <p>Te acompañaremos paso a paso en la cotización del Servicio de Contabilidad Mensual.</p>
 
-          <button @click="step = 2" class="btn-yes">Comencemos</button>
+          <button @click="step = 2" class="btn-yes">Comenzar</button>
 
         </template>
 
@@ -26,9 +26,9 @@
 
         <template #texto>
 
-          <p class="question">¿Nos puedes indicar como te llamas?</p>
+          <p class="question">Indicanos tu nombre</p>
 
-          <input type="text" class="input-custom" placeholder="Ingresa tu nombre" v-model="name">
+          <input type="text" class="input-custom" placeholder="Nombre Apellido" v-model="name">
 
           <button @click="step = 3" class="btn-yes" v-if="name.length > 3">Continuar</button>
 
@@ -44,11 +44,11 @@
 
           <p class="question">¿Has contratado nuestros servicios previamente?</p>
 
-          <button class="btn-yes" @click="step = 4, oldClient = 1">Si, Soy cliente</button>
+          <button class="btn-yes" @click="step = 4, oldClient = 1">Sí, soy cliente</button>
 
           <button class="btn-no" @click="step = 4, oldClient = 0">No, aún no soy cliente</button>
 
-          <p class="text-info">Los clientes previos tienen descuentos especiales</p>
+          <p class="text-info">Cliente: Personas o empresas que han contratado nuestros servicios previamente.</p>
 
         </template>
 
@@ -63,7 +63,7 @@
 
           <div class="input-wrapper py-2" v-if="oldClient === 0">
             <label for="company">Nombre de tu empresa</label>
-            <input type="text" class="input-custom" placeholder="Nombre de tu empresa" name="company" v-model="company">
+            <input type="text" class="input-custom" placeholder="Nombre empresa" name="company" v-model="company">
           </div>
 
           <div class="input-wrapper py-2">
@@ -91,6 +91,11 @@
             <button class="btn-yes" @click="step = 5" v-if="email.length > 3">Continuar</button>
           </div>
 
+
+
+          <p class="text-info">Las personas naturales que funcionen como empresa individual, deberán ingresar su RUT
+            personal.</p>
+
         </template>
 
       </ServicesQuote>
@@ -101,8 +106,30 @@
 
         <template #texto>
           <p class="question">¿Qué plan se ajusta a tus necesidades?</p>
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-9 gap-4 mt-2">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-4 mt-2">
             <!-- Esencial -->
+
+            <div class="card border p-1 m-1 col-span-1 lg:col-span-3">
+              <div class="card-header mb-3">
+                <strong>Personzalidado</strong>
+              </div>
+              <div class="card-body">
+                <ul>
+
+                  <li class="flex items-center space-x-3">
+                    <SiteCheck /><span>Ya tengo una oferta personalizada</span>
+                  </li>
+                 
+                </ul>
+
+              </div>
+              <div class="card-footer">
+                <button class="btn-yes" @click="step = 6, servicetype = 1">
+                 Valor Especial
+                </button>
+              </div>
+            </div>
+            <!-- Standard -->
             <div class="card border p-1 m-1 col-span-1 lg:col-span-3">
               <div class="card-header mb-3">
                 <strong>Esencial (Microempresas)</strong>
@@ -183,7 +210,9 @@
               </div>
             </div>
           </div>
-        </template>
+
+          <p class="text-info">Los precios pueden ser más bajos si existe una  cotización especial previa</p>
+                    </template>
       </ServicesQuote>
 
       <!-- 6 -->
@@ -192,15 +221,15 @@
 
         <template #texto>
 
-          <p class="question">¿Deseas agregar nuestro servicio de Remuneraciones?</p>
+          <p class="question">¿Deseas contratar nuestro servicio de Remuneraciones?</p>
 
           <p><strong>$15.000</strong> por trabajador contratado al mes</p>
-
           <button class="btn-yes" @click="step = 7, salary = 1">Si, 15.0000 / Trabajador</button>
+          <button class="btn-yes" @click="step = 7, salary = 2">Si, tengo una oferta personalizada</button>
           <button class="btn-no" @click="step = 7, salary = 0">No gracias</button>
 
-          <p class="text-info">El servicio de remuneraciones incluye: Liquidaciones de sueldo, Contratos de trabajo,
-            Finiquitos, Certificados de renta, Declaraciones juradas, entre otros.</p>
+          <p class="text-info">-El servicio de remuneraciones incluye: Liquidaciones de sueldo, Contratos de trabajo,
+            Finiquitos, Certificados de renta, Declaraciones juradas, entre otros.<br>-Los precios pueden ser más bajos si existe una  cotización especial previa.</p>
 
         </template>
 
@@ -446,11 +475,6 @@
 
           <button type="submit" class="btn-yes">Finalizar Cotización</button>
 
-
-           
-        
-
-   
 
           <!-- Mensaje de éxito -->
           <div v-if="submitSuccess" class="alert alert-success text-green-700">
