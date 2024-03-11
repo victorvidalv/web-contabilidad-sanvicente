@@ -13,30 +13,29 @@
     </div>
 
     <!-- Menú de Componentes -->
-    <div class="flex space-x-4 mb-4">
-      <button @click="setCurrentComponent('ToolsFee')" :class="buttonClass('ToolsFee')">
-        Cal. de Honorarios
+    <div class="flex flex-wrap space-x-4 mb-4">
+      <button @click="setCurrentComponent('ToolsFee')" :class="buttonClass('ToolsFee')" class="w-full sm:w-auto mb-3">
+      Cal. de Honorarios
       </button>
-      <button @click="setCurrentComponent('ToolsIndicators')" :class="buttonClass('ToolsIndicators')">
-        Ind. Económicos
+      <button @click="setCurrentComponent('ToolsIndicators')" :class="buttonClass('ToolsIndicators')" class="w-full sm:w-auto mb-3">
+      Ind. Económicos
       </button>
-      <button @click="setCurrentComponent('ToolsUsdConverter')" :class="buttonClass('ToolsUsdConverter')">
-        Con. Dólar Obs.
+      <button @click="setCurrentComponent('ToolsUsdConverter')" :class="buttonClass('ToolsUsdConverter')" class="w-full sm:w-auto mb-3">
+      Con. Dólar Obs.
       </button>
-      <button @click="setCurrentComponent('ToolsInvoice')" :class="buttonClass('ToolsInvoice')">
-        Cal. de Facturas
+      <button @click="setCurrentComponent('ToolsInvoice')" :class="buttonClass('ToolsInvoice')" class="w-full sm:w-auto mb-3">
+      Cal. de Facturas
       </button>
-
-      <button @click="setCurrentComponent('ToolsRepresentation')" :class="buttonClass('ToolsRepresentation')">
-        Gen. Poderes
+      <button @click="setCurrentComponent('ToolsRepresentation')" :class="buttonClass('ToolsRepresentation')" class="w-full sm:w-auto mb-3">
+      Gen. Poderes
       </button>
-
     </div>
 
     <!-- Componentes Dinámicos -->
     <component :is="currentComponent"></component>
   </div>
 </template>
+
 
 <script>
 export default {
