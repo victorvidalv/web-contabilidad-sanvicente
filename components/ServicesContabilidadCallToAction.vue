@@ -34,7 +34,7 @@
       <!--  -->
       <p class="text-sm text-gray-600 pt-5">
         * Los precios indicados corresponden exclusivamente al servicio de
-        contabilidad y no incluyen remuneraciones u otros costos adicionales.
+        contabilidad y no incluyen declaración de renta,  remuneraciones, u otros costos adicionales.
       </p>
     </div>
   </section>
@@ -49,24 +49,23 @@ export default {
           id: 1,
           nombre: 'Esencial',
           descripcion: 'La mejor opción para pequeños negocios.',
-          precio: '$ 59.900',
-          caracteristicas: ['Hasta 250 Documentos tributarios', 'Declaración mensual de impuestos F29', 'Informes de Venta', 'Documentación Online']
+          precio: '$ 79.900',
+          caracteristicas: ['Hasta 250 Documentos tributarios', 'Declaración mensual de impuestos F29']
         },
         {
           id: 2,
           nombre: 'Standard',
           descripcion: 'Recomendado para la mayoría de empresas.',
-          precio: '$ 119.900',
-          caracteristicas: ['Hasta 500 Documentos tributarios', 'Declaración mensual de impuestos F29', 'Informes de Venta', 'Informes de movimientos Bancarios', 'Documentación Online,']
+          precio: '$ 149.900',
+          caracteristicas: ['Hasta 500 Documentos tributarios', 'Declaración mensual de impuestos F29', 'Informes de movimientos Bancarios']
         },
         {
           id: 3,
           nombre: 'Avanzado',
           descripcion: 'Recomendado para medianas y grandes empresas.',
           precio: 'Desde $ 399.900 ',
-          caracteristicas: ['Cantidad de Documentos tributarios a convenir', 'Declaración mensual de impuestos F29', 'Informes de Venta', 'Documentación Online', 'Asesoría contable permantente']
+          caracteristicas: ['Cantidad de Documentos tributarios a convenir', 'Declaración mensual de impuestos F29', 'Informes de Venta', 'Documentación Online', 'Asesoría contable permantente','Entre otros por acordar']
         },
-
       ]
     }
   }
