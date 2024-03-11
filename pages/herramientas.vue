@@ -58,7 +58,7 @@ export default {
   // Configuración de etiquetas meta para SEO
   head() {
     return {
-      title: "Nosotros | Contabilidad San Vicente", // Título de la página
+      title: "Herramientas | Contabilidad San Vicente", // Título de la página
       meta: [
         {
           hid: "description", // Identificador único para esta etiqueta meta

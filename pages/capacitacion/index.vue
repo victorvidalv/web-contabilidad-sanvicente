@@ -41,12 +41,12 @@ export default {
   // Configuración de etiquetas meta para SEO
   head() {
     return {
-      title: "Bienvenido | Contabilidad San Vicente", // Título de la página
+      title: "Capacitación | Contabilidad San Vicente", // Título de la página
       meta: [
         {
           hid: "description", // Identificador único para esta etiqueta meta
           name: "description", // Nombre de la etiqueta meta
-          content: "Ofrecemos una amplia gama de servicios contables y empresariales en San Vicente de Tagua Tagua. Explore nuestras soluciones y descubra cómo podemos ayudarle a prosperar.", // Contenido de la etiqueta meta
+          content: "Ofrecemos una amplia gama de servicios de capacitación en San Vicente de Tagua Tagua. Desde cursos de contabilidad hasta asesoramiento tributario, tenemos la solución que su negocio necesita.", // Contenido de la etiqueta meta
         },
         {
           hid: "keywords", // Identificador único para esta etiqueta meta
