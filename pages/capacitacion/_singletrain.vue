@@ -3,6 +3,8 @@
       <!-- Banner de Capacitación con información dinámica -->
       <SiteSecondBanner :name="capacitar.name" :description="capacitar.description" img="train.webp"/>
   
+      <!-- Estadísticas de la Empresa -->
+      <SiteStast/>
       <!-- Características de la Capacitación -->
       <TrainSingleCharacteristics/>
       <TrainVideo/>
@@ -30,6 +32,7 @@
   TrainSingleDetails: () => import('~/components/TrainSingleDetails.vue'),
   TrainContract: () => import('~/components/TrainContract.vue'),
   SiteClients: () => import('~/components/SiteClients.vue'),
+  SiteStast: () => import('~/components/SiteStast.vue'),
   },
     layout: 'default', // Establece el diseño predeterminado para esta página
   

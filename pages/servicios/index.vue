@@ -3,6 +3,10 @@
     <!-- Banner de Servicios -->
     <ServicesBanner />
 
+    <!-- Estadísticas de la Empresa -->
+
+        <SiteStast />
+
     <!-- Tarjetas de Servicios -->
     <ServicesCards />
 
@@ -26,8 +30,12 @@ export default {
   //Modulos con carga diferida para optimizar la carga de la página
   components: {
     ServicesContract: () => import('~/components/ServicesContract.vue'),
+
     HomeModern: () => import('~/components/HomeModern.vue'),
+
     SiteClients: () => import('~/components/SiteClients.vue'),
+    SiteStast: () => import('~/components/SiteStast.vue'),
+
   },
   layout: 'default', // Establece el diseño predeterminado para esta página
 

@@ -5,6 +5,10 @@
     <SiteSecondBanner :name="servicio.name" :description="servicio.description"
       img="services.webp" />
 
+    <!-- Estadísticas de la Empresa -->
+
+    <SiteStast />
+
     <!-- Características del Servicio Individual -->
     <ServiceSingleCharacteristics />
 
@@ -36,6 +40,7 @@ export default {
     ServicesContabilidadCallToAction: () => import('~/components/ServicesContabilidadCallToAction.vue'),
     ServicesContract: () => import('~/components/ServicesContract.vue'),
     SiteClients: () => import('~/components/SiteClients.vue'),
+    SiteStast: () => import('~/components/SiteStast.vue'),
   },
   layout: 'default', // Establece el diseño predeterminado para esta página
 

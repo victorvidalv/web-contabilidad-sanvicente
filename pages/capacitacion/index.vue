@@ -3,6 +3,11 @@
     <!-- Banner de Entrenamiento -->
     <TrainBanner />
 
+        
+    <!-- Estadísticas de la Empresa -->
+
+    <SiteStast />
+
     <!-- Tarjetas de Entrenamiento -->
     <TrainCards />
 
@@ -29,6 +34,7 @@ export default {
     TrainFocus: () => import('~/components/TrainFocus.vue'),
     AboutTeam: () => import('~/components/AboutTeam.vue'),
     SiteClients: () => import('~/components/SiteClients.vue'),
+    SiteStast: () => import('~/components/SiteStast.vue'),
   },
   layout: 'default', // Establece el diseño predeterminado para esta página
 

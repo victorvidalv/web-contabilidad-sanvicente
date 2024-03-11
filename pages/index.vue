@@ -5,6 +5,10 @@
     <!-- Banner de inicio -->
     <HomeBanner />
 
+    <!-- Estadísticas de la Empresa -->
+
+ 
+
     <!-- Por qué elegirnos -->
     <HomeWhyChooseUs />
 
@@ -39,6 +43,7 @@ export default {
     HomeWhyChooseUs: () => import('~/components/HomeWhyChooseUs.vue'),
     HomeModern: () => import('~/components/HomeModern.vue'),
     SiteClients: () => import('~/components/SiteClients.vue'),
+
   },
   layout: "default", // Diseño predeterminado
 
