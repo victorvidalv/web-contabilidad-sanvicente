@@ -50,14 +50,14 @@ export default {
           nombre: 'Esencial',
           descripcion: 'La mejor opción para pequeños negocios.',
           precio: '$ 79.900',
-          caracteristicas: ['Hasta 250 Documentos tributarios', 'Declaración mensual de impuestos F29']
+          caracteristicas: ['Hasta 200 Documentos tributarios', 'Declaración mensual de impuestos F29']
         },
         {
           id: 2,
           nombre: 'Standard',
           descripcion: 'Recomendado para la mayoría de empresas.',
           precio: '$ 149.900',
-          caracteristicas: ['Hasta 500 Documentos tributarios', 'Declaración mensual de impuestos F29', 'Informes de movimientos Bancarios']
+          caracteristicas: ['Hasta 350 Documentos tributarios', 'Declaración mensual de impuestos F29', 'Informes de movimientos Bancarios']
         },
         {
           id: 3,
