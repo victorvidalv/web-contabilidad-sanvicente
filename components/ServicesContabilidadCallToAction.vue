@@ -50,7 +50,7 @@ export default {
           nombre: 'Esencial',
           descripcion: 'La mejor opción para pequeños negocios.',
           precio: '$ 79.900',
-          caracteristicas: ['Hasta 200 Documentos tributarios.', 'Declaración mensual de impuestos F29.','Registros Contable asociados al regimen tributario.']
+          caracteristicas: ['Hasta 200 Documentos tributarios.', 'Declaración mensual de impuestos F29.','Registros contables asociados al regimen tributario.']
          
         },
         {
@@ -58,14 +58,14 @@ export default {
           nombre: 'Standard',
           descripcion: 'Recomendado para la mayoría de empresas.',
           precio: '$ 149.900',
-          caracteristicas: ['Hasta 350 Documentos tributarios.', 'Declaración mensual de impuestos F29.', 'Informes de movimientos Bancarios.','Registros Contable asociados al regimen tributario.']
+          caracteristicas: ['Hasta 350 Documentos tributarios.', 'Declaración mensual de impuestos F29.', 'Informes de movimientos Bancarios.','Registros contables  asociados al regimen tributario.']
         },
         {
           id: 3,
           nombre: 'Avanzado',
           descripcion: 'Recomendado para medianas y grandes empresas.',
           precio: 'Desde $ 399.900 ',
-          caracteristicas: ['Cantidad de Documentos tributarios a convenir.', 'Declaración mensual de impuestos F29.','Registros Contable asociados al regimen tributario.', 'Informes de Venta.', 'Documentación Online.', 'Asesoría contable permantente.','Entre otros por acordar.']
+          caracteristicas: ['Cantidad de Documentos tributarios a convenir.', 'Declaración mensual de impuestos F29.','Registros contables asociados al regimen tributario.', 'Informes de Venta.', 'Documentación Online.', 'Asesoría contable permantente.','Entre otros por acordar.']
         },
       ]
     }
