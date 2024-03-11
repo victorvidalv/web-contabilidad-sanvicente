@@ -12,9 +12,11 @@
 
           <p class="question">Bienvenido</p>
 
-          <p>Te acompañaremos paso a paso en la cotización del Servicio de Contabilidad Mensual.</p>
+          <p>Te acompañaremos paso a paso en la cotización de tu Servicio.</p>
 
           <button @click="step = 2" class="btn-yes">Comenzar</button>
+            <p class="text-info">El presente formulario tiene como finalidad recopilar información para la cotización de nuestro servicio de Contabilidad Mensual.</p>
+          
 
         </template>
 
@@ -31,6 +33,7 @@
           <input type="text" class="input-custom" placeholder="Nombre Apellido" v-model="name">
 
           <button @click="step = 3" class="btn-yes" v-if="name.length > 3">Continuar</button>
+            <p class="text-info">Escribe tu nombre completo, para poder dirigirnos a ti de manera personalizada.</p>
 
         </template>
 
@@ -106,29 +109,9 @@
 
         <template #texto>
           <p class="question">¿Qué plan se ajusta a tus necesidades?</p>
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-4 mt-2">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-9 gap-4 mt-2">
             <!-- Esencial -->
 
-            <div class="card border p-1 m-1 col-span-1 lg:col-span-3">
-              <div class="card-header mb-3">
-                <strong>Personzalidado</strong>
-              </div>
-              <div class="card-body">
-                <ul>
-
-                  <li class="flex items-center space-x-3">
-                    <SiteCheck /><span>Ya tengo una oferta personalizada</span>
-                  </li>
-                 
-                </ul>
-
-              </div>
-              <div class="card-footer">
-                <button class="btn-yes" @click="step = 6, servicetype = 1">
-                 Valor Especial
-                </button>
-              </div>
-            </div>
             <!-- Standard -->
             <div class="card border p-1 m-1 col-span-1 lg:col-span-3">
               <div class="card-header mb-3">
@@ -138,17 +121,20 @@
                 <ul>
 
                   <li class="flex items-center space-x-3">
-                    <SiteCheck /><span>Hasta 250 Documentos tributarios</span>
+                    <SiteCheck /><span>Hasta 200 Documentos tributarios.</span>
                   </li>
                   <li class="flex items-center space-x-3">
-                    <SiteCheck /><span>Declaración F29</span>
+                    <SiteCheck /><span>Declaración mensual de impuestos F29.</span>
                   </li>
+                  <li class="flex items-center space-x-3">
+                   <SiteCheck /><span>Registros Contable asociados al regimen tributario.</span>
+                   </li>
                 </ul>
 
               </div>
               <div class="card-footer">
                 <button class="btn-yes" @click="step = 6, servicetype = 1">
-                  $ 59.900 / mes
+                  $ 79.900 / mes
                 </button>
               </div>
             </div>
@@ -160,19 +146,24 @@
               <div class="card-body">
                 <ul>
                   <li class="flex items-center space-x-3">
-                    <SiteCheck /><span>Hasta 500 Documentos tributarios</span>
+                    <SiteCheck /><span>Hasta 350 Documentos tributarios.</span>
                   </li>
                   <li class="flex items-center space-x-3">
-                    <SiteCheck /><span>Declaración F29</span>
+                    <SiteCheck /><span>Declaración mensual de impuestos F29.</span>
                   </li>
                   <li class="flex items-center space-x-3">
-                    <SiteCheck /><span>Inf. Movimientos Bancarios</span>
+                    <SiteCheck /><span>Informes de movimientos Bancarios.
+                    </span>
                   </li>
+                     <li class="flex items-center space-x-3">
+                                      <SiteCheck /><span>Registros Contable asociados al regimen tributario.
+                                      </span>
+                                    </li>
                 </ul>
               </div>
               <div class="card-footer">
                 <button class="btn-yes" @click="step = 6, servicetype = 2">
-                  $ 119.900 / mes
+                  $ 149.900 / mes
                 </button>
               </div>
             </div>
@@ -184,22 +175,22 @@
               <div class="card-body">
                 <ul>
                   <li class="flex items-center space-x-3">
-                    <SiteCheck /><span>Cantidad de Documentos tributarios a convenir</span>
+                    <SiteCheck /><span>Cantidad de Documentos tributarios a convenir.</span>
                   </li>
                   <li class="flex items-center space-x-3">
-                    <SiteCheck /><span>Declaración F29</span>
+                    <SiteCheck /><span>Declaración mensual de impuestos F29</span>
                   </li>
                   <li class="flex items-center space-x-3">
-                    <SiteCheck /><span>Inf. Movimientos Bancarios</span>
+                    <SiteCheck /><span>Registros Contable asociados al regimen tributario.</span>
                   </li>
                   <li class="flex items-center space-x-3">
-                    <SiteCheck /><span>Documentación Online</span>
+                    <SiteCheck /><span>Informes de Venta.</span>
                   </li>
                   <li class="flex items-center space-x-3">
-                    <SiteCheck /><span>Informes de Venta</span>
+                    <SiteCheck /><span>Documentación Online.</span>
                   </li>
                   <li class="flex items-center space-x-3">
-                    <SiteCheck /><span> Asesoría contable permanente</span>
+                    <SiteCheck /><span>Asesoría contable permantente.</span>
                   </li>
                 </ul>
               </div>
@@ -211,7 +202,8 @@
             </div>
           </div>
 
-          <p class="text-info">Los precios pueden ser más bajos si existe una  cotización especial previa</p>
+     
+          <p class="text-info">Los precios pueden ser inferiores en caso pagar 12 meses por adelantado (20% descuento sobre el total).</p>
                     </template>
       </ServicesQuote>
 
@@ -224,8 +216,7 @@
           <p class="question">¿Deseas contratar nuestro servicio de Remuneraciones?</p>
 
           <p><strong>$15.000</strong> por trabajador contratado al mes</p>
-          <button class="btn-yes" @click="step = 7, salary = 1">Si, 15.0000 / Trabajador</button>
-          <button class="btn-yes" @click="step = 7, salary = 2">Si, tengo una oferta personalizada</button>
+          <button class="btn-yes" @click="step = 7, salary = 1">Si, desde 15.0000 / Trabajador</button>
           <button class="btn-no" @click="step = 7, salary = 0">No gracias</button>
 
           <p class="text-info">-El servicio de remuneraciones incluye: Liquidaciones de sueldo, Contratos de trabajo,
@@ -243,6 +234,8 @@
 
           <button class="btn-yes" @click="step = 7, salary = 0">Si, posiblemente </button>
           <button class="btn-no" @click="step = 7, salary = 0">No, no planeo contratar personal</button>
+          <p class="text-info">Contese Sí, solo si será personal contratado, no incluya personal a honorarios.
+          </p>
 
         </template>
 
@@ -255,10 +248,10 @@
         <template #texto>
 
           <p class="question">¿Publicar tu empresa en nuestro directorio online?</p>
-          <p>El precio de la incorporación Standard es $ 25.000 (pago único), pero tenemos un <strong>descuento para
+          <p>El precio de la incorporación estandar es $ 25.000 (pago único), pero tenemos un <strong>descuento para
               ti</strong></p>
           <button class="btn-yes" @click="step = 8">
-            Si, incorporación Standard ( gratis )
+            Si, incorporación estandar ( gratis )
           </button>
           <button class="btn-yes" @click="step = 8">
             Si, incorporación destacada ( $ 10.000 )
@@ -269,7 +262,7 @@
           </button>
 
           <p class="text-info">El directorio online es un espacio donde publicaremos una reseña de tu empresa, tus
-            servicios y productos, además de tus datos de contacto, te ayudará amejorar tu posicionamiento en internet y
+            servicios y productos, además de tus datos de contacto, te ayudará a mejorar tu posicionamiento en internet y
             atraer más clientes.</p>
 
         </template>
@@ -284,13 +277,13 @@
 
           <p class="question">¿Publicar un articulo acerca de tus productos o servicios en nuestro blog?</p>
 
-          <p>El precio de una publicación promocional Standard es $ 15.000 (por publicación), pero tenemos un
+          <p>El precio de una publicación promocional estandar es $ 30.000 (por publicación), pero tenemos un
             <strong>descuento para ti</strong></p>
           <button class="btn-yes" @click="step = 9">
-            Si, 1 publicación Standard ( gratis )
+            Si, 1 publicación estandar ( gratis )
           </button>
           <button class="btn-yes" @click="step = 9">
-            Si, publicación destacada ( $ 45.000 )
+            Si, 1 publicación destacada ( $ 45.000 )
           </button>
 
           <button class="btn-no" @click="step = 9">
@@ -317,7 +310,7 @@
             Si, horario oficina ( gratis )
           </button>
           <button class="btn-yes" @click="step = 10">
-            Si, horario extendido ( $ 55.000/mes )
+            Si, horario extendido ( $ 99.000/mes )
           </button>
           <button class="btn-no" @click="step = 10">
             No, gracias
@@ -350,7 +343,7 @@
           </button>
 
           <p class="text-info">El correo corporativo incluye la compra del dominio y la configuración de las cuentas de
-            correo.</p>
+            correo en móviles o programas de correos.</p>
 
         </template>
 
@@ -411,11 +404,11 @@
             clientes</p>
 
           <button class="btn-yes" @click="step = 12">
-            Si, análisis básico ( gratis )
+            Si, informe con aspectos básicos ( gratis )
           </button>
 
           <button class="btn-yes" @click="step = 12">
-            Si, análisis avanzado ( $ 35.000 )
+            Si, análisis avanzado ( $ 159.000 )
           </button>
           <button class="btn-no" @click="step = 12">
             No, gracias
@@ -481,7 +474,6 @@
             {{ submitMessage }}
           </div>
           
-  
           <!-- Mensaje de error -->
           <div v-if="submitError" class="alert alert-danger text-red-700">
             {{ submitMessage }}
@@ -495,8 +487,6 @@
         <button @click="step -= 1" class="btn text-blue-500 p-2 m-1" v-if="step > 1">Atrás</button>
         <button @click="step = 1" class="btn text-blue-500 p-2 m-1" v-if="step > 2">Inicio</button>
       </div>
-
-
     </form>
   </div>
 
@@ -519,7 +509,7 @@ export default {
       submitSuccess: false,
       submitError: false,
       submitMessage: '',
-      step: 13,
+      step: 5,
       name: "",
       oldClient: 0,
       company: "",
