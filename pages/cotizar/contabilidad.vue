@@ -232,7 +232,7 @@
 
           <p class="question">¿Planeas contratar personal a futuro?</p>
 
-          <button class="btn-yes" @click="step = 7, salary = 0">Si, posiblemente </button>
+          <button class="btn-yes" @click="step = 7, salary = 3">Si, posiblemente </button>
           <button class="btn-no" @click="step = 7, salary = 0">No, no planeo contratar personal</button>
           <p class="text-info">Contese Sí, solo si será personal contratado, no incluya personal a honorarios.
           </p>
@@ -250,14 +250,14 @@
           <p class="question">¿Publicar tu empresa en nuestro directorio online?</p>
           <p>El precio de la incorporación estandar es $ 25.000 (pago único), pero tenemos un <strong>descuento para
               ti</strong></p>
-          <button class="btn-yes" @click="step = 8">
+          <button class="btn-yes" @click="step = 8, directory=1">
             Si, incorporación estandar ( gratis )
           </button>
-          <button class="btn-yes" @click="step = 8">
+          <button class="btn-yes" @click="step = 8,  directory=2">
             Si, incorporación destacada ( $ 10.000 )
           </button>
 
-          <button class="btn-no" @click="step = 8">
+          <button class="btn-no" @click="step = 8, directory=0">
             No, gracias
           </button>
 
@@ -279,14 +279,12 @@
 
           <p>El precio de una publicación promocional estandar es $ 30.000 (por publicación), pero tenemos un
             <strong>descuento para ti</strong></p>
-          <button class="btn-yes" @click="step = 9">
-            Si, 1 publicación estandar ( gratis )
-          </button>
-          <button class="btn-yes" @click="step = 9">
-            Si, 1 publicación destacada ( $ 45.000 )
-          </button>
 
-          <button class="btn-no" @click="step = 9">
+          <button class="btn-yes" @click="step = 9, blog=1">Si, 1 publicación estandar ( gratis )</button>
+
+          <button class="btn-yes" @click="step = 9, blog=2">Si, 1 publicación destacada ( $ 45.000 ) </button>
+
+          <button class="btn-no" @click="step = 9, blog=0">
             No, gracias
           </button>
 
@@ -306,13 +304,13 @@
           <p class="question">¿Te gustaría unirte a nuestro grupo de WhatsApp?</p>
           <p>Un grupo único donde estas tu con nuestro equipo y puedes hacer consultas directamente en horario de
             oficina</p>
-          <button class="btn-yes" @click="step = 10">
+          <button class="btn-yes" @click="step = 10, whatsApp=1">
             Si, horario oficina ( gratis )
           </button>
-          <button class="btn-yes" @click="step = 10">
+          <button class="btn-yes" @click="step = 10, whatsApp=2">
             Si, horario extendido ( $ 99.000/mes )
           </button>
-          <button class="btn-no" @click="step = 10">
+          <button class="btn-no" @click="step = 10, whatsApp=0">
             No, gracias
           </button>
 
@@ -332,13 +330,13 @@
           <p class="question">¿Te gustaría contar con un correo corporativo?</p>
           <p>Un correo del tipo tunombre@nombretuempresa.cl te dará una imagen más profesional</p>
 
-          <button class="btn-yes" @click="step = 11">
+          <button class="btn-yes" @click="step = 11, emailoffer=1">
             Si, una cuenta de email ( $ 5.000/mes )
           </button>
-          <button class="btn-yes" @click="step = 11">
+          <button class="btn-yes" @click="step = 11, emailoffer=2">
             Si, hasta 10 cuenta de email ( $ 10.000/mes )
           </button>
-          <button class="btn-no" @click="step = 11">
+          <button class="btn-no" @click="step = 11, emailoffer=0">
             No, gracias
           </button>
 
@@ -346,6 +344,7 @@
             correo en móviles o programas de correos.</p>
 
         </template>
+
 
       </ServicesQuote>
 
@@ -379,10 +378,10 @@
           <p class="question">¿Te gustaría contar con un sitio web?</p>
           <p>Un sitio web te permitirá tener presencia en internet y atraer más clientes</p>
 
-          <button class="btn-yes" @click="step = 12">
+          <button class="btn-yes" @click="step = 12, weboffer=1">
             Si, sitio web básico ( $ 7.500/mes )
           </button>
-          <button class="btn-no" @click="step = 12">
+          <button class="btn-no" @click="step = 12, weboffer=0">
             No, gracias
           </button>
 
@@ -403,16 +402,11 @@
           <p>Una revisión de tu sitio web te permitirá tener una visión de tu presencia en internet y atraer más
             clientes</p>
 
-          <button class="btn-yes" @click="step = 12">
-            Si, informe con aspectos básicos ( gratis )
-          </button>
+          <button class="btn-yes" @click="step = 12, seooffer=1">Si, informe con aspectos básicos ( gratis ) </button>
 
-          <button class="btn-yes" @click="step = 12">
-            Si, análisis avanzado ( $ 159.000 )
-          </button>
-          <button class="btn-no" @click="step = 12">
-            No, gracias
-          </button>
+          <button class="btn-yes" @click="step = 12, seooffer=2">Si, análisis avanzado ( $ 159.000 )</button>
+
+          <button class="btn-no" @click="step = 12, seooffer=0">No, gracias</button>
 
           <p class="text-info">La revisión de posicionamiento web incluye un informe de tu presencia en internet y
             recomendaciones para mejorar tu posicionamiento</p>
@@ -430,10 +424,10 @@
           <p>Un domicilio tributario te permitirá iniciar actividades, cuidar privacidad, tu correspondencia y tener una
             dirección para tu empresa</p>
 
-          <button class="btn-yes" @click="step = 13">
+          <button class="btn-yes" @click="step = 13, officeoffer=1">
             Si, domicilio tributario ( $ 9.900/mes )
           </button>
-          <button class="btn-no" @click="step = 13">
+          <button class="btn-no" @click="step = 13, officeoffer=0">
             No, gracias
           </button>
           <p class="text-info">El domicilio tributario incluye la dirección tributaria, la recepción de correspondencia
@@ -509,7 +503,9 @@ export default {
       submitSuccess: false,
       submitError: false,
       submitMessage: '',
-      step: 5,
+
+      step: 1,
+
       name: "",
       oldClient: 0,
       company: "",
@@ -519,6 +515,13 @@ export default {
       phone: "",
       servicetype: 0,
       salary: 0,
+      directory: 0,
+      blog: 0,
+      whatsApp: 0,
+      emailoffer: 0,
+      weboffer: 0,
+      seooffer: 0,
+      officeoffer: 0,
       emailService: 0,
       accept: false,
     };
@@ -539,11 +542,100 @@ export default {
   }
       const formData = {
         name: this.name,
+        oldClient: this.oldClient,
         email: this.email,
         phone: this.phone,
-        message: `Antecedentes: Nombre: ${this.name}, Email: ${this.email}, Teléfono: ${this.phone}, Empresa: ${this.company}, RUT: ${this.rut}, Trabajadores: ${this.workers}, Plan: ${this.servicetype}, Remuneraciones: ${this.salary}`,
+        company: this.company,
+        rut: this.rut,
+        workers: this.workers,
+        servicetype: this.servicetype,
+        salary: this.salary,
+        directory: this.directory,
+        blog: this.blog,
+        whatsApp: this.whatsApp,
+        emailoffer: this.emailoffer,
+        weboffer: this.weboffer,
+        seooffer: this.seooffer,
+        officeoffer: this.officeoffer,
+
 
       };
+
+      //trasforma 
+
+      if(this.oldClient === 1){
+        formData.oldClient = 'Cliente previo';
+      } else if(this.oldClient === 0){
+        formData.oldClient = 'Cliente Nuevo';
+      }
+
+      if (this.servicetype === 1) {
+        formData.servicetype = 'Plan Esencial';
+      } else if (this.servicetype === 2) {
+        formData.servicetype = 'Plan Standard';
+      } else if (this.servicetype === 3) {
+        formData.servicetype = 'Plan Avanzado';
+      }
+
+      if (this.salary === 1) {
+        formData.salary = 'Desea Servicio de Remuneraciones';
+      } else if (this.salary === 0) {
+        formData.salary = 'No desea Servicio de Remuneraciones';
+      } else if (this.salary === 3) {
+        formData.salary = 'Posiblemente desee Servicio de Remuneraciones (a futuro )';
+      }
+
+      if (this.directory === 1) {
+        formData.directory = 'Incorporación estandar al directorio (gratis)';
+      } else if (this.directory === 2) {
+        formData.directory = 'Incorporación destacada al directorio (de pago)';
+      } else if (this.directory === 0) {
+        formData.directory = 'No desea incorporación al directorio';
+      }
+
+      if (this.blog === 1) {
+        formData.blog = 'Publicación estandar en el blog (gratis)';
+      } else if (this.blog === 2) {
+        formData.blog = 'Publicación destacada en el blog (de pago)';
+      } else if (this.blog === 0) {
+        formData.blog = 'No desea publicar en el blog';
+      }
+
+      if (this.whatsApp === 1) {
+        formData.whatsApp = 'Desea unirse al grupo de WhatsApp en horario de oficina (gratis)';
+      } else if (this.whatsApp === 2) {
+        formData.whatsApp = 'Desea unirse al grupo de WhatsApp en horario extendido (de pago)';
+      } else if (this.whatsApp === 0) {
+        formData.whatsApp = 'No desea unirse al grupo de WhatsApp';
+      }
+
+      if (this.emailoffer === 1) {
+        formData.emailoffer = 'Desea una cuenta de correo corporativo (de pago)';
+      } else if (this.emailoffer === 2) {
+        formData.emailoffer = 'Desea hasta 10 cuentas de correo corporativo (de pago)';
+      } else if (this.emailoffer === 0) {
+        formData.emailoffer = 'No desea correo corporativo';
+      }
+
+      if (this.weboffer === 1) {
+        formData.weboffer = 'Desea un sitio web básico';
+      } else if (this.weboffer === 0) {
+        formData.weboffer = 'No desea un sitio web';
+      }
+
+      if (this.seooffer === 1) {
+        formData.seooffer = 'Desea una revisión de posicionamiento web con aspectos básicos (gratis)';
+      } else if (this.seooffer === 2) {
+        formData.seooffer = 'Desea una revisión de posicionamiento web con análisis avanzado (de pago)';
+      } else if (this.seooffer === 0) {
+        formData.seooffer = 'No desea revisión de posicionamiento web';
+      }
+
+      if (this.officeoffer === 1) {
+        formData.officeoffer = 'Desea un domicilio tributario (de pago)';
+      } else if (this.officeoffer === 0) {
+        formData.officeoffer = 'No desea un domicilio tributario';
+      }
 
       try {
         const response = await axios.post('https://formspree.io/f/xdoqdkyl', formData);
@@ -560,6 +652,7 @@ export default {
       }
     },
 
+ 
   },
 
   watch: {
