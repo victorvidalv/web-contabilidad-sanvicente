@@ -32,7 +32,7 @@
 
 
       <button @click="setCurrentComponent('ToolsQuote')" :class="buttonClass('ToolsQuote')" class="w-full sm:w-auto mb-3">
-      Cotización
+      Cot. Contabilidad
       </button>
 
 

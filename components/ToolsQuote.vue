@@ -504,7 +504,7 @@
         submitError: false,
         submitMessage: '',
   
-        step: 13,
+        step: 1,
   
         name: "",
         oldClient: 0,
