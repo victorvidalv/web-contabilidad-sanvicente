@@ -504,7 +504,7 @@ export default {
       submitError: false,
       submitMessage: '',
 
-      step: 1,
+      step: 13,
 
       name: "",
       oldClient: 0,
@@ -638,17 +638,17 @@ export default {
       }
 
       try {
-        const response = await axios.post('https://formspree.io/f/xdoqdkyl', formData);
+        const response = await axios.post('https://www.t2g.cl/apis/public/api/quote', formData);
         // Si la solicitud fue exitosa:
         this.submitSuccess = true;
         this.submitError = false;
-        this.submitMessage = 'Formulario enviado correctamente, nos pondremos en contacto a la brevedad, para continuar con la solicitud y validación de antecedentes.';
+        this.submitMessage = 'Datos enviados correctamente, nos pondremos en contacto a la brevedad, para continuar con la solicitud y validación de antecedentes.';
         // Opcional: Redirigir o mostrar resumen
         // this.$router.push('/ruta-de-exito'); // Si estás usando Vue Router
       } catch (error) {
         this.submitError = true;
         this.submitSuccess = false;
-        this.submitMessage = 'Acepta los términos y condiciones para continuar.';
+        this.submitMessage = 'Ocurrió un error al enviar los datos, por favor intenta nuevamente.';
       }
     },
 
