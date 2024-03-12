@@ -29,6 +29,14 @@
       <button @click="setCurrentComponent('ToolsRepresentation')" :class="buttonClass('ToolsRepresentation')" class="w-full sm:w-auto mb-3">
       Gen. Poderes
       </button>
+
+
+      <button @click="setCurrentComponent('ToolsQuote')" :class="buttonClass('ToolsQuote')" class="w-full sm:w-auto mb-3">
+      Cotización
+      </button>
+
+
+      
     </div>
 
     <!-- Componentes Dinámicos -->
@@ -49,6 +57,13 @@ export default {
       this.setCurrentComponent('ToolsRepresentation');
 
     }
+
+
+    if (this.$route.query.cotizar) {
+
+this.setCurrentComponent('ToolsQuote');
+
+}
 
   },
 
