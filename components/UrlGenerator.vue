@@ -37,7 +37,7 @@
             <label for="atiende" class="block text-sm font-medium text-gray-700">Atiende</label>
             <select id="atiende" v-model="atiende" class="input-custom">
                 <option value="ninguno" selected>ninguno</option>
-                <option value="venessa">Vanessa</option>
+                <option value="vanessa">Vanessa</option>
                 <option value="camila">Camila</option>
                 <option value="carmen">Carmen</option>
             </select>
