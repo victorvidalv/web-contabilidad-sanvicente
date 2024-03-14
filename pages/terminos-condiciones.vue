@@ -110,7 +110,7 @@
       necesidades contables y financieras.
     </p>
 
-    <p>Atentamente,<br />Equipo de Contabilidad San Vicente.</p>
+    <p>Atentamente,<br />Contabilidad San Vicente..</p>
   </div>
 </template>
 
