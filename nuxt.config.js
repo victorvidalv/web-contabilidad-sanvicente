@@ -53,7 +53,7 @@ export default {
   // Módulos
   modules: [
     '@nuxtjs/axios',
-    '@nuxtjs/pwa',
+    '@vite-pwa/nuxt',
     '@nuxtjs/sitemap',
   ],
 
