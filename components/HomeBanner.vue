@@ -33,7 +33,7 @@
       <!-- Fin Col -->
 
       <div class="relative ml-4">
-        <img class="w-full" src="home.webp" alt="contabilidad san vicente" />
+        <img class="w-full" src="home-enhanced.webp" alt="contabilidad san vicente" />
       </div>
       <!-- Fin Col -->
     </div>
