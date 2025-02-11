@@ -17,6 +17,13 @@
       <button @click="setCurrentComponent('ToolsFee')" :class="buttonClass('ToolsFee')" class="w-full sm:w-auto mb-3">
       Cal. de Honorarios
       </button>
+
+        <button @click="setCurrentComponent('ToolsEquilibrium')" :class="buttonClass('ToolsEquilibrium')" class="w-full sm:w-auto mb-3">
+      Punto de Equilibrio
+      </button>
+
+
+
       <button @click="setCurrentComponent('ToolsIndicators')" :class="buttonClass('ToolsIndicators')" class="w-full sm:w-auto mb-3">
       Ind. Económicos
       </button>
@@ -35,6 +42,7 @@
       Cot. Contabilidad
       </button>
 
+    
 
       
     </div>
