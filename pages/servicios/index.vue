@@ -42,21 +42,20 @@ export default {
   // Configuración de etiquetas meta para SEO
   head() {
     return {
-      title: "Servicios | Contabilidad San Vicente", // Título de la página
+      title: "Servicios Contables y Tributarios | Contabilidad San Vicente",
       meta: [
         {
-          hid: "description", // Identificador único para esta etiqueta meta
-          name: "description", // Nombre de la etiqueta meta
-          content: "Explore nuestra amplia gama de servicios contables y empresariales en San Vicente de Tagua Tagua. Desde contabilidad hasta asesoría tributaria, tenemos la solución que su negocio necesita.", // Contenido de la etiqueta meta
+          hid: "description",
+          name: "description",
+          content: "Servicios contables profesionales, asesoría tributaria, gestión de remuneraciones y consultoría empresarial en San Vicente. Soluciones integrales adaptadas a las necesidades de su empresa.",
         },
         {
-          hid: "keywords", // Identificador único para esta etiqueta meta
-          name: "keywords", // Nombre de la etiqueta meta
-          content: "Servicios Contables, San Vicente de Tagua Tagua, Contabilidad, Asesoría Tributaria, Gestión de Riesgos, Evaluación Financiera, Creación de Empresas, Fusiones y Adquisiciones, Gestión Remuneraciones, Cumplimiento Fiscal", // Contenido de la etiqueta meta
+          hid: "keywords",
+          name: "keywords",
+          content: "servicios contables, asesoría tributaria, gestión de remuneraciones, consultoría empresarial, contabilidad empresas, declaración de impuestos, san vicente de tagua tagua, planificación tributaria",
         },
       ],
     };
   },
 }
 </script>
-  

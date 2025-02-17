@@ -1,88 +1,37 @@
 <template>
-
-  <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-    <!-- Grid -->
-    <div class="md:grid md:grid-cols-2 md:items-center md:gap-12 xl:gap-32 bg-orange-600">
-      <div>
-        <img src="about.webp" alt="Descripción de la imagen">
+  <section class="max-w-[85rem] px-4 py-24 mx-auto" aria-label="Domicilio tributario en San Vicente">
+    <div class="grid md:grid-cols-2 md:items-center md:gap-24 bg-zinc-900">
+      <div class="aspect-[4/3]">
+        <img 
+          src="about.webp" 
+          alt="Oficina comercial profesional en San Vicente de Tagua Tagua - Vista interior" 
+          class="object-cover w-full h-full"
+          loading="lazy"
+        >
       </div>
-      <!-- Fin Col -->
 
-      <div class="mt-5 sm:mt-10 lg:mt-0  p-5  ">
-        <div class="space-y-6 sm:space-y-8 banner">
-          <!-- Título -->
-          <div class="space-y-2 md:space-y-4 ">
-            <h2 class="text-3xl lg:text-4xl text-white">
-              Domicilio Tributario y Comercial
-            </h2>
-            <p class="text-white">
-              Estamos dedicados a apoyar a los emprendedores y a las pequeñas empresas en su camino hacia el éxito. Conscientes de las necesidades y desafíos que enfrentan, ofrecemos un servicio integral que incluye la provisión de un domicilio tributario y comercial válido ante el Servicio de Impuestos Internos (SII).
-            </p>
-          </div>
-          <!-- Fin Título -->
+      <div class="p-12 space-y-12">
+        <header class="space-y-6">
+          <h1 class="text-4xl font-extralight text-white lg:text-5xl">
+            Domicilio Tributario Profesional en San Vicente
+          </h1>
+          <p class="text-zinc-200 leading-loose text-lg">
+            Establecemos su presencia comercial oficial en San Vicente de Tagua Tagua con un domicilio tributario autorizado por el SII. Ideal para emprendedores y PyMEs que buscan una solución profesional y confiable para su dirección comercial.
+          </p>
+        </header>
 
-          <!-- Lista -->
-          <ul role="list" class="space-y-2 sm:space-y-4">
-            <li class="flex space-x-3">
-              <!-- Marca de verificación sólida -->
-              <svg class="flex-shrink-0 h-6 w-6 text-white" width="16" height="16" viewBox="0 0 16 16" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M15.1965 7.85999C15.1965 3.71785 11.8387 0.359985 7.69653 0.359985C3.5544 0.359985 0.196533 3.71785 0.196533 7.85999C0.196533 12.0021 3.5544 15.36 7.69653 15.36C11.8387 15.36 15.1965 12.0021 15.1965 7.85999Z"
-                  fill="currentColor" fill-opacity="0.1" />
-                <path
-                  d="M10.9295 4.88618C11.1083 4.67577 11.4238 4.65019 11.6343 4.82904C11.8446 5.00788 11.8702 5.32343 11.6914 5.53383L7.44139 10.5338C7.25974 10.7475 6.93787 10.77 6.72825 10.5837L4.47825 8.5837C4.27186 8.40024 4.25327 8.0842 4.43673 7.87781C4.62019 7.67142 4.93622 7.65283 5.14261 7.83629L7.01053 9.49669L10.9295 4.88618Z"
-                  fill="currentColor" />
-              </svg>
-              <!-- Fin Marca de verificación sólida -->
-
-              <span class="text-sm sm:text-base text-white ">
-                <span class="font-bold">Domicilio Tributario</span> 
-              </span>
-            </li>
-
-            <li class="flex space-x-3">
-              <!-- Marca de verificación sólida -->
-              <svg class="flex-shrink-0 h-6 w-6 text-white" width="16" height="16" viewBox="0 0 16 16" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M15.1965 7.85999C15.1965 3.71785 11.8387 0.359985 7.69653 0.359985C3.5544 0.359985 0.196533 3.71785 0.196533 7.85999C0.196533 12.0021 3.5544 15.36 7.69653 15.36C11.8387 15.36 15.1965 12.0021 15.1965 7.85999Z"
-                  fill="currentColor" fill-opacity="0.1" />
-                <path
-                  d="M10.9295 4.88618C11.1083 4.67577 11.4238 4.65019 11.6343 4.82904C11.8446 5.00788 11.8702 5.32343 11.6914 5.53383L7.44139 10.5338C7.25974 10.7475 6.93787 10.77 6.72825 10.5837L4.47825 8.5837C4.27186 8.40024 4.25327 8.0842 4.43673 7.87781C4.62019 7.67142 4.93622 7.65283 5.14261 7.83629L7.01053 9.49669L10.9295 4.88618Z"
-                  fill="currentColor" />
-              </svg>
-              <!-- Fin Marca de verificación sólida -->
-
-              <span class="text-sm sm:text-base text-white ">
-                Dirección  <span class="font-bold">Fisica en San Vicente T.T</span>
-              </span>
-            </li>
-
-            <li class="flex space-x-3">
-              <!-- Marca de verificación sólida -->
-              <svg class="flex-shrink-0 h-6 w-6 text-white" width="16" height="16" viewBox="0 0 16 16" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M15.1965 7.85999C15.1965 3.71785 11.8387 0.359985 7.69653 0.359985C3.5544 0.359985 0.196533 3.71785 0.196533 7.85999C0.196533 12.0021 3.5544 15.36 7.69653 15.36C11.8387 15.36 15.1965 12.0021 15.1965 7.85999Z"
-                  fill="currentColor" fill-opacity="0.1" />
-                <path
-                  d="M10.9295 4.88618C11.1083 4.67577 11.4238 4.65019 11.6343 4.82904C11.8446 5.00788 11.8702 5.32343 11.6914 5.53383L7.44139 10.5338C7.25974 10.7475 6.93787 10.77 6.72825 10.5837L4.47825 8.5837C4.27186 8.40024 4.25327 8.0842 4.43673 7.87781C4.62019 7.67142 4.93622 7.65283 5.14261 7.83629L7.01053 9.49669L10.9295 4.88618Z"
-                  fill="currentColor" />
-              </svg>
-              <!-- Fin Marca de verificación sólida -->
-
-            <span class="text-sm sm:text-base text-white">
-              Contratación 100% ONLINE
-            </span>
+        <ul class="space-y-8 text-zinc-200">
+          <li class="flex items-center border-l-2 border-white pl-6">
+            <span>Domicilio Tributario oficial con certificación SII</span>
+          </li>
+          <li class="flex items-center border-l-2 border-white pl-6">
+            <span>Ubicación estratégica en el centro de San Vicente</span>
+          </li>
+          <li class="flex items-center border-l-2 border-white pl-6">
+            <span>Gestión digital completa y soporte personalizado</span>
           </li>
         </ul>
-        <!-- Fin Lista -->
       </div>
     </div>
-    <!-- Fin Col -->
-  </div>
-  <!-- Fin Grid -->
-</div>
-
+  </section>
 </template>

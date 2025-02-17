@@ -127,14 +127,12 @@ export default {
         {
           hid: "description",
           name: "description",
-          content:
-            "Los siguientes términos y condiciones regulan el uso de nuestro sitio web y los servicios que ofrecemos. Al acceder a este sitio web, usted acepta, sin limitación ni calificación, estos términos y condiciones.",
+          content: "Términos y condiciones de nuestros servicios contables y tributarios. Compromisos, responsabilidades y garantías de calidad en Contabilidad San Vicente.",
         },
         {
           hid: "keywords",
           name: "keywords",
-          content:
-            "Atención al Cliente, Consultas, San Vicente de Tagua Tagua, términios y condiciones, uso del sitio",
+          content: "términos condiciones, servicios contables, garantías servicio, normativa legal, contabilidad san vicente, derechos usuario, acuerdos servicio",
         },
       ],
     };

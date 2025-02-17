@@ -23,19 +23,17 @@ export default {
   // Configuración de etiquetas meta para SEO
   head() {
     return {
-      title: "Contacto | Contabilidad San Vicente", // Título de la página
+      title: "Contacte a Nuestros Expertos Contables | Contabilidad San Vicente",
       meta: [
         {
-          hid: "description", // Identificador único para esta etiqueta meta
-          name: "description", // Nombre de la etiqueta meta
-          content:
-            "Póngase en contacto con nosotros para servicios de contabilidad, asesoría tributaria y más en San Vicente de Tagua Tagua. Estamos aquí para resolver todas sus consultas.", // Contenido de la etiqueta meta
+          hid: "description",
+          name: "description",
+          content: "Contáctenos para asesoría contable y tributaria personalizada en San Vicente de Tagua Tagua. Agenda una consulta con nuestros expertos y descubra cómo podemos ayudar a su empresa.",
         },
         {
-          hid: "keywords", // Identificador único para esta etiqueta meta
-          name: "keywords", // Nombre de la etiqueta meta
-          content:
-            "Atención al Cliente, Consultas Financieras, San Vicente de Tagua Tagua, Asesoría Personalizada, Contacto Inmediato", // Contenido de la etiqueta meta
+          hid: "keywords",
+          name: "keywords",
+          content: "contacto contadores, asesoría contable, consulta tributaria, oficina contable san vicente, atención personalizada, servicios contables profesionales",
         },
       ],
     };

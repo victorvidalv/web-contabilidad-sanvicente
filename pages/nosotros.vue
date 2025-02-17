@@ -33,17 +33,17 @@ export default {
     // Configuración de etiquetas meta para SEO
     head() {
         return {
-            title: "Nosotros | Contabilidad San Vicente",
+            title: "Nuestro Equipo Contable Experto | Contabilidad San Vicente",
             meta: [
                 {
                     hid: "description",
                     name: "description",
-                    content: "Conozca más sobre nuestro equipo de expertos en servicios contables y empresariales en San Vicente de Tagua Tagua. Estamos comprometidos con la excelencia y el crecimiento de su negocio.",
+                    content: "Conozca a nuestro equipo de expertos contables y asesores tributarios en San Vicente. Profesionales comprometidos con la excelencia y el éxito financiero de su empresa.",
                 },
                 {
                     hid: "keywords",
                     name: "keywords",
-                    content: "Equipo Experto, San Vicente de Tagua Tagua, Servicios Contables, Excelencia Empresarial, Crecimiento de Negocio",
+                    content: "equipo contable, contadores expertos, asesores tributarios, profesionales contables, san vicente de tagua tagua, experiencia contable, asesoría financiera personalizada",
                 },
             ],
         };

@@ -1,90 +1,43 @@
 <template>
-  <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-    <!-- Grid -->
-    <div class="md:grid md:grid-cols-2 md:items-center md:gap-12 xl:gap-32">
-      <div>
-        <img src="train_cta.webp" alt="Image Description">
+  <section class="max-w-[85rem] px-4 py-16 mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-12 xl:gap-24">
+      <div class="aspect-square overflow-hidden">
+        <img 
+          src="train_cta.webp" 
+          alt="Capacitación empresarial en O'Higgins" 
+          class="object-cover w-full h-full"
+        >
       </div>
-      <!--  Col -->
 
-      <div class="mt-5 sm:mt-10 lg:mt-0">
-        <div class="space-y-6 sm:space-y-8">
-          <!-- Titulo -->
-          <div class="space-y-2 md:space-y-4">
-            <h2 class="font-bold text-3xl lg:text-4xl text-gray-800">
-              Formación y Capacitación
-            </h2>
-            <p class="text-gray-500">
-              A través de una formación práctica y centrada en la realidad empresarial de la Región de O'Higgins, nuestro
-              equipo de expertos proporciona cursos y talleres que abarcan desde fundamentos contables hasta asuntos más
-              avanzados como la gestión tributaria, análisis financiero y cumplimiento fiscal. Esta formación no solo
-              enriquecerá su conocimiento sino que también le dotará de las herramientas necesarias para tomar decisiones
-              financieras más informadas y estratégicas. 
+      <div class="space-y-8">
+        <div class="space-y-4">
+          <h1 class="font-normal text-4xl lg:text-5xl text-gray-900">
+            Capacitación Empresarial Especializada
+          </h1>
+          <p class="text-lg text-gray-600 leading-relaxed">
+            Potenciamos el desarrollo empresarial en la Región de O'Higgins mediante programas especializados en contabilidad, 
+            tributación y gestión financiera. Nuestros expertos combinan teoría práctica con casos reales, permitiéndole 
+            dominar las herramientas necesarias para la toma de decisiones estratégicas en su negocio.
+          </p>
+        </div>
 
-            </p>
+        <div class="space-y-6">
+          <div class="flex items-center space-x-4 text-gray-600">
+            <span class="w-8 h-[2px] bg-orange-600"></span>
+            <p class="text-lg">Especialización en Industrias Regionales</p>
           </div>
-          <!-- Fin Titulo-->
 
-          <!-- Lista -->
-          <ul role="list" class="space-y-2 sm:space-y-4">
-            <li class="flex space-x-3">
-              <!--  Check -->
-              <svg class="flex-shrink-0 h-6 w-6 text-orange-600" width="16" height="16" viewBox="0 0 16 16" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M15.1965 7.85999C15.1965 3.71785 11.8387 0.359985 7.69653 0.359985C3.5544 0.359985 0.196533 3.71785 0.196533 7.85999C0.196533 12.0021 3.5544 15.36 7.69653 15.36C11.8387 15.36 15.1965 12.0021 15.1965 7.85999Z"
-                  fill="currentColor" fill-opacity="0.1" />
-                <path
-                  d="M10.9295 4.88618C11.1083 4.67577 11.4238 4.65019 11.6343 4.82904C11.8446 5.00788 11.8702 5.32343 11.6914 5.53383L7.44139 10.5338C7.25974 10.7475 6.93787 10.77 6.72825 10.5837L4.47825 8.5837C4.27186 8.40024 4.25327 8.0842 4.43673 7.87781C4.62019 7.67142 4.93622 7.65283 5.14261 7.83629L7.01053 9.49669L10.9295 4.88618Z"
-                  fill="currentColor" />
-              </svg>
-              <!-- Fin Check -->
+          <div class="flex items-center space-x-4 text-gray-600">
+            <span class="w-8 h-[2px] bg-orange-600"></span>
+            <p class="text-lg">Metodología Integral Multidisciplinaria</p>
+          </div>
 
-              <span class="text-sm sm:text-base text-gray-500">
-                <span class="font-bold"> Especialización </span> en Sectores Locales
-              </span>
-            </li>
-
-            <li class="flex space-x-3">
-              <!--  Check -->
-              <svg class="flex-shrink-0 h-6 w-6 text-orange-600" width="16" height="16" viewBox="0 0 16 16" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M15.1965 7.85999C15.1965 3.71785 11.8387 0.359985 7.69653 0.359985C3.5544 0.359985 0.196533 3.71785 0.196533 7.85999C0.196533 12.0021 3.5544 15.36 7.69653 15.36C11.8387 15.36 15.1965 12.0021 15.1965 7.85999Z"
-                  fill="currentColor" fill-opacity="0.1" />
-                <path
-                  d="M10.9295 4.88618C11.1083 4.67577 11.4238 4.65019 11.6343 4.82904C11.8446 5.00788 11.8702 5.32343 11.6914 5.53383L7.44139 10.5338C7.25974 10.7475 6.93787 10.77 6.72825 10.5837L4.47825 8.5837C4.27186 8.40024 4.25327 8.0842 4.43673 7.87781C4.62019 7.67142 4.93622 7.65283 5.14261 7.83629L7.01053 9.49669L10.9295 4.88618Z"
-                  fill="currentColor" />
-              </svg>
-              <!-- FIn Check -->
-
-              <span class="text-sm sm:text-base text-gray-500">
-                Enfoque <span class="font-bold">Multidisciplinario </span>
-              </span>
-            </li>
-
-            <li class="flex space-x-3">
-              <!-- Check -->
-              <svg class="flex-shrink-0 h-6 w-6 text-orange-600" width="16" height="16" viewBox="0 0 16 16" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M15.1965 7.85999C15.1965 3.71785 11.8387 0.359985 7.69653 0.359985C3.5544 0.359985 0.196533 3.71785 0.196533 7.85999C0.196533 12.0021 3.5544 15.36 7.69653 15.36C11.8387 15.36 15.1965 12.0021 15.1965 7.85999Z"
-                  fill="currentColor" fill-opacity="0.1" />
-                <path
-                  d="M10.9295 4.88618C11.1083 4.67577 11.4238 4.65019 11.6343 4.82904C11.8446 5.00788 11.8702 5.32343 11.6914 5.53383L7.44139 10.5338C7.25974 10.7475 6.93787 10.77 6.72825 10.5837L4.47825 8.5837C4.27186 8.40024 4.25327 8.0842 4.43673 7.87781C4.62019 7.67142 4.93622 7.65283 5.14261 7.83629L7.01053 9.49669L10.9295 4.88618Z"
-                  fill="currentColor" />
-            </svg>
-            <!-- Fin Check -->
-
-            <span class="text-sm sm:text-base text-gray-500">
-              Uso Intensivo de Tecnología y Análisis de Datos
-            </span>
-          </li>
-        </ul>
-        <!-- Fin Lista -->
+          <div class="flex items-center space-x-4 text-gray-600">
+            <span class="w-8 h-[2px] bg-orange-600"></span>
+            <p class="text-lg">Análisis Avanzado de Datos Empresariales</p>
+          </div>
+        </div>
       </div>
     </div>
-    <!-- Fin Col -->
-  </div>
-  <!-- Fin Grid -->
-</div></template>
+  </section>
+</template>

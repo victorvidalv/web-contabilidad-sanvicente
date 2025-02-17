@@ -75,17 +75,17 @@ export default {
   // Configuración de etiquetas meta para SEO
   head() {
     return {
-      title: "Blog | Contabilidad San Vicente", // Título de la página
+      title: "Blog de Actualidad Contable y Tributaria | Contabilidad San Vicente",
       meta: [
         {
-          hid: "description", // Identificador único para esta etiqueta meta
-          name: "description", // Nombre de la etiqueta meta
-          content: "Conozca las últimas publicaicones de nuestro blog", // Contenido de la etiqueta meta
+          hid: "description",
+          name: "description",
+          content: "Manténgase informado sobre las últimas actualizaciones en contabilidad, tributación y normativas financieras. Artículos especializados por expertos contables de San Vicente.",
         },
         {
-          hid: "keywords", // Identificador único para esta etiqueta meta
-          name: "keywords", // Nombre de la etiqueta meta
-          content: "Blog, Noticias, Servicios Integrales, San Vicente de Tagua Tagua, Bienvenida, Soluciones Contables, Asesoramiento Contable", // Contenido de la etiqueta meta
+          hid: "keywords",
+          name: "keywords",
+          content: "blog contable, noticias tributarias, actualidad financiera, normativa contable, asesoría tributaria, artículos especializados, contabilidad san vicente",
         },
       ],
     };

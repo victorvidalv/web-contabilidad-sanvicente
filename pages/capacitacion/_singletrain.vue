@@ -77,21 +77,21 @@
   
     head() {
       return {
-        title: this.capacitar.name + ' | San Vicente Tagua Tagua', // Título de la página con nombre dinámico
+        title: this.capacitar.name + ' | Capacitación Contable San Vicente',
         meta: [
           {
-            hid: "description", // Identificador único para esta etiqueta meta
-            name: "description", // Nombre de la etiqueta meta
-            content: this.capacitar.meta, // Contenido de la etiqueta meta
+            hid: "description",
+            name: "description",
+            content: this.capacitar.meta || `Programa especializado en ${this.capacitar.name.toLowerCase()}. Formación profesional impartida por expertos contables en San Vicente de Tagua Tagua.`,
           },
           {
-            hid: "keywords", // Identificador único para esta etiqueta meta
-            name: "keywords", // Nombre de la etiqueta meta
-            content: this.capacitar.keywords, // Contenido de la etiqueta meta
+            hid: "keywords",
+            name: "keywords",
+            content: this.capacitar.keywords || `capacitación ${this.capacitar.name.toLowerCase()}, formación contable, cursos especializados, actualización profesional, san vicente de tagua tagua`,
           },
         ],
       };
     },
   }
   </script>
-  
+

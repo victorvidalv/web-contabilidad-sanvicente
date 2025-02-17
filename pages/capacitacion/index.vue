@@ -41,21 +41,20 @@ export default {
   // Configuración de etiquetas meta para SEO
   head() {
     return {
-      title: "Capacitación | Contabilidad San Vicente", // Título de la página
+      title: "Cursos y Capacitación Contable | Contabilidad San Vicente",
       meta: [
         {
-          hid: "description", // Identificador único para esta etiqueta meta
-          name: "description", // Nombre de la etiqueta meta
-          content: "Ofrecemos una amplia gama de servicios de capacitación en San Vicente de Tagua Tagua. Desde cursos de contabilidad hasta asesoramiento tributario, tenemos la solución que su negocio necesita.", // Contenido de la etiqueta meta
+          hid: "description",
+          name: "description",
+          content: "Programas de capacitación especializada en contabilidad, tributación y gestión empresarial. Actualice sus conocimientos con expertos en San Vicente de Tagua Tagua.",
         },
         {
-          hid: "keywords", // Identificador único para esta etiqueta meta
-          name: "keywords", // Nombre de la etiqueta meta
-          content: "Servicios Integrales, San Vicente de Tagua Tagua, Bienvenida, Soluciones Contables, Asesoramiento Contable", // Contenido de la etiqueta meta
+          hid: "keywords",
+          name: "keywords",
+          content: "capacitación contable, cursos tributarios, formación empresarial, actualización contable, workshops financieros, educación continua, san vicente de tagua tagua",
         },
       ],
     };
   },
 }
 </script>
-  

@@ -87,21 +87,21 @@ export default {
   // Configuración de etiquetas meta para SEO
   head() {
     return {
-      title: this.servicio.name + ' | San Vicente Tagua Tagua', // Título de la página
+      title: this.servicio.name + ' | Servicios Contables en San Vicente',
       meta: [
         {
-          hid: "description", // Identificador único para esta etiqueta meta
-          name: "description", // Nombre de la etiqueta meta
-          content: this.servicio.meta, // Contenido de la etiqueta meta
+          hid: "description",
+          name: "description",
+          content: this.servicio.meta || `Servicio profesional de ${this.servicio.name.toLowerCase()} en San Vicente de Tagua Tagua. Asesoría especializada y soluciones personalizadas para su empresa.`,
         },
         {
-          hid: "keywords", // Identificador único para esta etiqueta meta
-          name: "keywords", // Nombre de la etiqueta meta
-          content: this.servicio.keywords, // Contenido de la etiqueta meta
+          hid: "keywords",
+          name: "keywords",
+          content: this.servicio.keywords || `${this.servicio.name.toLowerCase()}, servicios contables san vicente, asesoría especializada, contabilidad profesional, san vicente de tagua tagua`,
         },
       ],
     };
   },
 }
 </script>
-  
+

@@ -1,32 +1,42 @@
 <template>
-  <section class=" max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8  mx-auto ">
-    <div class="container mx-auto bg-gray-100 p-4">
-      <div class="flex flex-wrap -mx-2">
+  <section class="max-w-[85rem] px-4 py-24 sm:px-6 lg:px-8 mx-auto bg-white">
+    <div class="container mx-auto">
+      <!-- Título de sección -->
+      <div class="text-center mb-16">
+        <span class="text-sm uppercase tracking-widest text-orange-600 mb-3 block">Nuestra Esencia</span>
+        <h1 class="text-4xl font-light text-gray-900">Identidad Empresarial</h1>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
         <!-- Columna Misión -->
-        <div class="w-full md:w-1/2 px-2">
-          <div class="p-4 border-l  border-orange-600">
-            <h2 class="text-2xl font-semibold mb-2">Misión</h2>
-            <p class="text-base">
-              Nuestra misión es brindar soluciones contables, financieras y estratégicas integrales de la más alta
-              calidad,
-              adaptadas a las necesidades y particularidades del contexto empresarial chileno. Buscamos ser un aliado
-              estratégico para nuestros clientes, enfocándonos en pilares fundamentales como la competencia técnica
-              actualizada, la integridad ética, la confidencialidad y la claridad en la comunicación.
-            </p>
-            <!-- Aquí podrías continuar con más texto -->
+        <div class="border-l-2 border-orange-600 pl-8">
+          <div class="mb-6">
+            <p class="text-sm uppercase tracking-widest text-orange-600 mb-2">Misión</p>
+            <h2 class="text-2xl font-light text-gray-900">Asesoría Contable y Financiera en Chile</h2>
           </div>
+          <p class="text-gray-600 leading-relaxed">
+            Como expertos contables en San Vicente de Tagua Tagua, nuestra misión es proporcionar servicios de 
+            contabilidad, asesoría financiera y consultoría estratégica de primera categoría. Nos especializamos 
+            en soluciones contables personalizadas para empresas chilenas, ofreciendo servicios de contabilidad 
+            integral, declaración de impuestos y asesoría tributaria. Nuestro compromiso se basa en la excelencia 
+            profesional, actualización constante en normativas contables chilenas, confidencialidad absoluta y 
+            comunicación efectiva con nuestros clientes empresariales.
+          </p>
         </div>
+
         <!-- Columna Visión -->
-        <div class="w-full md:w-1/2 px-2">
-          <div class=" p-4 border-l border-orange-600">
-            <h2 class="text-2xl font-semibold mb-2">Visión</h2>
-            <p class="text-base">
-              Aspiramos a ser la firma de contabilidad y consultoría estratégica líder en San Vicente de Tagua Tagua y en
-              la Región de O'Higgins, reconocida por nuestra excelencia en el servicio, nuestra innovación en el uso de
-              tecnología y nuestro compromiso con la ética profesional y la satisfacción del cliente.
-            </p>
-            <!-- Aquí podrías continuar con más texto -->
+        <div class="border-l-2 border-orange-600 pl-8">
+          <div class="mb-6">
+            <p class="text-sm uppercase tracking-widest text-orange-600 mb-2">Visión</p>
+            <h2 class="text-2xl font-light text-gray-900">Líderes en Servicios Contables en la Región de O'Higgins</h2>
           </div>
+          <p class="text-gray-600 leading-relaxed">
+            Nos proyectamos como la empresa contable líder en servicios de contabilidad y consultoría empresarial 
+            en San Vicente de Tagua Tagua y la Región de O'Higgins. Destacamos por implementar tecnologías contables 
+            innovadoras, ofrecer asesoría tributaria especializada y mantener los más altos estándares éticos en 
+            servicios contables. Nuestro objetivo es ser reconocidos como el mejor estudio contable de la región, 
+            brindando soluciones financieras integrales que impulsen el éxito de nuestros clientes.
+          </p>
         </div>
       </div>
     </div>

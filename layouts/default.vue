@@ -22,18 +22,14 @@ export default {
     SiteFooter: () => import('~/components/SiteFooter.vue'),
   },
 
-   //Configuración  head del 
-
   head() {
     return {
-      title: "Contacto | Contabilidad San Vicente",
-     
-      // Atributos HTML (SEO)
+      title: this.$route.path === '/' ? 'Contabilidad San Vicente | Expertos Contables en San Vicente de Tagua Tagua' : 'Contabilidad San Vicente',
+      
       htmlAttrs: {
         lang: "es",
       },
 
-      // Metadatos SEO
       meta: [
         {
           hid: "viewport",
@@ -53,17 +49,17 @@ export default {
         {
           hid: "robots",
           name: "robots",
-          content: "noimageindex",
+          content: "index, follow",
         },
         {
           hid: "description",
           name: "description",
-          content: "Ofrecemos una amplia gama de servicios contables y empresariales en San Vicente de Tagua Tagua. Explore nuestras soluciones y descubra cómo podemos ayudarle a prosperar.",
+          content: "Servicios contables profesionales y asesoría tributaria especializada en San Vicente de Tagua Tagua. Optimizamos sus finanzas con soluciones personalizadas y atención experta.",
         },
         {
           hid: "keywords",
           name: "keywords",
-          content: "Servicios Integrales, San Vicente de Tagua Tagua, Bienvenida, Soluciones Contables, Asesoramiento Contable",
+          content: "contabilidad san vicente, asesoría tributaria, servicios contables, san vicente de tagua tagua, contadores expertos, gestión financiera, declaración de impuestos, asesoría empresarial",
         },
       ],
 

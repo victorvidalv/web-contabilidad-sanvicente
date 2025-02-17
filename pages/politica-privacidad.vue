@@ -97,19 +97,17 @@ export default {
 
   head() {
     return {
-      title: "Politica Privacidad | Contabilidad San Vicente",
+      title: "Política de Privacidad | Contabilidad San Vicente",
       meta: [
         {
           hid: "description",
           name: "description",
-          content:
-            " Esta política tiene como objetivo informar a los usuarios sobre la recolección, uso, divulgación y protección de información personal que podríamos obtener a través de nuestro sitio web o servicios prestados.",
+          content: "Conozca nuestra política de privacidad y protección de datos. Transparencia y seguridad en el manejo de su información en Contabilidad San Vicente.",
         },
         {
           hid: "keywords",
           name: "keywords",
-          content:
-            "Atención al Cliente, Consultas, San Vicente de Tagua Tagua, Politica Privacidad, uso del sitio",
+          content: "política privacidad, protección datos, seguridad información, términos legales, contabilidad san vicente, confidencialidad",
         },
       ],
     };

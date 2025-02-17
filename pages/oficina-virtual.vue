@@ -31,17 +31,17 @@ export default {
     // Configuración de etiquetas meta para SEO
     head() {
         return {
-            title: "Domicilio Tributario ONLINE | Contabilidad San Vicente",
+            title: "Oficina Virtual y Domicilio Tributario | Contabilidad San Vicente",
             meta: [
                 {
                     hid: "description",
                     name: "description",
-                    content: "Oficina Virtual en San Vicente de Tagua Tagua, su solución para domicilio tributario y comercial.",
+                    content: "Soluciones de oficina virtual y domicilio tributario en San Vicente. Gestione su empresa de forma eficiente con nuestros servicios digitales y soporte profesional continuo.",
                 },
                 {
                     hid: "keywords",
                     name: "keywords",
-                    content: "Oficina Virtual, Equipo Experto, San Vicente de Tagua Tagua, Servicios Contables, Excelencia Empresarial, Crecimiento de Negocio",
+                    content: "oficina virtual, domicilio tributario, gestión empresarial digital, servicios contables online, operaciones virtuales, contabilidad remota, san vicente de tagua tagua",
                 },
             ],
         };
