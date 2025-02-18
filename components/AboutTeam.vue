@@ -47,13 +47,13 @@ export default {
                 {
                     nombre: 'Vanessa Peralta',
                     titulo: 'Directora Ejecutiva | Asesora Contable y Tributaria Senior',
-                    descripcion: 'Ingeniera Comercial especializada en asesoría contable, tributaria y financiera con más de 15 años liderando proyectos de optimización fiscal y contable. Experta en implementación de sistemas ERP, planificación tributaria estratégica y gestión financiera para empresas agrícolas y PyMEs de la región.',
+                    descripcion: 'Ingeniera en administración especializada en asesoría contable, tributaria y financiera con más de 15 años liderando proyectos de optimización fiscal y contable. Experta en implementación de sistemas ERP, planificación tributaria estratégica y gestión financiera para empresas agrícolas y PyMEs de la región.',
                     imagen: 'vanessa_peralta.png'
                 },
                 {
                     nombre: 'Bernardino Silva',
                     titulo: 'Director de Gestión Laboral y Recursos Humanos',
-                    descripcion: 'Especialista certificado en legislación laboral chilena y gestión de recursos humanos con 12 años de experiencia. Experto en cumplimiento normativo, contratos laborales agrícolas, remuneraciones y asesoría en relaciones laborales para el sector agroindustrial.',
+                    descripcion: 'Especialista  en legislación laboral chilena y gestión de recursos humanos con 12 años de experiencia. Experto en cumplimiento normativo, contratos laborales agrícolas, remuneraciones y asesoría en relaciones laborales para el sector agroindustrial.',
                     imagen: 'bernardino_silva.png'
                 },
                 {
