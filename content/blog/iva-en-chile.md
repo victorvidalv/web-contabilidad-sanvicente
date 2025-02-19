@@ -1,8 +1,8 @@
 ---
 title: 'El IVA en Chile: Un Pilar Fundamental del Sistema Tributario en Detalle'
 description: 'Descubre cómo funciona el IVA en Chile, sus mecanismos, obligaciones y desafíos en el contexto nacional e internacional'
-date: '2024-01-15'
-author: 'Equipo San Vicente'
+date: '2025-01-15'
+author: 'Equipo Contabilidad San Vicente'
 ---
 **El IVA en Chile: Un Pilar Fundamental del Sistema Tributario en Detalle**
 

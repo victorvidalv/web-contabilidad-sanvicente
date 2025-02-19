@@ -30,10 +30,7 @@
             </li>
           </ul>
 
-          <button class="mt-auto py-3 px-6  font-semibold text-white transition-all duration-300
-            bg-blue-950 hover:from-gray-800 hover:to-gray-950">
-            Seleccionar Plan
-          </button>
+     
         </div>
       </div>
 

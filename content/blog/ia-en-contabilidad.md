@@ -1,8 +1,8 @@
 ---
 title: 'Inteligencia Artificial en Contabilidad: Una Nueva Era'
 description: 'Explora cómo la IA está transformando los procesos contables y qué beneficios aporta a las empresas modernas'
-date: '2024-01-25'
-author: 'Equipo San Vicente'
+date: '2025-01-02'
+author: 'Equipo Contabilidad San Vicente'
 ---
 
 **La Inteligencia Artificial: el nuevo aliado de la contabilidad en la era digital**
@@ -32,9 +32,3 @@ La IA en la contabilidad se refiere al uso de algoritmos y modelos de aprendizaj
 Se espera que la IA continúe desempeñando un papel cada vez más importante en la contabilidad en el futuro. A medida que la tecnología avance, es probable que veamos nuevas aplicaciones de la IA en áreas como la auditoría, la planificación fiscal y la gestión de riesgos. La IA también podría utilizarse para personalizar los servicios contables y ofrecer soluciones más adaptadas a las necesidades de cada cliente.
 
 En resumen, la IA está transformando la contabilidad al automatizar tareas, mejorar la precisión y proporcionar información valiosa para la toma de decisiones. Si bien existen desafíos, los beneficios de la IA en la contabilidad son innegables. Las empresas que adopten la IA estarán mejor posicionadas para tener éxito en el panorama financiero actual y futuro.
-
-**Recursos adicionales:**
-
-*   [Usos y ventajas de la IA para contabilidad y finanzas ... - Docusign](https://www.docusign.com/es-mx/blog/ia-para-contabilidad-y-finanzas)
-*   [El impacto de la inteligencia artificial en la contabilidad - Transtecnia](https://transtecnia.cl/blog/el-impacto-de-la-inteligencia-artificial-en-la-contabilidad/)
-*   [El impacto de la Inteligencia Artificial en la contabilidad](https://www.palermo.edu/Archivos_content/contador-publico/newsletter/2024/Enero/Carlos-Garcia.html)
