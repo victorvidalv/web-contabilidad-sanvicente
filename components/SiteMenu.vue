@@ -36,6 +36,9 @@
 
             <nuxt-link class="font-medium md:w-32 md:text-center sm:py-6 py-2 px-2 "
               exact-active-class="bg-orange-600 text-white" to="/capacitacion/">Capacitación</nuxt-link>
+
+                 <nuxt-link class="font-medium md:w-32 md:text-center sm:py-6 py-2 px-2 "
+               exact-active-class="bg-orange-600 text-white" to="/blog/">Blog</nuxt-link>
  
 
           

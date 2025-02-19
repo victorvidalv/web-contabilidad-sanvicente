@@ -55,6 +55,7 @@ export default {
     '@nuxtjs/axios',
     '@vite-pwa/nuxt',
     '@nuxtjs/sitemap',
+    '@nuxt/content'
   ],
 
   // Configuración del módulo Axios
@@ -74,11 +75,24 @@ export default {
     },
   },
 
+  // Configuración del módulo content
+  content: {
+    markdown: {
+      prism: {
+        theme: 'prism-themes/themes/prism-material-oceanic.css'
+      }
+    }
+  },
+
   // Configuración de sitemap
   sitemap: {
     hostname: 'https://contabilidadsanvicente.cl/',
-    filter({ routes }) {
-      const includedRoutes = [
+    routes: async () => {
+      const { $content } = require('@nuxt/content')
+      const blog = await $content('blog').fetch()
+      
+      const blogRoutes = blog.map(post => `/blog/content/${post.slug}`)
+      const staticRoutes = [
         '/nosotros/',
         '/servicios/',
         '/capacitacion/',
@@ -104,40 +118,48 @@ export default {
         '/capacitacion/manejo-remuneraciones/',
         '/capacitacion/beneficios-laborales/',
         '/capacitacion/cumplimiento-fiscal/',
-      ];
-
-      return routes.filter(route => includedRoutes.includes(route.url));
-    },
+      ]
+      
+      return [...staticRoutes, ...blogRoutes]
+    }
   },
 
   // Configuración de construcción
   generate: {
-    routes: [
-      '/nosotros/',
-      '/servicios/',
-      '/capacitacion/',
-      '/contacto/',
-      '/blog/',
-      '/terminos-condiciones/',
-      '/politica-privacidad/',
-      '/oficina-virtual/',
-      '/herramientas/',
-      '/servicios/contabilidad/',
-      '/servicios/evaluacion-proyectos-inversion/',
-      '/servicios/remuneraciones/',
-      '/servicios/asesoria-tributaria/',
-      '/servicios/cumplimiento/',
-      '/servicios/evaluacion-financiera/',
-      '/servicios/gestion-riesgo/',
-      '/servicios/creacion-cierre-empresas/',
-      '/servicios/fusiones-adquisiciones/',
-      '/servicios/quiebras/',
-      '/capacitacion/fundamentos-contabilidad/',
-      '/capacitacion/gestion-tributaria/',
-      '/capacitacion/analisis-financiero/',
-      '/capacitacion/manejo-remuneraciones/',
-      '/capacitacion/beneficios-laborales/',
-      '/capacitacion/cumplimiento-fiscal/',
-    ],
+    async routes() {
+      const { $content } = require('@nuxt/content')
+      const blog = await $content('blog').fetch()
+      
+      const blogRoutes = blog.map(post => `/blog/content/${post.slug}`)
+      const staticRoutes = [
+        '/nosotros/',
+        '/servicios/',
+        '/capacitacion/',
+        '/contacto/',
+        '/blog/',
+        '/terminos-condiciones/',
+        '/politica-privacidad/',
+        '/oficina-virtual/',
+        '/herramientas/',
+        '/servicios/contabilidad/',
+        '/servicios/evaluacion-proyectos-inversion/',
+        '/servicios/remuneraciones/',
+        '/servicios/asesoria-tributaria/',
+        '/servicios/cumplimiento/',
+        '/servicios/evaluacion-financiera/',
+        '/servicios/gestion-riesgo/',
+        '/servicios/creacion-cierre-empresas/',
+        '/servicios/fusiones-adquisiciones/',
+        '/servicios/quiebras/',
+        '/capacitacion/fundamentos-contabilidad/',
+        '/capacitacion/gestion-tributaria/',
+        '/capacitacion/analisis-financiero/',
+        '/capacitacion/manejo-remuneraciones/',
+        '/capacitacion/beneficios-laborales/',
+        '/capacitacion/cumplimiento-fiscal/',
+      ]
+      
+      return [...staticRoutes, ...blogRoutes]
+    }
   },
 };
