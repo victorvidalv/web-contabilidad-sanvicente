@@ -1,6 +1,6 @@
 export default {
-  // Desactivar renderizado del lado del servidor
-  ssr: false,
+  // Habilitar renderizado del lado del servidor para contenido estático
+  ssr: true,
 
   // Objetivo: estático
   target: 'static',
