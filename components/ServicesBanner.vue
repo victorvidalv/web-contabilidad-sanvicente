@@ -55,7 +55,7 @@
 
 <style scoped>
 .services-section {
-  background-color: #f8f9fa;
+
 }
 
 .services-image-container {

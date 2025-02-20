@@ -1,6 +1,6 @@
 <template>
   <!-- Contenedor Principal con fondo sutil -->
-  <div class="min-h-screen bg-gradient-to-b from-gray-50 to-white">
+  <div class="min-h-screen ">
     <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
       <!-- Sección del Título Mejorada -->
       <div class="text-center max-w-3xl mx-auto mb-12">

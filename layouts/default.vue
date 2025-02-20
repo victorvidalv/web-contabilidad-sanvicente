@@ -3,7 +3,7 @@
 
     <!-- Navbar -->
     <SiteMenu />
-    <nav v-if="$route.path !== '/'" class="w-full bg-gray-50 border-b" aria-label="Breadcrumb">
+    <nav v-if="$route.path !== '/'" class="w-full " aria-label="Breadcrumb">
       <div class="max-w-[85rem] w-full mx-auto px-4 py-2.5">
         <ol class="flex items-center flex-wrap gap-2">
           <li class="flex items-center">
