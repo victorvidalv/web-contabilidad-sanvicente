@@ -61,7 +61,7 @@
 .services-image-container {
   position: relative;
   width: 100%;
-  height: 0;
+  height: 100%;
   padding-bottom: 75%; /* Proporción 4:3 más profesional */
   overflow: hidden;
 }

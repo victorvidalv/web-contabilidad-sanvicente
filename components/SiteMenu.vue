@@ -1,7 +1,7 @@
 <template>
   <div>
     <header
-      class="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full border-b text-sm py-3 sm:py-0 bg-blue-950 text-white">
+      class="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full  text-sm py-3 sm:py-0 bg-blue-950 text-white">
       <nav class="relative max-w-[85rem] w-full mx-auto sm:flex sm:items-center sm:justify-between" aria-label="Global">
         <div class="flex items-center justify-between">
           <nuxt-link to="/" class="flex-none text-xl font-semibold text-white" aria-label="Brand">
