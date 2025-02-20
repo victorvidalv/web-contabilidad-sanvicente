@@ -10,15 +10,15 @@
       <!-- Fin de la columna -->
 
       <!-- Columna del contenido textual -->
-      <div class="mt-5 sm:mt-10 lg:mt-0 border p-5 bg-blue-950">
+      <div class="mt-5 sm:mt-10 lg:mt-0 border p-5 bg-[#eeeeee]">
         <div class="space-y-6 sm:space-y-8 banner">
           <!-- Título -->
           <div class="space-y-2 md:space-y-4">
-            <h2 class="text-3xl lg:text-4xl text-white">
+            <h2 class="text-3xl lg:text-4xl ">
               {{ name }}
             </h2>
             <!-- Descripción usando v-html para interpretar HTML en la cadena -->
-            <p class="text-white" v-html="description">
+            <p class="" v-html="description">
             </p>
           </div>
           <!-- Fin del título -->

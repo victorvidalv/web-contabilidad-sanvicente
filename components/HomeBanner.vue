@@ -20,10 +20,10 @@
                 Soluciones contables integrales y asesoría estratégica para el crecimiento de tu negocio
             </p>
             <div class="mt-8 space-x-4">
-                <a href="/servicios" class="inline-block bg-orange-600 text-white px-8 py-3 rounded-lg hover:bg-orange-700 transition duration-300 animate-slide-up animate-delay-1000">
+                <a href="/servicios" class="inline-block bg-orange-600 text-white px-8 py-3 hover:bg-orange-700 transition duration-300 animate-slide-up animate-delay-1000">
                     Conoce nuestros servicios
                 </a>
-                <a href="/contacto" class="inline-block border-2 border-white text-white px-8 py-3 rounded-lg hover:bg-white/10 transition duration-300 animate-slide-up animate-delay-1000">
+                <a href="/contacto" class="inline-block border-2 border-white text-white px-8 py-3  hover:bg-white/10 transition duration-300 animate-slide-up animate-delay-1000">
                     Contáctanos
                 </a>
             </div>

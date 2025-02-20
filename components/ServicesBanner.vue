@@ -11,36 +11,36 @@
           >
         </div>
 
-        <div class="mt-12 md:mt-0 p-12 bg-blue-950">
+        <div class="mt-12 md:mt-0 p-12 bg-[#eeeeee]">
           <div class="space-y-10">
-            <div class="text-white">
-              <h1 class="text-4xl lg:text-5xl font-extralight mb-8">
+            <div class="space-y-4">
+              <h1 class="text-4xl lg:text-5xl font-light mb-8">
                 Asesoría Contable y Financiera
               </h1>
-              <p class="text-lg leading-relaxed font-light">
+              <p class="text-lg leading-relaxed">
                 Expertos en servicios contables y financieros para el sector agroindustrial 
                 en la Región de O'Higgins. Transformamos la gestión financiera 
                 de su empresa con soluciones precisas.
               </p>
             </div>
 
-            <div class="space-y-8 text-white">
-              <div class="border-l border-white pl-6">
-                <p class="text-lg font-light">
+            <div class="space-y-8">
+              <div class="border-l-2 border-blue-950 pl-6">
+                <p class="text-lg">
                   <span class="block text-xl mb-2 font-normal">Experiencia Sectorial</span>
                   Especialistas en las necesidades del sector agrícola
                 </p>
               </div>
 
-              <div class="border-l border-white pl-6">
-                <p class="text-lg font-light">
+              <div class="border-l-2 border-blue-950 pl-6">
+                <p class="text-lg">
                   <span class="block text-xl mb-2 font-normal">Innovación Digital</span>
                   Sistemas modernos de gestión financiera agrícola
                 </p>
               </div>
 
-              <div class="border-l border-white pl-6">
-                <p class="text-lg font-light">
+              <div class="border-l-2 border-blue-950 pl-6">
+                <p class="text-lg">
                   <span class="block text-xl mb-2 font-normal">Atención Personalizada</span>
                   Respuesta inmediata y acompañamiento continuo
                 </p>
@@ -54,15 +54,11 @@
 </template>
 
 <style scoped>
-.services-section {
-
-}
-
 .services-image-container {
   position: relative;
   width: 100%;
   height: 100%;
-  padding-bottom: 75%; /* Proporción 4:3 más profesional */
+  padding-bottom: 75%;
   overflow: hidden;
 }
 

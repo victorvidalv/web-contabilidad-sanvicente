@@ -1,7 +1,7 @@
 <template>
   <!-- Contenedor principal del componente -->
   <section class="max-w-[85rem] px-4 py-8 sm:px-6 lg:px-8 lg:py-8 mx-auto">
-    <div class="max-w-[85rem] px-4 py-6 sm:px-6 lg:px-2 lg:py-6 mx-auto bg-gray-100">
+    <div class="max-w-[85rem] px-4 py-6 sm:px-6 lg:px-2 lg:py-6 mx-auto bg-[#eeeeee]">
       <!-- Div contenedor con estilos de fondo y padding -->
       <div class="relative z-10 overflow-hidden rounded bg-primary py-12 px-8 md:p-[70px]">
         <!-- Flex container para los elementos internos -->

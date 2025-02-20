@@ -4,7 +4,7 @@
     <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
       <!-- Sección del Título Mejorada -->
       <div class="text-center max-w-3xl mx-auto mb-12">
-        <h2 class="text-3xl font-bold md:text-4xl md:leading-tight bg-clip-text text-transparent bg-gradient-to-r from-blue-950 to-blue-700">
+        <h2 class="text-3xl font-bold md:text-4xl md:leading-tight  ">
           Nuestras Herramientas
         </h2>
         <p class="mt-4 text-lg text-gray-600 leading-relaxed">

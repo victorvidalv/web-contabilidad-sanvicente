@@ -92,7 +92,7 @@
       </div>
 
       <!-- Contact Info -->
-      <div class="bg-gray-50 rounded-lg p-8 space-y-6">
+      <div class="bg-[#eeeeee]  p-8 space-y-6">
         <!-- Contact items here - update styling for each contact method -->
         <div class="flex gap-x-7 py-6">
           <a href="https://wa.me/56722746337?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n.">

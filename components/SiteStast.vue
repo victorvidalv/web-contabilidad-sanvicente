@@ -1,5 +1,5 @@
 <template>
-  <section class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 bg-slate-50">
+  <section class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 bg-[#eeeeee]">
     <div class="max-w-3xl mx-auto text-center mb-16">
       <h1 class="text-4xl font-bold text-slate-900 mb-4 lg:text-5xl">
         Experiencia y Resultados que Respaldan Nuestro Servicio

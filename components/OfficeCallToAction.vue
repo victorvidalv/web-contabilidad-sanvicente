@@ -1,7 +1,7 @@
 <template>
   <section class="max-w-[85rem] px-4 py-12 mx-auto">
     <!-- Contenedor principal con fondo sutil -->
-    <div class="w-full px-8 py-16 bg-gradient-to-br from-gray-50 to-gray-100">
+    <div class="w-full px-8 py-16 bg-[#eeeeee]">
       <!-- Contenedor del contenido con espaciado mejorado -->
       <div class="max-w-7xl mx-auto">
         <div class="flex flex-col lg:flex-row items-center justify-between gap-12">
