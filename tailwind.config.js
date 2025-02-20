@@ -1,5 +1,4 @@
 module.exports = {
-    // Configuración PURGE CSS
   purge: {
     content: [
       './components/**/*.vue',
@@ -15,13 +14,10 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
+        'sans': ['Roboto', 'Arial', 'sans-serif'],
         'helvetica': ['"Helvetica Neue"', 'Arial', 'sans-serif'],
       },
     },
   },
-  // Configuración del modo oscuro
-  darkMode: 'class', // Habilita el modo oscuro con la clase .dark
-
-  // Contenido a procesar por Tailwind CSS
-
+  darkMode: 'class',
 }

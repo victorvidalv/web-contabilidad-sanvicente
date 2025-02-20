@@ -1,5 +1,5 @@
 <template>
-  <div class="font-helvetica"> <!-- << Fuente del sitio -->
+  <div class="font-sans"> <!-- << Fuente del sitio -->
 
     <!-- Navbar -->
     <SiteMenu />
