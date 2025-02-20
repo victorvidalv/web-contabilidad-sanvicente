@@ -17,7 +17,7 @@
               Expertos en Consultoría y Contabilidad
             </h1>
             <p class="text-lg leading-relaxed">
-              Somos especialistas en servicios contables y consultoría estratégica, enfocados en el sector agroindustrial y comercial del Perú. Ofrecemos soluciones integrales en Contabilidad Financiera, Consultoría Empresarial y Gestión de Tesorería
+              Somos especialistas en servicios contables y consultoría estratégica, enfocados en el sector agroindustrial y comercial. Ofrecemos soluciones integrales en Contabilidad Financiera, Consultoría Empresarial y Gestión de Tesorería
             </p>
           </header>
 

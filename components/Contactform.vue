@@ -119,7 +119,7 @@
           <div>
             <h3 class="font-semibold text-gray-800">Agenda Online</h3>
             <p class="mt-1 text-gray-500">Reserva tu reunión en línea</p>
-            <a class="mt-2 inline-flex items-center gap-x-2 font-medium text-gray-600" href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0QEa7VufZM2f_fQ_12APcY4oioU3SQgV5MrrDe_bm5lgAuqpnaPdd7rI5w8weM7BAm1SKrFPmI?gv=true">
+            <a class="mt-2 inline-flex items-center gap-x-2 font-medium text-gray-600" href="https://www.tuu.cl/asesoriascontabilidadsanvicente">
               Agenda Online
             </a>
           </div>
