@@ -3,7 +3,9 @@
         <!-- Componente del banner de "Acerca de nosotros" -->
         <AboutBanner />
 
+    
         <AboutVisionMisionValues />
+    <TrainVideo/>
 
         <!-- Componente de nuestro equipo -->
         <AboutTeam />

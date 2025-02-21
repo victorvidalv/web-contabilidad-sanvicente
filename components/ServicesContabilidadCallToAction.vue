@@ -43,7 +43,13 @@
 </template>
 
 <script>
+import SiteCheck from './SiteCheck.vue'
+
 export default {
+  name: 'ServicesContabilidadCallToAction',
+  components: {
+    SiteCheck
+  },
   data() {
     return {
       planes: [
