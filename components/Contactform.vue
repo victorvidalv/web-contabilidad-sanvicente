@@ -1,13 +1,6 @@
 <template>
   <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-    <div class="text-center mb-16">
-      <h1 class="text-4xl font-bold text-gray-800 sm:text-5xl">
-        Contacto
-      </h1>
-      <p class="mt-4 text-gray-600 text-xl max-w-2xl mx-auto">
-        Estamos encantados de recibir tus consultas y comentarios
-      </p>
-    </div>
+  
 
     <div class="mt-12 grid items-center lg:grid-cols-2 gap-6 lg:gap-16">
       <!-- Form Card -->

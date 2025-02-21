@@ -1,6 +1,7 @@
 <template>
   <div>
     <!-- Componente del formulario de contacto -->
+    <ContactVideo/>
     <Contactform />
     <!-- Componente desplegable Mapa Oficina -->
     <ContactMap />
