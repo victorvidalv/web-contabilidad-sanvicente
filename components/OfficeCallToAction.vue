@@ -39,23 +39,6 @@
       </div>
     </section>
 
-    <section class="bg-gray-100 py-16">
-      <div class="container mx-auto px-4">
-        <div class="max-w-3xl mx-auto text-center">
-          <h2 class="text-3xl font-bold text-gray-800 mb-6">¿Listo para comenzar con tu oficina virtual?</h2>
-          <p class="text-gray-600 mb-8">Comienza hoy mismo con nuestro servicio de oficina virtual y dale a tu empresa una dirección profesional.</p>
-          <div class="flex flex-col md:flex-row justify-center gap-4">
-            <a href="https://forms.gle/wHyYiMHLb5VZ7kaF9" target="_blank" 
-               class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition duration-300">
-              Formalizar Contrato
-            </a>
-            <a href="https://www.tuu.cl/OficinaVirtual" target="_blank"
-               class="bg-green-600 text-white px-8 py-3 rounded-lg hover:bg-green-700 transition duration-300">
-              Pagar Oficina Virtual
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
+ 
   </div>
 </template>
