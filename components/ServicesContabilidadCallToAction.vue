@@ -2,7 +2,7 @@
   <section class="bg-gradient-to-b from-gray-50 to-white">
     <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-20">
       <div class="mx-auto max-w-screen-md text-center mb-12 lg:mb-16">
-        <h2 class="mb-4 text-4xl font-extrabold bg-gradient-to-r from-gray-700 to-gray-900 bg-clip-text text-transparent">
+        <h2 class="mb-4 text-4xl font-extrabold bg-gradient-to-r from-gray-700 to-gray-900 bg-clip-text text-transparent !important">
           Planes de Contabilidad Mensual
         </h2>
       </div>
@@ -16,7 +16,8 @@
           </p>
 
           <div class="flex justify-center items-baseline my-8">
-            <span class="mr-2 text-5xl font-bold bg-gradient-to-r from-gray-700 to-gray-900 bg-clip-text text-transparent">
+            <span class="mr-2 text-5xl font-bold bg-gradient-to-r from-gray-700 to-gray-900 bg-clip-text text-transparent !important" 
+                  style="background: linear-gradient(to right, #374151, #111827); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
               {{ plan.precio }}
             </span>
             <span class="text-gray-500 font-medium">/mes</span>
@@ -80,3 +81,24 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+/* Backup styles for gradient text in case Tailwind purges the classes */
+.text-transparent {
+  color: transparent;
+}
+.bg-clip-text {
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.bg-gradient-to-r {
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+.from-gray-700 {
+  --tw-gradient-from: #374151;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(55, 65, 81, 0));
+}
+.to-gray-900 {
+  --tw-gradient-to: #111827;
+}
+</style>
