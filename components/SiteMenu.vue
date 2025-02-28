@@ -9,7 +9,7 @@
 
         <!-- Botón para menú móvil -->
         <button @click="toggleMenu" type="button" 
-          class="inline-flex items-center p-2 w-10 h-10 justify-center text-white rounded-lg md:hidden hover:bg-blue-900 focus:outline-none focus:ring-2 focus:ring-blue-800"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-white md:hidden hover:bg-blue-950 focus:outline-none focus:ring-2 focus:ring-blue-800"
           aria-controls="navbar-main" aria-expanded="false">
           <span class="sr-only">Abrir menú principal</span>
           <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
@@ -24,7 +24,7 @@
           <ul class="flex flex-col mt-4 font-medium md:flex-row md:mt-0 md:space-x-1">
             <li>
               <nuxt-link to="/" 
-                class="block py-2 px-3 md:px-4 rounded-lg md:py-2.5 hover:bg-blue-900 md:hover:bg-blue-900"
+                class="block py-2 px-3 md:px-4 md:py-2.5 hover:bg-blue-950"
                 exact-active-class="bg-orange-600 text-white">
                 Inicio
               </nuxt-link>
@@ -36,7 +36,7 @@
                 @mouseleave="handleMouseLeave('nosotros')">
               <button id="nosotros-dropdown-button" 
                 @click="toggleNosotrosDropdown"
-                class="flex items-center justify-between w-full py-2 px-3 md:px-4 rounded-lg md:py-2.5 hover:bg-blue-900 md:hover:bg-blue-900"
+                class="flex items-center justify-between w-full py-2 px-3 md:px-4 md:py-2.5 hover:bg-blue-950"
                 :class="{'bg-orange-600': $route.path.startsWith('/nosotros') || $route.path.startsWith('/blog')}">
                 Nosotros
                 <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
@@ -47,15 +47,15 @@
               <!-- Dropdown menu -->
               <div id="nosotros-dropdown" 
                 v-show="nosotrosDropdown"
-                class="absolute z-10 bg-blue-900 border border-blue-800 rounded-lg shadow-lg w-40 md:mt-2">
+                class="absolute z-10 bg-blue-950 border border-blue-800 shadow-lg w-40 md:mt-2">
                 <div class="p-2">
                   <nuxt-link to="/nosotros/" 
-                    class="block px-4 py-2 text-white hover:bg-blue-800 rounded-md"
+                    class="block px-4 py-2 text-white hover:bg-blue-950"
                     @click.native="closeDropdowns">
                     Empresa
                   </nuxt-link>
                   <nuxt-link to="/blog/" 
-                    class="block px-4 py-2 text-white hover:bg-blue-800 rounded-md mt-1"
+                    class="block px-4 py-2 text-white hover:bg-blue-950 mt-1"
                     @click.native="closeDropdowns">
                     Blog
                   </nuxt-link>
@@ -69,7 +69,7 @@
                 @mouseleave="handleMouseLeave('servicios')">
               <button id="servicios-dropdown-button" 
                 @click="toggleServiciosDropdown"
-                class="flex items-center justify-between w-full py-2 px-3 md:px-4 rounded-lg md:py-2.5 hover:bg-blue-900 md:hover:bg-blue-900"
+                class="flex items-center justify-between w-full py-2 px-3 md:px-4 md:py-2.5 hover:bg-blue-950"
                 :class="{'bg-orange-600': $route.path.startsWith('/servicios') || $route.path.startsWith('/capacitacion')}">
                 Servicios
                 <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
@@ -80,15 +80,15 @@
               <!-- Dropdown menu -->
               <div id="servicios-dropdown" 
                 v-show="serviciosDropdown"
-                class="absolute z-10 bg-blue-900 border border-blue-800 rounded-lg shadow-lg w-48 md:mt-2">
+                class="absolute z-10 bg-blue-950 border border-blue-800 shadow-lg w-48 md:mt-2">
                 <div class="p-2">
                   <nuxt-link to="/servicios/" 
-                    class="block px-4 py-2 text-white hover:bg-blue-800 rounded-md"
+                    class="block px-4 py-2 text-white hover:bg-blue-950"
                     @click.native="closeDropdowns">
                     Servicios Contables
                   </nuxt-link>
                   <nuxt-link to="/capacitacion/" 
-                    class="block px-4 py-2 text-white hover:bg-blue-800 rounded-md mt-1"
+                    class="block px-4 py-2 text-white hover:bg-blue-950 mt-1"
                     @click.native="closeDropdowns">
                     Capacitación
                   </nuxt-link>
@@ -98,7 +98,7 @@
             
             <li>
               <nuxt-link to="/oficina-virtual/" 
-                class="block py-2 px-3 md:px-4 rounded-lg md:py-2.5 hover:bg-blue-900 md:hover:bg-blue-900"
+                class="block py-2 px-3 md:px-4 md:py-2.5 hover:bg-blue-950"
                 exact-active-class="bg-orange-600 text-white">
                 Oficina Virtual
               </nuxt-link>
@@ -106,7 +106,7 @@
             
             <li>
               <nuxt-link to="/herramientas/" 
-                class="block py-2 px-3 md:px-4 rounded-lg md:py-2.5 hover:bg-blue-900 md:hover:bg-blue-900"
+                class="block py-2 px-3 md:px-4 md:py-2.5 hover:bg-blue-950"
                 exact-active-class="bg-orange-600 text-white">
                 Herramientas
               </nuxt-link>
@@ -114,7 +114,7 @@
             
             <li>
               <nuxt-link to="/contacto/" 
-                class="block py-2 px-3 md:px-4 rounded-lg md:py-2.5 hover:bg-blue-900 md:hover:bg-blue-900"
+                class="block py-2 px-3 md:px-4 md:py-2.5 hover:bg-blue-950"
                 exact-active-class="bg-orange-600 text-white">
                 Contacto
               </nuxt-link>

@@ -3,14 +3,14 @@
         <!-- Componente del banner de "Acerca de nosotros" -->
         <AboutBanner />
 
+        <!-- Componente de valores de la empresa -->
+        <SiteValues />
     
         <AboutVisionMisionValues />
-    <TrainVideo/>
+        <TrainVideo/>
 
         <!-- Componente de nuestro equipo -->
         <AboutTeam />
-
-  
 
         <!-- Componente de la sección servcios modernos de inicio -->
         <HomeModern />
@@ -29,6 +29,7 @@ export default {
         HomeWhyChooseUs: () => import('~/components/HomeWhyChooseUs.vue'),
         HomeModern: () => import('~/components/HomeModern.vue'),
         SiteClients: () => import('~/components/SiteClients.vue'),
+        SiteValues: () => import('~/components/SiteValues.vue'),
     },
     layout: 'default', // Establece el diseño predeterminado para esta página
 
