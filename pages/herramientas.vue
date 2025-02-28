@@ -52,7 +52,9 @@ export default {
       
         ToolsEquilibrium: 'Punto de Equilibrio',
           ToolsFee: 'Cal. de Honorarios',
-        ToolsIndicators: 'Ind. Económicos'
+        ToolsIndicators: 'Ind. Económicos',
+        ToolsInvoice: 'Cal. de Facturas',
+        ToolsConverter: 'Conversor'
      
     
       }
