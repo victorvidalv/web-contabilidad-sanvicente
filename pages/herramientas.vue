@@ -48,15 +48,13 @@ export default {
     return {
       currentComponent: "ToolsFee",
       tools: {
-         ToolsRepresentation: 'Gen. Poderes',
-      
+        ToolsRepresentation: 'Gen. Poderes',
         ToolsEquilibrium: 'Punto de Equilibrio',
-          ToolsFee: 'Cal. de Honorarios',
+        ToolsFee: 'Cal. de Honorarios',
         ToolsIndicators: 'Ind. Económicos',
         ToolsInvoice: 'Cal. de Facturas',
-        ToolsConverter: 'Conversor'
-     
-    
+        ToolsConverter: 'Conversor',
+        ToolsDocuments: 'Documentos'
       }
     };
   },
