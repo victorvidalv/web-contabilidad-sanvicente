@@ -1,25 +1,20 @@
 <template>
   <div>
-
     <!--  -->
     <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
       <!-- -->
       <div class="grid md:grid-cols-2 gap-12 bg-gray-100 p-4">
         <div class="lg:w-3/4">
           <h2 class="text-3xl text-gray-800 font-bold lg:text-4xl">
-            Domiciliclio Tributario y Comercial
+            Domicilio Tributario y Comercial en Chile
           </h2>
           <p class="mt-3 text-gray-800">
-            ¿Necesitas emitir facturas?, ¿Tu emprendimiento busca una dirección física confiable? En Contabilidad San Vicente, te ofrecemos la solución perfecta: obtén tu domicilio tributario de manera 100% online. No esperes más para dar ese paso crucial en tu negocio. Con nuestro servicio de domicilio tributario virtual, puedes comenzar tu emprendimiento de inmediato, asegurándote de cumplir con todas las normativas y requisitos fiscales. ¡Emprende ahora con la confianza y el respaldo de Contabilidad San Vicente.
+            ¿Necesitas emitir facturas electrónicas según la normativa del SII? ¿Tu emprendimiento chileno requiere una dirección profesional confiable? En Contabilidad San Vicente, te ofrecemos la solución perfecta: obtén tu domicilio tributario 100% legal y conforme a la legislación chilena. Este servicio te permite iniciar operaciones inmediatamente, cumpliendo con todos los requisitos fiscales establecidos por el SII. Formaliza tu negocio hoy mismo con nuestro respaldo profesional y evita sanciones por incumplimiento tributario.
           </p>
-
-
-
           
-          <img class="mt-10" src="contract.webp" alt="Image Description">
+          <img class="mt-10" src="contract.webp" alt="Contrato de domicilio tributario para empresas en Chile">
         </div>
         <!--  -->
-
         <div class="space-y-6 lg:space-y-10">
           <!--  -->
           <div class="flex" >
@@ -34,19 +29,18 @@
             </span>
             <div class="ml-5 sm:ml-8">
               <h3 class="text-base sm:text-lg font-semibold text-gray-800 ">
-                Beneficicios
+                Beneficios concretos para tu empresa
               </h3>
               <p class="mt-1 text-gray-600 ">
-                Al elegir nuestro servicio de Domicilio Tributario y Comercial Virtual en Contabilidad San Vicente, usted se beneficia de una solución integral que simplifica y fortalece su emprendimiento. Este servicio no solo facilita el cumplimiento de sus obligaciones fiscales y comerciales, sino que también proporciona una dirección física prestigiosa para su negocio en San Vicente Tagua Tagua. </p>
+                Nuestro servicio de Domicilio Tributario y Comercial Virtual ofrece ventajas exclusivas para emprendedores y PyMEs chilenas: cumplimiento inmediato con el SII, dirección física prestigiosa en San Vicente Tagua Tagua, gestión profesional de notificaciones legales y facilidad para trámites municipales. Este respaldo te permite concentrarte en el crecimiento de tu negocio mientras nosotros nos encargamos de los aspectos administrativos y fiscales de tu dirección comercial.
+              </p>
             </div>
           </div>
           <!--  -->
-
           <!--  -->
           <div class="flex" >
             <!--  -->
             <span class="flex-shrink-0 inline-flex justify-center items-center w-[46px] h-[46px] ">
-
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                 class="flex-shrink-0 mt-1 w-10 h-10 text-orange-600" viewBox="0 0 16 16">
                 <path
@@ -57,17 +51,17 @@
             </span>
             <div class="ml-5 sm:ml-8">
               <h3 class="text-base sm:text-lg font-semibold text-gray-800 ">
-                ¿Qué significa tener Dirección Tributaria y Dirección Comercial?
+                Importancia estratégica del Domicilio Tributario y Comercial en Chile
               </h3>
               <p class="mt-1 text-gray-600 ">
-                Entender la importancia de una Dirección Tributaria y una Dirección Comercial es esencial en el proceso de formación de tu empresa. El domicilio tributario es una dirección fiscal indispensable para iniciar actividades ante el Servicio de Impuestos Internos (SII) . Es más que una simple dirección; es el lugar donde tu empresa recibirá notificaciones legales, gestionará trámites municipales y manejará aspectos clave como la facturación electrónica.
-              </p>  <p class="mt-3 text-gray-600 ">
-Paralelamente, la dirección comercial es vital una vez que tu empresa comienza a operar. Esta dirección es tu cara frente a clientes y proveedores, apareciendo en tus tarjetas de presentación, sitio web, redes sociales y otros materiales de marketing. 
+                El domicilio tributario es un requisito legal obligatorio en Chile para iniciar actividades formalmente ante el SII. No se trata solo de un trámite: es el punto de conexión oficial entre tu empresa y las autoridades fiscales chilenas. A través de esta dirección, recibirás notificaciones importantes del SII, podrás gestionar permisos municipales y emitir documentos tributarios electrónicos conforme a la legislación vigente.
+              </p>  
+              <p class="mt-3 text-gray-600 ">
+                La dirección comercial, por su parte, fortalece la imagen profesional de tu negocio en el mercado chileno. Es tu carta de presentación ante clientes potenciales, proveedores y aliados estratégicos. Una dirección comercial establecida en una zona reconocida como San Vicente Tagua Tagua añade credibilidad a tu empresa y facilita la generación de confianza comercial, factor determinante para el éxito empresarial en Chile.
               </p>
             </div>
           </div>
           <!--  -->
-
           <!--  -->
           <div class="flex" >
             <!--  -->
@@ -82,12 +76,13 @@ Paralelamente, la dirección comercial es vital una vez que tu empresa comienza 
             </span>
             <div class="ml-5 sm:ml-8">
               <h3 class="text-base sm:text-lg font-semibold text-gray-800 ">
-                ¿Es necesario visitar físicamente nuestras oficinas para contratar uno de nuestros planes?
+                Proceso simplificado: Contratación 100% digital con respaldo legal
               </h3>
               <p class="mt-1 text-gray-600 ">
-              La respuesta es simple: No, no es necesario para la mayoría de los pasos. En Contabilidad San Vicente, hemos optimizado nuestros servicios para ofrecer la máxima comodidad y eficiencia, permitiéndole realizar todo el proceso de contratación a través de Internet. Desde la selección de su plan ideal hasta la revisión y acuerdo de los términos del servicio, todo se puede gestionar en línea para adaptarse a su horario y necesidades.
-              </p> <p class="mt-3 text-gray-600 ">
-Sin embargo, hay un aspecto importante que requiere su presencia física: la firma del contrato de arriendo. Este es un requisito legal ineludible en Chile para la formalización de contratos de este tipo. Para ello, deberá acudir a una notaría. 
+                En Contabilidad San Vicente hemos digitalizado casi todo el proceso de contratación, adaptándonos a las necesidades del emprendedor chileno moderno. Puedes seleccionar y contratar nuestro servicio completamente en línea, ahorrando tiempo valioso para tu negocio. Nuestro sistema cumple con todos los estándares de seguridad digital exigidos por la normativa chilena.
+              </p> 
+              <p class="mt-3 text-gray-600 ">
+                El único paso que requiere presencia física es la firma del contrato de arriendo en notaría, requisito establecido por la legislación chilena para garantizar la validez legal del acuerdo. Este documento notarial te proporciona total seguridad jurídica y es reconocido por todas las entidades fiscales y municipales del país, asegurando que tu domicilio tributario cumpla con todas las exigencias legales vigentes en Chile.
               </p>
             </div>
           </div>

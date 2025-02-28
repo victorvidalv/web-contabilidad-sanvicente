@@ -3,7 +3,7 @@
   <div class="container mx-auto my-10 p-5 border">
     <h1 class="text-2xl font-bold mb-5">Documentos</h1>
     <p class="text-gray-600 mb-8">
-      Complete los siguientes formularios para acceder a nuestros servicios de documentación:
+     A continuación encontrará una serie de documentos y formularios que le permitirán realizar trámites y gestiones de manera rápida y sencilla.
     </p>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -39,6 +39,40 @@
         <h2 class="text-xl font-semibold mb-2">Registro</h2>
         <p class="text-gray-500 text-center mb-4">Formulario de registro para nuevos clientes y usuarios</p>
         <span class="bg-blue-950 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-800">Completar registro</span>
+      </a>
+      
+      <!-- Enlace de Contrato Oficina Virtual -->
+      <a 
+        href="https://forms.gle/wHyYiMHLb5VZ7kaF9" 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        class="flex flex-col items-center p-6 border rounded-lg hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300"
+      >
+        <div class="w-16 h-16 bg-blue-950 rounded-full flex items-center justify-center mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2" />
+          </svg>
+        </div>
+        <h2 class="text-xl font-semibold mb-2">Contrato Oficina Virtual</h2>
+        <p class="text-gray-500 text-center mb-4">Formulario para contrato de servicios de oficina virtual</p>
+        <span class="bg-blue-950 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-800">Completar registro</span>
+      </a>
+
+      <!-- Enlace de Pago Oficina Virtual -->
+      <a 
+        href="https://www.tuu.cl/OficinaVirtual" 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        class="flex flex-col items-center p-6 border rounded-lg hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300"
+      >
+        <div class="w-16 h-16 bg-blue-950 rounded-full flex items-center justify-center mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2z" />
+          </svg>
+        </div>
+        <h2 class="text-xl font-semibold mb-2">Pago Oficina Virtual</h2>
+        <p class="text-gray-500 text-center mb-4">Plataforma para realizar el pago de servicios de oficina virtual</p>
+        <span class="bg-blue-950 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-800">Realizar pago</span>
       </a>
     </div>
   </div>
