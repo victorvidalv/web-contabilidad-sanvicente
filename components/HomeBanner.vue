@@ -3,16 +3,16 @@
     <!-- Hero Section -->
     <div class="relative h-screen flex items-center justify-center overflow-hidden">
         <!-- Video de fondo -->
-        <video autoplay muted loop playsinline class="absolute z-0 w-auto min-w-full min-h-full max-w-none object-cover">
+        <video autoplay muted loop playsinline class="absolute -z-10 w-auto min-w-full min-h-full max-w-none object-cover">
             <source src="/intro.mp4" type="video/mp4">
             Tu navegador no soporta videos HTML5.
         </video>
 
         <!-- Capa oscura para mejorar la legibilidad del texto -->
-        <div class="absolute z-10 w-full h-full bg-blue-900/40"></div>
+        <div class="absolute z-[1] w-full h-full bg-blue-900/40"></div>
 
         <!-- Contenido del Hero -->
-        <div class="relative z-20 text-center text-white max-w-4xl px-4">
+        <div class="relative z-[2] text-center text-white max-w-4xl px-4">
             <h1 class="text-5xl font-bold animate-slide-up">
                 Expertos en Consultoría y Contabilidad
             </h1>

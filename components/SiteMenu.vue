@@ -1,60 +1,128 @@
 <template>
   <div>
-    <header
-      class="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full  text-sm py-3 sm:py-0 bg-blue-950 text-white">
-      <nav class="relative max-w-[85rem] w-full mx-auto sm:flex sm:items-center sm:justify-between" aria-label="Global">
-        <div class="flex items-center justify-between">
-          <nuxt-link to="/" class="flex-none text-xl font-semibold text-white" aria-label="Brand">
-            <SiteLogo />
-          </nuxt-link>
-          <div class="sm:hidden">
-            <button @click="toggleMenu" type="button"
-              class="bg-blue-950 hs-collapse-toggle p-2 inline-flex justify-center items-center gap-2  font-medium text-white shadow-sm align-middle focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white text-sm"
-              aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation">
-              <svg class="hs-collapse-open:hidden w-8 h-8" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                  d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
-              </svg>
-              <svg class="hs-collapse-open:block hidden w-8 h-8" width="16" height="16" fill="currentColor"
-                viewBox="0 0 16 16">
-                <path
-                  d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
-              </svg>
-            </button>
-          </div>
+    <nav class="bg-blue-950 text-white">
+      <div class="flex flex-wrap items-center justify-between max-w-screen-xl mx-auto p-2">
+        <!-- Logo y nombre del sitio -->
+        <nuxt-link to="/" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <SiteLogo />
+        </nuxt-link>
+
+        <!-- Botón para menú móvil -->
+        <button @click="toggleMenu" type="button" 
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-white rounded-lg md:hidden hover:bg-blue-900 focus:outline-none focus:ring-2 focus:ring-blue-800"
+          aria-controls="navbar-main" aria-expanded="false">
+          <span class="sr-only">Abrir menú principal</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path v-if="!isMenuOpen" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+            <path v-else stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1 15 15M1 15 15 1"/>
+          </svg>
+        </button>
+
+        <!-- Menú principal -->
+        <div id="navbar-main" :class="{'hidden': !isMenuOpen, 'block': isMenuOpen}"
+          class="items-center justify-between w-full md:flex md:w-auto mt-4 md:mt-0">
+          <ul class="flex flex-col mt-4 font-medium md:flex-row md:mt-0 md:space-x-1">
+            <li>
+              <nuxt-link to="/" 
+                class="block py-2 px-3 md:px-4 rounded-lg md:py-2.5 hover:bg-blue-900 md:hover:bg-blue-900"
+                exact-active-class="bg-orange-600 text-white">
+                Inicio
+              </nuxt-link>
+            </li>
+            
+            <!-- Menú desplegable Nosotros -->
+            <li class="relative" 
+                @mouseenter="handleMouseEnter('nosotros')" 
+                @mouseleave="handleMouseLeave('nosotros')">
+              <button id="nosotros-dropdown-button" 
+                @click="toggleNosotrosDropdown"
+                class="flex items-center justify-between w-full py-2 px-3 md:px-4 rounded-lg md:py-2.5 hover:bg-blue-900 md:hover:bg-blue-900"
+                :class="{'bg-orange-600': $route.path.startsWith('/nosotros') || $route.path.startsWith('/blog')}">
+                Nosotros
+                <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                </svg>
+              </button>
+              
+              <!-- Dropdown menu -->
+              <div id="nosotros-dropdown" 
+                v-show="nosotrosDropdown"
+                class="absolute z-10 bg-blue-900 border border-blue-800 rounded-lg shadow-lg w-40 md:mt-2">
+                <div class="p-2">
+                  <nuxt-link to="/nosotros/" 
+                    class="block px-4 py-2 text-white hover:bg-blue-800 rounded-md"
+                    @click.native="closeDropdowns">
+                    Empresa
+                  </nuxt-link>
+                  <nuxt-link to="/blog/" 
+                    class="block px-4 py-2 text-white hover:bg-blue-800 rounded-md mt-1"
+                    @click.native="closeDropdowns">
+                    Blog
+                  </nuxt-link>
+                </div>
+              </div>
+            </li>
+
+            <!-- Menú desplegable Servicios -->
+            <li class="relative"
+                @mouseenter="handleMouseEnter('servicios')" 
+                @mouseleave="handleMouseLeave('servicios')">
+              <button id="servicios-dropdown-button" 
+                @click="toggleServiciosDropdown"
+                class="flex items-center justify-between w-full py-2 px-3 md:px-4 rounded-lg md:py-2.5 hover:bg-blue-900 md:hover:bg-blue-900"
+                :class="{'bg-orange-600': $route.path.startsWith('/servicios') || $route.path.startsWith('/capacitacion')}">
+                Servicios
+                <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                </svg>
+              </button>
+              
+              <!-- Dropdown menu -->
+              <div id="servicios-dropdown" 
+                v-show="serviciosDropdown"
+                class="absolute z-10 bg-blue-900 border border-blue-800 rounded-lg shadow-lg w-48 md:mt-2">
+                <div class="p-2">
+                  <nuxt-link to="/servicios/" 
+                    class="block px-4 py-2 text-white hover:bg-blue-800 rounded-md"
+                    @click.native="closeDropdowns">
+                    Servicios Contables
+                  </nuxt-link>
+                  <nuxt-link to="/capacitacion/" 
+                    class="block px-4 py-2 text-white hover:bg-blue-800 rounded-md mt-1"
+                    @click.native="closeDropdowns">
+                    Capacitación
+                  </nuxt-link>
+                </div>
+              </div>
+            </li>
+            
+            <li>
+              <nuxt-link to="/oficina-virtual/" 
+                class="block py-2 px-3 md:px-4 rounded-lg md:py-2.5 hover:bg-blue-900 md:hover:bg-blue-900"
+                exact-active-class="bg-orange-600 text-white">
+                Oficina Virtual
+              </nuxt-link>
+            </li>
+            
+            <li>
+              <nuxt-link to="/herramientas/" 
+                class="block py-2 px-3 md:px-4 rounded-lg md:py-2.5 hover:bg-blue-900 md:hover:bg-blue-900"
+                exact-active-class="bg-orange-600 text-white">
+                Herramientas
+              </nuxt-link>
+            </li>
+            
+            <li>
+              <nuxt-link to="/contacto/" 
+                class="block py-2 px-3 md:px-4 rounded-lg md:py-2.5 hover:bg-blue-900 md:hover:bg-blue-900"
+                exact-active-class="bg-orange-600 text-white">
+                Contacto
+              </nuxt-link>
+            </li>
+          </ul>
         </div>
-
-        <div @click="toggleMenu" id="navbar-collapse-with-animation" :class="{ 'hidden': !isMenuOpen, 'block': isMenuOpen }"
-          class="hs-collapse overflow-hidden transition-all duration-300 basis-full grow sm:block">
-          <div class="flex flex-col gap-y-4 gap-x-0 mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:pl-7">
-            <nuxt-link class="font-medium md:w-32 md:text-center sm:py-6 py-2 px-2 "
-              exact-active-class="bg-orange-600 text-white" to="/">Inicio</nuxt-link>
-            <nuxt-link class="font-medium md:w-32 md:text-center sm:py-6 py-2 px-2 "
-              exact-active-class="bg-orange-600 text-white" to="/nosotros/">Nosotros</nuxt-link>
-            <nuxt-link class="font-medium md:w-32 md:text-center sm:py-6 py-2 px-2 "
-              exact-active-class="bg-orange-600 text-white" to="/servicios/">Servicios</nuxt-link>
-
-            <nuxt-link class="font-medium md:w-32 md:text-center sm:py-6 py-2 px-2 "
-              exact-active-class="bg-orange-600 text-white" to="/capacitacion/">Capacitación</nuxt-link>
-
-                 <nuxt-link class="font-medium md:w-32 md:text-center sm:py-6 py-2 px-2 "
-               exact-active-class="bg-orange-600 text-white" to="/blog/">Blog</nuxt-link>
- 
-
-          
-   <nuxt-link class="font-medium md:w-32 md:text-center sm:py-6 py-2 px-2 "
-               exact-active-class="bg-orange-600 text-white" to="/herramientas/">Herramientas</nuxt-link>
-  
-
-            <nuxt-link class="font-medium md:w-32 md:text-center sm:py-6 py-2 px-2 "
-              exact-active-class="bg-orange-600 text-white" to="/contacto/">Contacto</nuxt-link>
-
-          </div>
-        </div>
-      </nav>
-
-    </header>
-
+      </div>
+    </nav>
   </div>
 </template>
   
@@ -64,15 +132,133 @@ export default {
   data() {
     return {
       isMenuOpen: false,
+      nosotrosDropdown: false,
+      serviciosDropdown: false,
+      timeoutNosotros: null,
+      timeoutServicios: null,
+      isMobile: false
     };
   },
+  mounted() {
+    this.checkMobile();
+    window.addEventListener('resize', this.checkMobile);
+  },
+  beforeDestroy() {
+    window.removeEventListener('resize', this.checkMobile);
+    this.clearTimeouts();
+  },
   methods: {
+    checkMobile() {
+      this.isMobile = window.innerWidth < 768;
+    },
     toggleMenu() {
       this.isMenuOpen = !this.isMenuOpen;
+      if (this.isMenuOpen === false) {
+        this.closeDropdowns();
+      }
     },
-    closeMenu() {
-      this.isMenuOpen = false;
+    toggleNosotrosDropdown(event) {
+      // En móvil, maneja el evento como toggle normal
+      if (this.isMobile) {
+        this.nosotrosDropdown = !this.nosotrosDropdown;
+        if (this.nosotrosDropdown) {
+          this.serviciosDropdown = false;
+        }
+      } else {
+        // En desktop, siempre abre el dropdown al hacer clic
+        this.serviciosDropdown = false;
+        this.nosotrosDropdown = true;
+      }
+      // Prevenir que el evento click propague si está abierto
+      if (this.nosotrosDropdown) {
+        event.stopPropagation();
+      }
     },
+    toggleServiciosDropdown(event) {
+      // En móvil, maneja el evento como toggle normal
+      if (this.isMobile) {
+        this.serviciosDropdown = !this.serviciosDropdown;
+        if (this.serviciosDropdown) {
+          this.nosotrosDropdown = false;
+        }
+      } else {
+        // En desktop, siempre abre el dropdown al hacer clic
+        this.nosotrosDropdown = false;
+        this.serviciosDropdown = true;
+      }
+      // Prevenir que el evento click propague si está abierto
+      if (this.serviciosDropdown) {
+        event.stopPropagation();
+      }
+    },
+    handleMouseEnter(menu) {
+      // Solo aplicar hover en desktop
+      if (this.isMobile) return;
+
+      this.clearTimeouts();
+      
+      if (menu === 'nosotros') {
+        this.nosotrosDropdown = true;
+        this.serviciosDropdown = false;
+      } else if (menu === 'servicios') {
+        this.serviciosDropdown = true;
+        this.nosotrosDropdown = false;
+      }
+    },
+    handleMouseLeave(menu) {
+      // Solo aplicar hover en desktop
+      if (this.isMobile) return;
+
+      // Retraso para permitir que el cursor se mueva al dropdown
+      if (menu === 'nosotros') {
+        this.timeoutNosotros = setTimeout(() => {
+          this.nosotrosDropdown = false;
+        }, 300);
+      } else if (menu === 'servicios') {
+        this.timeoutServicios = setTimeout(() => {
+          this.serviciosDropdown = false;
+        }, 300);
+      }
+    },
+    clearTimeouts() {
+      if (this.timeoutNosotros) {
+        clearTimeout(this.timeoutNosotros);
+        this.timeoutNosotros = null;
+      }
+      if (this.timeoutServicios) {
+        clearTimeout(this.timeoutServicios);
+        this.timeoutServicios = null;
+      }
+    },
+    closeDropdowns() {
+      this.nosotrosDropdown = false;
+      this.serviciosDropdown = false;
+    }
   },
+  watch: {
+    '$route'() {
+      // Cerrar menú desplegable y menú móvil al cambiar de ruta
+      this.nosotrosDropdown = false;
+      this.serviciosDropdown = false;
+      this.isMenuOpen = false;
+    }
+  }
 };
 </script>
+
+<style scoped>
+/* Mejoras para pantallas pequeñas */
+@media (max-width: 768px) {
+  #navbar-main ul {
+    @apply space-y-2 py-2;
+  }
+  
+  #nosotros-dropdown,
+  #servicios-dropdown {
+    position: relative;
+    width: 100%;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+}
+</style>
